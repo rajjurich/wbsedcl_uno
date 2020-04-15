@@ -1,0 +1,3194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5F46F47C-2F80-4BB1-B388-A52BC1B941FF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UNO</RootNamespace>
+    <AssemblyName>UNO</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\..\..\22.07.2015\UNO_STANDARD\UNO\bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxMin">
+      <HintPath>..\..\..\22.07.2015\UNO_STANDARD\UNO\bin\AjaxMin.dll</HintPath>
+    </Reference>
+    <Reference Include="CMSDateTime">
+      <HintPath>E:\CMSDateTime.dll</HintPath>
+    </Reference>
+    <Reference Include="DemoGrid, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DemoGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\packages\HtmlAgilityPack.1.4.6\lib\Net40\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.ContactlessCardRW">
+      <HintPath>D:\jasmin\IIST UNO\UNO_26Mar_Inuse\UNO\obj\Debug\Interop.ContactlessCardRW.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Data.Edm">
+      <HintPath>..\packages\Microsoft.Data.Edm.5.2.0\lib\net40\Microsoft.Data.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData">
+      <HintPath>..\packages\Microsoft.Data.OData.5.2.0\lib\net40\Microsoft.Data.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.WindowsAzure.Configuration">
+      <HintPath>..\packages\Microsoft.WindowsAzure.ConfigurationManager.1.8.0.0\lib\net35-full\Microsoft.WindowsAzure.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Storage">
+      <HintPath>..\packages\WindowsAzure.Storage.2.1.0.4\lib\net40\Microsoft.WindowsAzure.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Obout.Ajax.UI">
+      <HintPath>C:\Documents and Settings\Manoj MM\Desktop\Pages\bin\Obout.Ajax.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Chart.Wpf, Version=13.1400.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Syncfusion.Chart.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Compression.Base, Version=13.1400.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Syncfusion.Compression.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Core, Version=13.1400.0.21, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Syncfusion.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.DocIO.Base, Version=13.1400.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Syncfusion.DocIO.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.DocToPDFConverter.Base, Version=13.1400.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Syncfusion.DocToPDFConverter.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.EJ, Version=13.1400.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Syncfusion.EJ.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.EJ.Export, Version=13.1400.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Syncfusion.EJ.Export.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.EJ.Olap, Version=13.1400.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Syncfusion.EJ.Olap.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.EJ.ReportViewer, Version=13.1400.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Syncfusion.EJ.ReportViewer.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.EJ.Web, Version=13.1400.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Syncfusion.EJ.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.ExcelToPdfConverter.Base, Version=13.1400.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Syncfusion.ExcelToPdfConverter.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Gauge.WPF, Version=13.1400.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Syncfusion.Gauge.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Grid.Wpf, Version=13.1400.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Syncfusion.Grid.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.GridCommon.Wpf, Version=13.1400.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Syncfusion.GridCommon.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.HtmlConverter.Base, Version=13.1400.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Syncfusion.HtmlConverter.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Linq.Base, Version=13.1400.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Syncfusion.Linq.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.OCRProcessor.Base, Version=13.1400.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Syncfusion.OCRProcessor.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.OfficeChart.Base, Version=13.1400.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Syncfusion.OfficeChart.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.OfficeChartToImageConverter.Wpf, Version=13.1400.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Syncfusion.OfficeChartToImageConverter.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Olap.Base, Version=13.1400.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Syncfusion.Olap.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Pdf.Base, Version=13.1400.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Syncfusion.Pdf.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.PivotAnalysis.Base, Version=13.1400.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Syncfusion.PivotAnalysis.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Presentation.Base, Version=13.1400.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Syncfusion.Presentation.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.PresentationToPdfConverter.Base, Version=13.1400.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Syncfusion.PresentationToPdfConverter.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.ReportControls.WPF, Version=13.1400.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Syncfusion.ReportControls.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.ReportWriter.Base, Version=13.1400.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Syncfusion.ReportWriter.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.RichTextBoxAdv.WPF, Version=13.1400.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Syncfusion.RichTextBoxAdv.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfChart.WPF, Version=13.1400.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Syncfusion.SfChart.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfMaps.WPF, Version=13.1400.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Syncfusion.SfMaps.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Shared.Wpf, Version=13.1400.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Syncfusion.Shared.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.XlsIO.Base, Version=13.1400.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Syncfusion.XlsIO.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Spatial">
+      <HintPath>..\packages\System.Spatial.5.2.0\lib\net40\System.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Aboutus.aspx" />
+    <Content Include="Access_Settings.aspx" />
+    <Content Include="AccessLevelAdd.aspx" />
+    <Content Include="AccessLevelBrowse.aspx" />
+    <Content Include="AccessLevelEdit.aspx" />
+    <Content Include="AccessLevelReport.aspx" />
+    <Content Include="AccessLevelReport_SecondLevel.aspx" />
+    <Content Include="AccessReport_HeadCount.aspx" />
+    <Content Include="Access_Report.aspx" />
+    <Content Include="AcsPointAdd.aspx" />
+    <Content Include="AcsPointBrowse.aspx" />
+    <Content Include="ACS_Events_Upload.aspx" />
+    <Content Include="ActivityBrowser.aspx" />
+    <Content Include="AdminAnnouncement.aspx" />
+    <Content Include="AssetMovement.aspx" />
+    <Content Include="AssetReport.aspx" />
+    <Content Include="assets\jquery.webticker.js" />
+    <Content Include="assets\jquery.webticker.min.js" />
+    <Content Include="assets\left.png" />
+    <Content Include="assets\right.png" />
+    <Content Include="assets\webticker.css" />
+    <Content Include="Asset_ControllerMaster.aspx" />
+    <Content Include="Asset_EventViewer.aspx" />
+    <Content Include="Asset_Master_Entry.aspx" />
+    <Content Include="Asset_Tag_Inventory.aspx" />
+    <Content Include="AttandanceReport.aspx" />
+    <Content Include="Attendance_Report.aspx" />
+    <Content Include="Attendance_Summary_Report.aspx" />
+    <Content Include="AutoCardLookup.aspx" />
+    <Content Include="AutoScheduledBackupConfig.aspx" />
+    <Content Include="bin\CMSDateTime.dll" />
+    <Content Include="bin\Interop.ContactlessCardRW.dll" />
+    <Content Include="bin\Obout.Ajax.UI.dll" />
+    <Content Include="bin\scardsyn.dll" />
+    <Content Include="bin\Syncfusion.Chart.Wpf.dll" />
+    <Content Include="bin\Syncfusion.Compression.Base.dll" />
+    <Content Include="bin\Syncfusion.Core.dll" />
+    <Content Include="bin\Syncfusion.DocIO.Base.dll" />
+    <Content Include="bin\Syncfusion.DocToPDFConverter.Base.dll" />
+    <Content Include="bin\Syncfusion.EJ.dll" />
+    <Content Include="bin\Syncfusion.EJ.Export.dll" />
+    <Content Include="bin\Syncfusion.EJ.Olap.dll" />
+    <Content Include="bin\Syncfusion.EJ.ReportViewer.dll" />
+    <Content Include="bin\Syncfusion.EJ.Web.dll" />
+    <Content Include="bin\Syncfusion.ExcelToPdfConverter.Base.dll" />
+    <Content Include="bin\Syncfusion.Gauge.WPF.dll" />
+    <Content Include="bin\Syncfusion.Grid.Wpf.dll" />
+    <Content Include="bin\Syncfusion.GridCommon.Wpf.dll" />
+    <Content Include="bin\Syncfusion.HtmlConverter.Base.dll" />
+    <Content Include="bin\Syncfusion.Linq.Base.dll" />
+    <Content Include="bin\Syncfusion.OCRProcessor.Base.dll" />
+    <Content Include="bin\Syncfusion.OfficeChart.Base.dll" />
+    <Content Include="bin\Syncfusion.OfficeChartToImageConverter.Wpf.dll" />
+    <Content Include="bin\Syncfusion.Olap.Base.dll" />
+    <Content Include="bin\Syncfusion.Pdf.Base.dll" />
+    <Content Include="bin\Syncfusion.PivotAnalysis.Base.dll" />
+    <Content Include="bin\Syncfusion.Presentation.Base.dll" />
+    <Content Include="bin\Syncfusion.PresentationToPdfConverter.Base.dll" />
+    <Content Include="bin\Syncfusion.ReportControls.WPF.dll" />
+    <Content Include="bin\Syncfusion.ReportWriter.Base.dll" />
+    <Content Include="bin\Syncfusion.RichTextBoxAdv.WPF.dll" />
+    <Content Include="bin\Syncfusion.SfChart.WPF.dll" />
+    <Content Include="bin\Syncfusion.SfMaps.WPF.dll" />
+    <Content Include="bin\Syncfusion.Shared.Wpf.dll" />
+    <Content Include="bin\Syncfusion.XlsIO.Base.dll" />
+    <Content Include="BiometricCardSetting.aspx" />
+    <Content Include="BioMetric_Personalize_Template_Configuration.aspx" />
+    <Content Include="BioMetric_Template_Configuration.aspx" />
+    <Content Include="CardholderActivationdetails.aspx" />
+    <Content Include="CardHolderExpiryDetails.aspx" />
+    <Content Include="Card_Design.aspx" />
+    <Content Include="Card_View.aspx" />
+    <Content Include="CategaryMasterView.aspx" />
+    <Content Include="CategoryLeaveRelation.aspx" />
+    <Content Include="ChronicLateEarly.aspx" />
+    <Content Include="CommonViewMstr.aspx" />
+    <Content Include="CompanyMasterView.aspx" />
+    <Content Include="ControllerEvents.aspx" />
+    <Content Include="controllerReport.aspx" />
+    <Content Include="ControllerStatus.aspx" />
+    <Content Include="ControllerView.aspx" />
+    <Content Include="Controller_Master.aspx" />
+    <Content Include="ControllerEmployeeMapping.aspx" />
+    <Content Include="CostCenterMapping.aspx" />
+    <Content Include="Daily_Arrival_Report.aspx" />
+    <Content Include="Daily_Employee_Report.aspx" />
+    <Content Include="EmployeePinConfigureADD.aspx" />
+    <Content Include="EmployeePinConfigView.aspx" />
+    <Content Include="Emp_Asset_Tag_Mapping.aspx" />
+    <Content Include="EventBrowser.aspx" />
+    <Content Include="Filter\ControllerEmployeeService.asmx" />
+    <Content Include="Filter\CostCenterService.asmx" />
+    <Content Include="GatepassRegistration.aspx" />
+    <Content Include="images\home.png" />
+    <Content Include="images\LeftHand.png" />
+    <Content Include="images\RightHand.png" />
+    <Content Include="images\wbsedcl-copy.png" />
+    <Content Include="images\wbsedcl.png" />
+    <Content Include="LeaveRuleNew.aspx" />
+    <Content Include="Manager_Dashboard.aspx" />
+    <Content Include="Monthly_Biometric_Report.aspx" />
+    <Content Include="NumberofVisitorsReport.aspx" />
+    <Content Include="OutpassView.aspx" />
+    <Content Include="OutPassADD.aspx" />
+    <Content Include="Current_Emp_Strength.aspx" />
+    <Content Include="DirectoryPopup.aspx" />
+    <Content Include="DOSCardPersonalisation.aspx" />
+    <Content Include="EmpAndNonEmpStrength.aspx" />
+    <Content Include="EmpImage\11121314.jpg" />
+    <Content Include="EmpImage\11121315.jpg" />
+    <Content Include="EmpImage\12345670.jpg" />
+    <Content Include="EmpImage\14785236.jpg" />
+    <Content Include="EmpImage\225555554.jpg" />
+    <Content Include="EmpImage\36985214.jpg" />
+    <Content Include="EmpImage\Default_Female.JPG" />
+    <Content Include="EmpImage\Default_Male.JPG" />
+    <Content Include="EmpImage\Default_Preview.jpg" />
+    <Content Include="EmpImage\Default_Preview.png" />
+    <Content Include="EmpImage\Default_Preview_old.JPG" />
+    <Content Include="EmpImage\L3.jpg" />
+    <Content Include="EmpImage\M1.jpg" />
+    <Content Include="EmpImage\M2.jpg" />
+    <Content Include="EmpImage\S2.jpg" />
+    <Content Include="EmployeeCardConfigureADD.aspx" />
+    <Content Include="EmployeeCardConfigView.aspx" />
+    <Content Include="EmployeeTimeAttendanceADD.aspx" />
+    <Content Include="EmployeeTimeAttendanceView.aspx" />
+    <Content Include="Employee_Left.aspx" />
+    <Content Include="Employee_Performance_Report.aspx" />
+    <Content Include="EnglishToHindi.aspx" />
+    <Content Include="EnglishToHindiView.aspx" />
+    <Content Include="EnrollmentView.aspx" />
+    <Content Include="EPDViewNew.aspx" />
+    <Content Include="ESS_Dashboard.aspx" />
+    <Content Include="ESS_PendingRequest.aspx" />
+    <Content Include="ESS_Sanc_View.aspx" />
+    <Content Include="ESS_TA_CO_VIEW.aspx" />
+    <Content Include="ESS_TA_GP_View.aspx" />
+    <Content Include="ESS_TA_LV_View.aspx" />
+    <Content Include="ESS_TA_MA_View.aspx" />
+    <Content Include="ESS_TA_OD_Edit.aspx" />
+    <Content Include="ESS_TA_OD_View.aspx" />
+    <Content Include="EventBrowser_old.aspx" />
+    <Content Include="ExpenseEntry.aspx" />
+    <Content Include="FeedBack.aspx" />
+    <Content Include="Filter\Filter.asmx" />
+    <Content Include="FingerEnrollment.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="HierarchyManagerLinkAdd.aspx" />
+    <Content Include="HierarchyManagerView.aspx" />
+    <Content Include="HolidayView.aspx" />
+    <Content Include="Holiday_Attendance_Report.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="HoursStayed.aspx" />
+    <Content Include="iFrame.aspx" />
+    <Content Include="images\276.GIF" />
+    <Content Include="images\AccessControlSystem.png" />
+    <Content Include="images\advancedsettings.png" />
+    <Content Include="images\arrow.png" />
+    <Content Include="images\arrows.png" />
+    <Content Include="images\blk_1.gif" />
+    <Content Include="images\Bulb_art_cms.jpg" />
+    <Content Include="images\b_1.gif" />
+    <Content Include="images\calendar.gif" />
+    <Content Include="images\CanteenManagement.png" />
+    <Content Include="images\CardManagement.png" />
+    <Content Include="images\close-button.png" />
+    <Content Include="images\Core.gif" />
+    <Content Include="images\cross.png" />
+    <Content Include="images\emp.png" />
+    <Content Include="images\Excelicon.png" />
+    <Content Include="images\Folder.jpg" />
+    <Content Include="images\g_1.gif" />
+    <Content Include="images\h_1.gif" />
+    <Content Include="images\h_2.gif" />
+    <Content Include="images\h_3.gif" />
+    <Content Include="images\icon-loading-animated.gif" />
+    <Content Include="images\iconSpritImage1.png" />
+    <Content Include="images\ImageAttribution.txt" />
+    <Content Include="images\improve_data_quality.png" />
+    <Content Include="images\Invalid.png" />
+    <Content Include="images\layout_1_999px_a_08.gif" />
+    <Content Include="images\l_t_1.png" />
+    <Content Include="images\minus.png" />
+    <Content Include="images\Next_track_play_previous.png" />
+    <Content Include="images\our-mission-shadow.png" />
+    <Content Include="images\palm.bmp" />
+    <Content Include="images\pattern.png" />
+    <Content Include="images\plus.png" />
+    <Content Include="images\Previous_track_next.png" />
+    <Content Include="images\TimeAttendance.png" />
+    <Content Include="images\top_arr.png" />
+    <Content Include="images\twig.gif" />
+    <Content Include="images\VisitorManagement.png" />
+    <Content Include="images\y_1.gif" />
+    <Content Include="ImageUploadIframe.aspx" />
+    <Content Include="img\add_image.png" />
+    <Content Include="img\bgcolor1.jpeg" />
+    <Content Include="img\delete.jpg" />
+    <Content Include="img\EPD_PHOTOURL.jpeg" />
+    <Content Include="img\ForeColor1.jpeg" />
+    <Content Include="InternlCampus.aspx" />
+    <Content Include="Operational_Access.aspx" />
+    <Content Include="Other Center or Unit_Access_Control_Report.aspx" />
+    <Content Include="Multifilter_Access_Report.aspx" />
+    <Content Include="OTRpt.aspx" />
+    <Content Include="OverstayedVisitorsReport.aspx" />
+    <Content Include="PresentAbsent_Report.aspx" />
+    <Content Include="ReadCSNR.aspx" />
+    <Content Include="Reader_Message_Template.aspx" />
+    <Content Include="ResetPassword.aspx" />
+    <Content Include="RestoreSql.aspx" />
+    <Content Include="rptKeypadReport.aspx" />
+    <Content Include="rptManagerWiseReport.aspx" />
+    <Content Include="SACCapturePersoDetails.aspx" />
+    <Content Include="SACCapturePersoDetails_Idea.aspx" />
+    <Content Include="SACCapturePersoDetails_Mahindra.aspx" />
+    <Content Include="SACCreateMasterCard.aspx" />
+    <Content Include="SACDOSCard.aspx" />
+    <Content Include="SACMasterCard.aspx" />
+    <Content Include="SACPersoDataCapture.aspx" />
+    <Content Include="SACPersonalisationView.aspx" />
+    <Content Include="SACRawOLDCard.aspx" />
+    <Content Include="SACViewCard.aspx" />
+    <Content Include="Scripts\jquery-1.11.3.min.js" />
+    <Content Include="SlickGrid\Scripts\dataview.js" />
+    <Content Include="SlickGrid\Scripts\jquery-1.7.min.js" />
+    <Content Include="SlickGrid\Scripts\jquery.event.drag-2.2.js" />
+    <Content Include="SlickGrid\Scripts\jquery.event.drop-2.2.js" />
+    <Content Include="SlickGrid\Scripts\slick.core.js" />
+    <Content Include="SlickGrid\Scripts\slick.grid.js" />
+    <Content Include="SlickGrid\Scripts\slick.pager.js" />
+    <Content Include="SlickGrid\Styles\examples.css" />
+    <Content Include="SlickGrid\Styles\slick-default-theme.css" />
+    <Content Include="SlickGrid\Styles\slick.grid.css" />
+    <Content Include="SlickGrid\Styles\slick.pager.css" />
+    <Content Include="SlickGrid\Styles\SlickGridImages\sort-asc.gif" />
+    <Content Include="SlickGrid\Styles\SlickGridImages\sort-desc.gif" />
+    <Content Include="SlickGrid\Styles\Smoothness\jquery-ui-1.8.16.custom.css" />
+    <Content Include="Syncfusion\Content\ej\common-images\colorpicker_dark.png" />
+    <Content Include="Syncfusion\Content\ej\common-images\colorpicker_light.png" />
+    <Content Include="Syncfusion\Content\ej\common-images\diagram_context.png" />
+    <Content Include="Syncfusion\Content\ej\common-images\diagram_context1.png" />
+    <Content Include="Syncfusion\Content\ej\common-images\icons-black.png" />
+    <Content Include="Syncfusion\Content\ej\common-images\icons-gray.png" />
+    <Content Include="Syncfusion\Content\ej\common-images\icons-halfwhite.png" />
+    <Content Include="Syncfusion\Content\ej\common-images\icons-white.png" />
+    <Content Include="Syncfusion\Content\ej\common-images\maps\Arrow_Bootom.png" />
+    <Content Include="Syncfusion\Content\ej\common-images\maps\Arrow_Bootom_hover.png" />
+    <Content Include="Syncfusion\Content\ej\common-images\maps\Arrow_Left.png" />
+    <Content Include="Syncfusion\Content\ej\common-images\maps\Arrow_Left_hover.png" />
+    <Content Include="Syncfusion\Content\ej\common-images\maps\Arrow_Right.png" />
+    <Content Include="Syncfusion\Content\ej\common-images\maps\Arrow_Right_hover.png" />
+    <Content Include="Syncfusion\Content\ej\common-images\maps\Arrow_Top.png" />
+    <Content Include="Syncfusion\Content\ej\common-images\maps\Arrow_Top_hover.png" />
+    <Content Include="Syncfusion\Content\ej\common-images\maps\Bar.png" />
+    <Content Include="Syncfusion\Content\ej\common-images\maps\Home.png" />
+    <Content Include="Syncfusion\Content\ej\common-images\maps\Home_hover.png" />
+    <Content Include="Syncfusion\Content\ej\common-images\maps\Home_hover_lime.png" />
+    <Content Include="Syncfusion\Content\ej\common-images\maps\Home_hover_saffron.png" />
+    <Content Include="Syncfusion\Content\ej\common-images\maps\Home_lime.png" />
+    <Content Include="Syncfusion\Content\ej\common-images\maps\Home_saffron.png" />
+    <Content Include="Syncfusion\Content\ej\common-images\maps\Navicatior.png" />
+    <Content Include="Syncfusion\Content\ej\common-images\maps\Zoom-In.png" />
+    <Content Include="Syncfusion\Content\ej\common-images\maps\Zoom-In_hover.png" />
+    <Content Include="Syncfusion\Content\ej\common-images\maps\Zoom-out.png" />
+    <Content Include="Syncfusion\Content\ej\common-images\maps\Zoom-out_hover.png" />
+    <Content Include="Syncfusion\Content\ej\common-images\olapkpi\circle.png" />
+    <Content Include="Syncfusion\Content\ej\common-images\olapkpi\diamond.png" />
+    <Content Include="Syncfusion\Content\ej\common-images\olapkpi\down-arrow.png" />
+    <Content Include="Syncfusion\Content\ej\common-images\olapkpi\green.png" />
+    <Content Include="Syncfusion\Content\ej\common-images\olapkpi\red.png" />
+    <Content Include="Syncfusion\Content\ej\common-images\olapkpi\right-arrow.png" />
+    <Content Include="Syncfusion\Content\ej\common-images\olapkpi\three-color.png" />
+    <Content Include="Syncfusion\Content\ej\common-images\olapkpi\triangle.png" />
+    <Content Include="Syncfusion\Content\ej\common-images\olapkpi\up-arrow.png" />
+    <Content Include="Syncfusion\Content\ej\common-images\radialmenu\back.png" />
+    <Content Include="Syncfusion\Content\ej\common-images\radialmenu\radial.png" />
+    <Content Include="Syncfusion\Content\ej\common-images\reports\down.png" />
+    <Content Include="Syncfusion\Content\ej\common-images\reports\minus.gif" />
+    <Content Include="Syncfusion\Content\ej\common-images\reports\plus.gif" />
+    <Content Include="Syncfusion\Content\ej\common-images\reports\up.png" />
+    <Content Include="Syncfusion\Content\ej\common-images\reports\updown.png" />
+    <Content Include="Syncfusion\Content\ej\common-images\Rotate.cur" />
+    <Content Include="Syncfusion\Content\ej\default-theme\bootstrap.css" />
+    <Content Include="Syncfusion\Content\ej\default-theme\bootstrap.min.css" />
+    <Content Include="Syncfusion\Content\ej\default-theme\default-responsive.css" />
+    <Content Include="Syncfusion\Content\ej\default-theme\default.css" />
+    <Content Include="Syncfusion\Content\ej\default-theme\ej.theme.css" />
+    <Content Include="Syncfusion\Content\ej\default-theme\ej.theme.min.css" />
+    <Content Include="Syncfusion\Content\ej\default-theme\ej.web.all.css" />
+    <Content Include="Syncfusion\Content\ej\default-theme\ej.web.all.min.css" />
+    <Content Include="Syncfusion\Content\ej\default-theme\ej.widgets.all.css" />
+    <Content Include="Syncfusion\Content\ej\default-theme\ej.widgets.all.min.css" />
+    <Content Include="Syncfusion\Content\ej\default-theme\ej.widgets.core.css" />
+    <Content Include="Syncfusion\Content\ej\default-theme\images\ajax-loader.gif" />
+    <Content Include="Syncfusion\Content\ej\default-theme\images\arrow-hover.png" />
+    <Content Include="Syncfusion\Content\ej\default-theme\images\checkedtick.png" />
+    <Content Include="Syncfusion\Content\ej\default-theme\images\dot.png" />
+    <Content Include="Syncfusion\Content\ej\default-theme\images\drop-sibling.png" />
+    <Content Include="Syncfusion\Content\ej\default-theme\images\gradient.png" />
+    <Content Include="Syncfusion\Content\ej\default-theme\images\olap-gridbutton.png" />
+    <Content Include="Syncfusion\Content\ej\default-theme\images\olap-kpi.png" />
+    <Content Include="Syncfusion\Content\ej\default-theme\images\olap-toolbar.png" />
+    <Content Include="Syncfusion\Content\ej\default-theme\images\olap-treeview.png" />
+    <Content Include="Syncfusion\Content\ej\default-theme\images\palette-arrow.png" />
+    <Content Include="Syncfusion\Content\ej\default-theme\images\rating-star.png" />
+    <Content Include="Syncfusion\Content\ej\default-theme\images\rotator-icon.png" />
+    <Content Include="Syncfusion\Content\ej\default-theme\images\tgarrow.png" />
+    <Content Include="Syncfusion\Content\ej\default-theme\images\toggle-text.png" />
+    <Content Include="Syncfusion\Content\ej\default-theme\images\toolbar_icons.png" />
+    <Content Include="Syncfusion\Content\ej\default-theme\images\ui-icon.png" />
+    <Content Include="Syncfusion\Content\ej\default-theme\images\waitingpopup.gif" />
+    <Content Include="Syncfusion\Content\ej\ej.icons.css" />
+    <Content Include="Syncfusion\Content\ej\ej.widgets.core.css" />
+    <Content Include="Syncfusion\Content\ej\ej.widgets.core.min.css" />
+    <Content Include="Syncfusion\Content\responsive-css\ej.responsive.css" />
+    <Content Include="Syncfusion\Content\responsive-css\ejgrid.responsive.css" />
+    <Content Include="Syncfusion\Content\responsive-css\ejschedule.responsive.css" />
+    <Content Include="Syncfusion\Scripts\angular.min.js" />
+    <Content Include="Syncfusion\Scripts\bootstrap-notify.js" />
+    <Content Include="Syncfusion\Scripts\bootstrap.min.js" />
+    <Content Include="Syncfusion\Scripts\canvg.js" />
+    <Content Include="Syncfusion\Scripts\ej\ej.unobtrusive.min.js" />
+    <Content Include="Syncfusion\Scripts\ej\ej.web.all.min.js" />
+    <Content Include="Syncfusion\Scripts\ej\ej.webform.min.js" />
+    <Content Include="Syncfusion\Scripts\ej\ej.widget.angular.min.js" />
+    <Content Include="Syncfusion\Scripts\ej\ej.widget.ko.min.js" />
+    <Content Include="Syncfusion\Scripts\excanvas.min.js" />
+    <Content Include="Syncfusion\Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Syncfusion\Scripts\jquery.easing-1.3.min.js" />
+    <Content Include="Syncfusion\Scripts\jquery.globalize.min.js" />
+    <Content Include="Syncfusion\Scripts\jquery.signalR-1.1.4.min.js" />
+    <Content Include="Syncfusion\Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Syncfusion\Scripts\jquery.validate.min.js" />
+    <Content Include="Syncfusion\Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Syncfusion\Scripts\jsondata.js" />
+    <Content Include="Syncfusion\Scripts\jsondata.min.js" />
+    <Content Include="Syncfusion\Scripts\jsondatachart.js" />
+    <Content Include="Syncfusion\Scripts\jsrender.min.js" />
+    <Content Include="Syncfusion\Scripts\jsviews.min.js" />
+    <Content Include="Syncfusion\Scripts\knockout-min.js" />
+    <Content Include="Syncfusion\Scripts\modernizr-2.5.3.js" />
+    <Content Include="Syncfusion\Scripts\onlinedata.js" />
+    <Content Include="Syncfusion\Scripts\Popup.js" />
+    <Content Include="Syncfusion\Scripts\properties.js" />
+    <Content Include="Syncfusion\Scripts\respond.js" />
+    <Content Include="Syncfusion\Scripts\rgbcolor.js" />
+    <Content Include="Syncfusion\Scripts\sampleBrowserSite.js" />
+    <Content Include="Syncfusion\Scripts\sampleslist.js" />
+    <Content Include="Syncfusion\Scripts\StackBlur.js" />
+    <Content Include="Syncfusion\Scripts\treemapdata.js" />
+    <Content Include="Syncfusion\Scripts\ZeroClipboard.js" />
+    <Content Include="Syncfusion\Scripts\ZeroClipboard.swf" />
+    <Content Include="Tour_Details_Report.aspx" />
+    <Content Include="img\progress-anim.gif" />
+    <Content Include="LateMarkDeduction_Report.aspx" />
+    <Content Include="Late_Report.aspx" />
+    <Content Include="LeaveADD.aspx" />
+    <Content Include="LeaveAppEdit.aspx" />
+    <Content Include="LeaveAppView.aspx" />
+    <Content Include="LeaveFileView.aspx" />
+    <Content Include="Leave_Data_Upload.aspx" />
+    <Content Include="LevelAccessEdit.aspx" />
+    <Content Include="LevelAccessPage.aspx" />
+    <Content Include="LevelAccessView.aspx" />
+    <Content Include="LocateCardHolder.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="MANUALADD.aspx" />
+    <Content Include="ManualAttendEdit.aspx" />
+    <Content Include="ManualAttendView.aspx" />
+    <Content Include="MasterCard.aspx" />
+    <Content Include="Mission.aspx" />
+    <Content Include="NetwrokUpdate.aspx" />
+    <Content Include="ODADD.aspx" />
+    <Content Include="ODAppEdit.aspx" />
+    <Content Include="ODAppView.aspx" />
+    <Content Include="Personalization.aspx" />
+    <Content Include="RawCard.aspx" />
+    <Content Include="Reader_Access_Point_Report.aspx" />
+    <Content Include="Reader_Access_Report.aspx" />
+    <Content Include="ReasonFileView.aspx" />
+    <Content Include="SACPersonalisation.aspx" />
+    <Content Include="SACRawCard.aspx" />
+    <Content Include="SaveTemplate.aspx" />
+    <Content Include="SchedulerSettings.aspx" />
+    <Content Include="ScheduleSettingView.aspx" />
+    <Content Include="Scripts\1.8.23-jquery-ui.min.js" />
+    <Content Include="Scripts\calendar.js" />
+    <Content Include="Scripts\CalendarControl.js" />
+    <Content Include="Scripts\cbpHorizontalMenu.js" />
+    <Content Include="Scripts\cbpHorizontalMenu.min.js" />
+    <Content Include="Scripts\Choosen\chosen-sprite%402x.png" />
+    <Content Include="Scripts\Choosen\chosen-sprite.png" />
+    <Content Include="Scripts\Choosen\chosen.css" />
+    <Content Include="Scripts\Choosen\chosen.jquery.js" />
+    <Content Include="Scripts\Choosen\chosen.jquery.min.js" />
+    <Content Include="Scripts\Choosen\chosen.min.css" />
+    <Content Include="Scripts\Choosen\chosen.proto.js" />
+    <Content Include="Scripts\Choosen\chosen.proto.min.js" />
+    <Content Include="Scripts\Choosen\docsupport\chosen.png" />
+    <Content Include="Scripts\Choosen\docsupport\oss-credit.png" />
+    <Content Include="Scripts\Choosen\docsupport\prism.css" />
+    <Content Include="Scripts\Choosen\docsupport\prism.js" />
+    <Content Include="Scripts\Choosen\docsupport\style.css" />
+    <Content Include="Scripts\Choosen\index.html" />
+    <Content Include="Scripts\Choosen\index.proto.html" />
+    <Content Include="Scripts\Choosen\options.html" />
+    <Content Include="Scripts\html2canvas.js" />
+    <Content Include="Scripts\html5.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery.complexify.js" />
+    <Content Include="Scripts\jquery.contentcarousel.js" />
+    <Content Include="Scripts\jquery.easing.1.3.js" />
+    <Content Include="Scripts\Jquery.min.1.8.2.js" />
+    <Content Include="Scripts\jquery.min.js" />
+    <Content Include="Scripts\jquery.mousewheel.js" />
+    <Content Include="Scripts\jquery.ruler.js" />
+    <Content Include="Scripts\jquery1.9.min.js" />
+    <Content Include="Scripts\keyboard.js" />
+    <Content Include="Scripts\modernizr.custom.js" />
+    <Content Include="Scripts\modernizr.min.js" />
+    <Content Include="Scripts\Ricebox\Close Icon.gif" />
+    <Content Include="Scripts\Ricebox\jquery-1.4.4.js" />
+    <Content Include="Scripts\Ricebox\ricePhoto.js" />
+    <Content Include="Scripts\Ricebox\ricePhoto1.js" />
+    <Content Include="Scripts\Ricebox\ricePhotoClose.gif" />
+    <Content Include="Scripts\Ricebox\ricePhotoLoading.gif" />
+    <Content Include="Scripts\Ricebox\ricePhotoMaskLoading.gif" />
+    <Content Include="Scripts\Ricebox\ricePhotoNav.gif" />
+    <Content Include="Scripts\Ricebox\ricePhotoNext.gif" />
+    <Content Include="Scripts\Ricebox\ricePhotoNext.png" />
+    <Content Include="Scripts\Ricebox\ricePhotoPrevious.gif" />
+    <Content Include="Scripts\Ricebox\ricePhotoPrevious.png" />
+    <Content Include="Scripts\Searchbox\jquery-ui.css" />
+    <Content Include="Scripts\Searchbox\jquery-ui.min.js" />
+    <Content Include="Scripts\Searchbox\jquery.js" />
+    <Content Include="Scripts\Searchbox\jquery.multiselect.css" />
+    <Content Include="Scripts\Searchbox\jquery.multiselect.filter.css" />
+    <Content Include="Scripts\Searchbox\jquery.multiselect.filter.js" />
+    <Content Include="Scripts\Searchbox\jquery.multiselect.js" />
+    <Content Include="Scripts\Searchbox\prettify.css" />
+    <Content Include="Scripts\Searchbox\prettify.js" />
+    <Content Include="Scripts\Searchbox\style.css" />
+    <Content Include="Scripts\timepicki.js" />
+    <Content Include="Scripts\Validation.js" />
+    <Content Include="ShiftMasterView.aspx" />
+    <Content Include="ShiftPatternView.aspx" />
+    <Content Include="ShiftScheduleCorrection.aspx" />
+    <Content Include="Styles\calendar.css" />
+    <Content Include="Styles\CalendarControl.css" />
+    <Content Include="Styles\component.css" />
+    <Content Include="Styles\default.css" />
+    <Content Include="Styles\demo.css" />
+    <Content Include="Styles\jquery-ui.css" />
+    <Content Include="Styles\jquery.jscrollpane.css" />
+    <Content Include="Styles\Keyboard.css" />
+    <Content Include="Styles\Login.css" />
+    <Content Include="Styles\reset.css" />
+    <Content Include="Styles\ruler.css" />
+    <Content Include="Styles\style.css" />
+    <Content Include="Styles\style_Flyout.css" />
+    <Content Include="Styles\timepicki.css" />
+    <Content Include="TEClientMasterFile.aspx" />
+    <Content Include="TEClientMasterView.aspx" />
+    <Content Include="TemporaryCardMaster.aspx" />
+    <Content Include="TemporaryCardViewMaster.aspx" />
+    <Content Include="TE_Activity.aspx" />
+    <Content Include="TE_ActivityAssignment.aspx" />
+    <Content Include="TE_Milestone.aspx" />
+    <Content Include="TE_Projects.aspx" />
+    <Content Include="TE_WBS.aspx" />
+    <Content Include="TimeEntry.aspx" />
+    <Content Include="TimeZoneView.aspx" />
+    <Content Include="Uno_Dashboard.aspx" />
+    <Content Include="UpdatePassword.aspx" />
+    <Content Include="uploadImg\add_image.png" />
+    <Content Include="uploadImg\Blue hills.jpg" />
+    <Content Include="uploadImg\Water lilies.jpg" />
+    <Content Include="UploadTemplate.aspx" />
+    <Content Include="UserAccessPermissionBrowse.aspx" />
+    <Content Include="UserAccessPermissionEdit.aspx" />
+    <Content Include="UserView.aspx" />
+    <Content Include="User_Master_Report.aspx" />
+    <Content Include="User_Profile_Report.aspx" />
+    <Content Include="VEH_AdminOperations.aspx" />
+    <Content Include="VEH_Controller.aspx" />
+    <Content Include="VEH_DailyEntryExitReport.aspx" />
+    <Content Include="VEH_ReportofRFIDtagInventory.aspx" />
+    <Content Include="VEH_RFID_Inventory.aspx" />
+    <Content Include="VEH_RFID_Inventory_New.aspx" />
+    <Content Include="VEH_VehicleDenialReport.aspx" />
+    <Content Include="VEH_VehicleEnromentl.aspx" />
+    <Content Include="VEH_VehicleNumbeWiseReport.aspx" />
+    <Content Include="ViewCard.aspx" />
+    <Content Include="VisitorAccessMovementReport.aspx" />
+    <Content Include="VisitorRawCard.aspx" />
+    <Content Include="Visitor_BlackList.aspx" />
+    <Content Include="Visitor_Current_Strength.aspx" />
+    <Content Include="Visitor_EmployeeRequest.aspx" />
+    <Content Include="Visitor_List_Report.aspx" />
+    <Content Include="Visitor_VMSApproveRequest.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WeeklyOffView.aspx" />
+    <Content Include="WorkDayviewMaster.aspx" />
+    <Content Include="ZoneBrowse.aspx" />
+    <Content Include="ZoneEdit.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Aboutus.aspx.cs">
+      <DependentUpon>Aboutus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aboutus.aspx.designer.cs">
+      <DependentUpon>Aboutus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Access_Settings.aspx.cs">
+      <DependentUpon>Access_Settings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Access_Settings.aspx.designer.cs">
+      <DependentUpon>Access_Settings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AccessController.cs" />
+    <Compile Include="AccessLevelAdd.aspx.cs">
+      <DependentUpon>AccessLevelAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccessLevelAdd.aspx.designer.cs">
+      <DependentUpon>AccessLevelAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AccessLevelBrowse.aspx.cs">
+      <DependentUpon>AccessLevelBrowse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccessLevelBrowse.aspx.designer.cs">
+      <DependentUpon>AccessLevelBrowse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AccessLevelEdit.aspx.cs">
+      <DependentUpon>AccessLevelEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccessLevelEdit.aspx.designer.cs">
+      <DependentUpon>AccessLevelEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AccessLevelReport.aspx.cs">
+      <DependentUpon>AccessLevelReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccessLevelReport.aspx.designer.cs">
+      <DependentUpon>AccessLevelReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AccessLevelReport_SecondLevel.aspx.cs">
+      <DependentUpon>AccessLevelReport_SecondLevel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccessLevelReport_SecondLevel.aspx.designer.cs">
+      <DependentUpon>AccessLevelReport_SecondLevel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AccessReport_HeadCount.aspx.cs">
+      <DependentUpon>AccessReport_HeadCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccessReport_HeadCount.aspx.designer.cs">
+      <DependentUpon>AccessReport_HeadCount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Access_Report.aspx.cs">
+      <DependentUpon>Access_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Access_Report.aspx.designer.cs">
+      <DependentUpon>Access_Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AcsPointAdd.aspx.cs">
+      <DependentUpon>AcsPointAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AcsPointAdd.aspx.designer.cs">
+      <DependentUpon>AcsPointAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AcsPointBrowse.aspx.cs">
+      <DependentUpon>AcsPointBrowse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AcsPointBrowse.aspx.designer.cs">
+      <DependentUpon>AcsPointBrowse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ACS_Events_Upload.aspx.cs">
+      <DependentUpon>ACS_Events_Upload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ACS_Events_Upload.aspx.designer.cs">
+      <DependentUpon>ACS_Events_Upload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ActivityBrowser.aspx.cs">
+      <DependentUpon>ActivityBrowser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ActivityBrowser.aspx.designer.cs">
+      <DependentUpon>ActivityBrowser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminAnnouncement.aspx.cs">
+      <DependentUpon>AdminAnnouncement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminAnnouncement.aspx.designer.cs">
+      <DependentUpon>AdminAnnouncement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="allSelectRoleWise.cs" />
+    <Compile Include="AssetMovement.aspx.cs">
+      <DependentUpon>AssetMovement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssetMovement.aspx.designer.cs">
+      <DependentUpon>AssetMovement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssetReport.aspx.cs">
+      <DependentUpon>AssetReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssetReport.aspx.designer.cs">
+      <DependentUpon>AssetReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssetRpt.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AssetRpt.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Asset_ControllerMaster.aspx.cs">
+      <DependentUpon>Asset_ControllerMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Asset_ControllerMaster.aspx.designer.cs">
+      <DependentUpon>Asset_ControllerMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Asset_EventViewer.aspx.cs">
+      <DependentUpon>Asset_EventViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Asset_EventViewer.aspx.designer.cs">
+      <DependentUpon>Asset_EventViewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Asset_Master_Entry.aspx.cs">
+      <DependentUpon>Asset_Master_Entry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Asset_Master_Entry.aspx.designer.cs">
+      <DependentUpon>Asset_Master_Entry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Asset_Tag_Inventory.aspx.cs">
+      <DependentUpon>Asset_Tag_Inventory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Asset_Tag_Inventory.aspx.designer.cs">
+      <DependentUpon>Asset_Tag_Inventory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AttandanceReport.aspx.cs">
+      <DependentUpon>AttandanceReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AttandanceReport.aspx.designer.cs">
+      <DependentUpon>AttandanceReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance_Report.aspx.cs">
+      <DependentUpon>Attendance_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance_Report.aspx.designer.cs">
+      <DependentUpon>Attendance_Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance_Summary_Report.aspx.cs">
+      <DependentUpon>Attendance_Summary_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attendance_Summary_Report.aspx.designer.cs">
+      <DependentUpon>Attendance_Summary_Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AutoCardLookup.aspx.cs">
+      <DependentUpon>AutoCardLookup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AutoCardLookup.aspx.designer.cs">
+      <DependentUpon>AutoCardLookup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AutoScheduledBackupConfig.aspx.cs">
+      <DependentUpon>AutoScheduledBackupConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AutoScheduledBackupConfig.aspx.designer.cs">
+      <DependentUpon>AutoScheduledBackupConfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BiometricCardSetting.aspx.cs">
+      <DependentUpon>BiometricCardSetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BiometricCardSetting.aspx.designer.cs">
+      <DependentUpon>BiometricCardSetting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BioMetric_Personalize_Template_Configuration.aspx.cs">
+      <DependentUpon>BioMetric_Personalize_Template_Configuration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BioMetric_Personalize_Template_Configuration.aspx.designer.cs">
+      <DependentUpon>BioMetric_Personalize_Template_Configuration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BioMetric_Template_Configuration.aspx.cs">
+      <DependentUpon>BioMetric_Template_Configuration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BioMetric_Template_Configuration.aspx.designer.cs">
+      <DependentUpon>BioMetric_Template_Configuration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bits.cs" />
+    <Compile Include="BrowserCompatibility.cs" />
+    <Compile Include="CardholderActivationdetails.aspx.cs">
+      <DependentUpon>CardholderActivationdetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CardholderActivationdetails.aspx.designer.cs">
+      <DependentUpon>CardholderActivationdetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CardHolderActive.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CardHolderActive.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CardHolderExpiryDetails.aspx.cs">
+      <DependentUpon>CardHolderExpiryDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CardHolderExpiryDetails.aspx.designer.cs">
+      <DependentUpon>CardHolderExpiryDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Card_Design.aspx.cs">
+      <DependentUpon>Card_Design.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Card_Design.aspx.designer.cs">
+      <DependentUpon>Card_Design.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Card_View.aspx.cs">
+      <DependentUpon>Card_View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Card_View.aspx.designer.cs">
+      <DependentUpon>Card_View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CategaryMasterView.aspx.cs">
+      <DependentUpon>CategaryMasterView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CategaryMasterView.aspx.designer.cs">
+      <DependentUpon>CategaryMasterView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryLeaveRelation.aspx.cs">
+      <DependentUpon>CategoryLeaveRelation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CategoryLeaveRelation.aspx.designer.cs">
+      <DependentUpon>CategoryLeaveRelation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CheckReporting.cs" />
+    <Compile Include="ChronicLateEarly.aspx.cs">
+      <DependentUpon>ChronicLateEarly.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChronicLateEarly.aspx.designer.cs">
+      <DependentUpon>ChronicLateEarly.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="clsAssetMonitoring.cs" />
+    <Compile Include="clsCallManagement.cs" />
+    <Compile Include="clsCardRW.cs" />
+    <Compile Include="clsCommonHandler.cs" />
+    <Compile Include="clsEmailTemplate.cs" />
+    <Compile Include="CommonViewMstr.aspx.cs">
+      <DependentUpon>CommonViewMstr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonViewMstr.aspx.designer.cs">
+      <DependentUpon>CommonViewMstr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyMasterView.aspx.cs">
+      <DependentUpon>CompanyMasterView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyMasterView.aspx.designer.cs">
+      <DependentUpon>CompanyMasterView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControllerEventLog.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ControllerEventLog.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ControllerEvents.aspx.cs">
+      <DependentUpon>ControllerEvents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControllerEvents.aspx.designer.cs">
+      <DependentUpon>ControllerEvents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="controllerReport.aspx.cs">
+      <DependentUpon>controllerReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="controllerReport.aspx.designer.cs">
+      <DependentUpon>controllerReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControllerStatus.aspx.cs">
+      <DependentUpon>ControllerStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControllerStatus.aspx.designer.cs">
+      <DependentUpon>ControllerStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControllerView.aspx.cs">
+      <DependentUpon>ControllerView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControllerView.aspx.designer.cs">
+      <DependentUpon>ControllerView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controller_Master.aspx.cs">
+      <DependentUpon>Controller_Master.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controller_Master.aspx.designer.cs">
+      <DependentUpon>Controller_Master.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Converse.cs" />
+    <Compile Include="ControllerEmployeeMapping.aspx.cs">
+      <DependentUpon>ControllerEmployeeMapping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControllerEmployeeMapping.aspx.designer.cs">
+      <DependentUpon>ControllerEmployeeMapping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControllerEmployeeMappingModel.cs" />
+    <Compile Include="CostCenterMapping.aspx.cs">
+      <DependentUpon>CostCenterMapping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CostCenterMapping.aspx.designer.cs">
+      <DependentUpon>CostCenterMapping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CostCenterMappingModel.cs" />
+    <Compile Include="Daily_Arrival_Report.aspx.cs">
+      <DependentUpon>Daily_Arrival_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Daily_Arrival_Report.aspx.designer.cs">
+      <DependentUpon>Daily_Arrival_Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Daily_Employee_Report.aspx.cs">
+      <DependentUpon>Daily_Employee_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Daily_Employee_Report.aspx.designer.cs">
+      <DependentUpon>Daily_Employee_Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\AttandanceDataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AttandanceDataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\Daily_Employee.Designer.cs" />
+    <Compile Include="DataSets\dsMonthlyBiomentric.cs">
+      <DependentUpon>dsMonthlyBiomentric.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSets\dsMonthlyBiomentric.Designer.cs">
+      <DependentUpon>dsMonthlyBiomentric.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\dsMonthlyBiomentric1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsMonthlyBiomentric1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\dsVisitors.cs">
+      <DependentUpon>dsVisitors.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\dsVisitors.Designer.cs">
+      <DependentUpon>dsVisitors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\OtheCenterUnitAccess1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OtheCenterUnitAccess.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\rptKeypad1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptKeypad.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\visitor_current_strength.Designer.cs" />
+    <Compile Include="DataTansactionLog.cs" />
+    <Compile Include="EmployeePinConfigureADD.aspx.cs">
+      <DependentUpon>EmployeePinConfigureADD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeePinConfigureADD.aspx.designer.cs">
+      <DependentUpon>EmployeePinConfigureADD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeePinConfigView.aspx.cs">
+      <DependentUpon>EmployeePinConfigView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeePinConfigView.aspx.designer.cs">
+      <DependentUpon>EmployeePinConfigView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Emp_Asset_Tag_Mapping.aspx.cs">
+      <DependentUpon>Emp_Asset_Tag_Mapping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Emp_Asset_Tag_Mapping.aspx.designer.cs">
+      <DependentUpon>Emp_Asset_Tag_Mapping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EventBrowser.aspx.cs">
+      <DependentUpon>EventBrowser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EventBrowser.aspx.designer.cs">
+      <DependentUpon>EventBrowser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Filter\ControllerEmployeeService.asmx.cs">
+      <DependentUpon>ControllerEmployeeService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Filter\CostCenterService.asmx.cs">
+      <DependentUpon>CostCenterService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GatepassRegistration.aspx.cs">
+      <DependentUpon>GatepassRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GatepassRegistration.aspx.designer.cs">
+      <DependentUpon>GatepassRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LeaveRuleNew.aspx.cs">
+      <DependentUpon>LeaveRuleNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LeaveRuleNew.aspx.designer.cs">
+      <DependentUpon>LeaveRuleNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manager_Dashboard.aspx.cs">
+      <DependentUpon>Manager_Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manager_Dashboard.aspx.designer.cs">
+      <DependentUpon>Manager_Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Monthly_Biometric_Report.aspx.cs">
+      <DependentUpon>Monthly_Biometric_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Monthly_Biometric_Report.aspx.designer.cs">
+      <DependentUpon>Monthly_Biometric_Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NumberofVisitorsReport.aspx.cs">
+      <DependentUpon>NumberofVisitorsReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NumberofVisitorsReport.aspx.designer.cs">
+      <DependentUpon>NumberofVisitorsReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OutpassView.aspx.cs">
+      <DependentUpon>OutpassView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OutpassView.aspx.designer.cs">
+      <DependentUpon>OutpassView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OutPassADD.aspx.cs">
+      <DependentUpon>OutPassADD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OutPassADD.aspx.designer.cs">
+      <DependentUpon>OutPassADD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Current_Emp_Strength.aspx.cs">
+      <DependentUpon>Current_Emp_Strength.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Current_Emp_Strength.aspx.designer.cs">
+      <DependentUpon>Current_Emp_Strength.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\Access_Report.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Access_Report.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\Address.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Address.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\AttendanceSummaryReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AttendanceSummaryReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\Attendance_Report.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Attendance_Report.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\Call_Performance.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Call_Performance.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\Call_Status.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Call_Status.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\Controllers.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Controllers.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\Current_Emp_Strength.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Current_Emp_Strength.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\Daily_Arrival.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Daily_Arrival.xsd</DependentUpon>
+    </Compile>
+    <Content Include="DataSets\EL_Dataset.Designer.cs" />
+    <Compile Include="DataSets\DatasetPresentAbsent.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatasetPresentAbsent.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\DataSetWorkDayCalculation.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetWorkDayCalculation.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\dsAccessHeadCount.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsAccessHeadCount.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\dsSecondLevelAcces.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSecondLevelAcces.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\EmpAndNonEmpReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmpAndNonEmpReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\Employee_Performance.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Employee_Performance.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\GATEPASS_APPLICATION.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GATEPASS_APPLICATION.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\Holiday_Report.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Holiday_Report.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\hourStayed.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hourStayed.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\LateMarkDeduction_Report.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LateMarkDeduction_Report.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\Late_Report.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Late_Report.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\LEAVE.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LEAVE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\LeaveConsumptionDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LeaveConsumptionDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\LEAVE_APPLICATION.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LEAVE_APPLICATION.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\MAttendance_Application.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MAttendance_Application.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\Monthly_Leave_Consuption.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Monthly_Leave_Consuption.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\MultifilterAccessDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MultifilterAccessDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\OD_APPLICATION.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OD_APPLICATION.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\Periodic_MusterDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Periodic_MusterDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\Periodic_PerformanceDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Periodic_PerformanceDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\Reader_Access.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reader_Access.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\Reader_Access_Point.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reader_Access_Point.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\TOUR_REPORT.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TOUR_REPORT.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\User Profile.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>User Profile.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\User.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>User.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\VMSCompanyWiseReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VMSCompanyWiseReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\VMSDTWrpt.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VMSDTWrpt.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\VMSEmployeeWiseReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VMSEmployeeWiseReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\Zone.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Zone.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DirectoryPopup.aspx.cs">
+      <DependentUpon>DirectoryPopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DirectoryPopup.aspx.designer.cs">
+      <DependentUpon>DirectoryPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DOSCardPersonalisation.aspx.cs">
+      <DependentUpon>DOSCardPersonalisation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DOSCardPersonalisation.aspx.designer.cs">
+      <DependentUpon>DOSCardPersonalisation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dsEmployeeHierReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsEmployeeHierReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_EMPLOYEE_HIER_ERROR.Designer.cs" />
+    <Compile Include="DS_LVCUT_ERROR.Designer.cs" />
+    <Compile Include="EmpAndNonEmpStrength.aspx.cs">
+      <DependentUpon>EmpAndNonEmpStrength.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmpAndNonEmpStrength.aspx.designer.cs">
+      <DependentUpon>EmpAndNonEmpStrength.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeCardConfigureADD.aspx.cs">
+      <DependentUpon>EmployeeCardConfigureADD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeCardConfigureADD.aspx.designer.cs">
+      <DependentUpon>EmployeeCardConfigureADD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeCardConfigView.aspx.cs">
+      <DependentUpon>EmployeeCardConfigView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeCardConfigView.aspx.designer.cs">
+      <DependentUpon>EmployeeCardConfigView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeTimeAttendanceADD.aspx.cs">
+      <DependentUpon>EmployeeTimeAttendanceADD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeTimeAttendanceADD.aspx.designer.cs">
+      <DependentUpon>EmployeeTimeAttendanceADD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeTimeAttendanceView.aspx.cs">
+      <DependentUpon>EmployeeTimeAttendanceView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeTimeAttendanceView.aspx.designer.cs">
+      <DependentUpon>EmployeeTimeAttendanceView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee_Left.aspx.cs">
+      <DependentUpon>Employee_Left.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee_Left.aspx.designer.cs">
+      <DependentUpon>Employee_Left.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee_Performance_Report.aspx.cs">
+      <DependentUpon>Employee_Performance_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee_Performance_Report.aspx.designer.cs">
+      <DependentUpon>Employee_Performance_Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EncryptDecrypt.cs" />
+    <Compile Include="EnglishToHindi.aspx.cs">
+      <DependentUpon>EnglishToHindi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EnglishToHindi.aspx.designer.cs">
+      <DependentUpon>EnglishToHindi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EnglishToHindiView.aspx.cs">
+      <DependentUpon>EnglishToHindiView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EnglishToHindiView.aspx.designer.cs">
+      <DependentUpon>EnglishToHindiView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EnrollmentView.aspx.cs">
+      <DependentUpon>EnrollmentView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EnrollmentView.aspx.designer.cs">
+      <DependentUpon>EnrollmentView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EPDViewNew.aspx.cs">
+      <DependentUpon>EPDViewNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EPDViewNew.aspx.designer.cs">
+      <DependentUpon>EPDViewNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS_Dashboard.aspx.cs">
+      <DependentUpon>ESS_Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS_Dashboard.aspx.designer.cs">
+      <DependentUpon>ESS_Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS_PendingRequest.aspx.cs">
+      <DependentUpon>ESS_PendingRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS_PendingRequest.aspx.designer.cs">
+      <DependentUpon>ESS_PendingRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS_Sanc_View.aspx.cs">
+      <DependentUpon>ESS_Sanc_View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS_Sanc_View.aspx.designer.cs">
+      <DependentUpon>ESS_Sanc_View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS_TA_CO_VIEW.aspx.cs">
+      <DependentUpon>ESS_TA_CO_VIEW.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS_TA_CO_VIEW.aspx.designer.cs">
+      <DependentUpon>ESS_TA_CO_VIEW.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS_TA_GP_View.aspx.cs">
+      <DependentUpon>ESS_TA_GP_View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS_TA_GP_View.aspx.designer.cs">
+      <DependentUpon>ESS_TA_GP_View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS_TA_LV_View.aspx.cs">
+      <DependentUpon>ESS_TA_LV_View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS_TA_LV_View.aspx.designer.cs">
+      <DependentUpon>ESS_TA_LV_View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS_TA_MA_View.aspx.cs">
+      <DependentUpon>ESS_TA_MA_View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS_TA_MA_View.aspx.designer.cs">
+      <DependentUpon>ESS_TA_MA_View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS_TA_OD_Edit.aspx.cs">
+      <DependentUpon>ESS_TA_OD_Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS_TA_OD_Edit.aspx.designer.cs">
+      <DependentUpon>ESS_TA_OD_Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESS_TA_OD_View.aspx.cs">
+      <DependentUpon>ESS_TA_OD_View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESS_TA_OD_View.aspx.designer.cs">
+      <DependentUpon>ESS_TA_OD_View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EventBrowser_old.aspx.cs">
+      <DependentUpon>EventBrowser_old.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EventBrowser_old.aspx.designer.cs">
+      <DependentUpon>EventBrowser_old.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExpenseEntry.aspx.cs">
+      <DependentUpon>ExpenseEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExpenseEntry.aspx.designer.cs">
+      <DependentUpon>ExpenseEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FeedBack.aspx.cs">
+      <DependentUpon>FeedBack.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FeedBack.aspx.designer.cs">
+      <DependentUpon>FeedBack.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FileList.cs" />
+    <Compile Include="Filter\Filter.asmx.cs">
+      <DependentUpon>Filter.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FingerEnrollment.aspx.cs">
+      <DependentUpon>FingerEnrollment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FingerEnrollment.aspx.designer.cs">
+      <DependentUpon>FingerEnrollment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Handler1.ashx.cs">
+      <DependentUpon>Handler1.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Hex.cs" />
+    <Compile Include="HierarchyManagerLinkAdd.aspx.cs">
+      <DependentUpon>HierarchyManagerLinkAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HierarchyManagerLinkAdd.aspx.designer.cs">
+      <DependentUpon>HierarchyManagerLinkAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HierarchyManagerView.aspx.cs">
+      <DependentUpon>HierarchyManagerView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HierarchyManagerView.aspx.designer.cs">
+      <DependentUpon>HierarchyManagerView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HolidayView.aspx.cs">
+      <DependentUpon>HolidayView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HolidayView.aspx.designer.cs">
+      <DependentUpon>HolidayView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Holiday_Attendance_Report.aspx.cs">
+      <DependentUpon>Holiday_Attendance_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Holiday_Attendance_Report.aspx.designer.cs">
+      <DependentUpon>Holiday_Attendance_Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HoursStayed.aspx.cs">
+      <DependentUpon>HoursStayed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HoursStayed.aspx.designer.cs">
+      <DependentUpon>HoursStayed.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="iFrame.aspx.cs">
+      <DependentUpon>iFrame.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="iFrame.aspx.designer.cs">
+      <DependentUpon>iFrame.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImageUploadIframe.aspx.cs">
+      <DependentUpon>ImageUploadIframe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImageUploadIframe.aspx.designer.cs">
+      <DependentUpon>ImageUploadIframe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InternlCampus.aspx.cs">
+      <DependentUpon>InternlCampus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InternlCampus.aspx.designer.cs">
+      <DependentUpon>InternlCampus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IntrnlCmps.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IntrnlCmps.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MANUALADD.aspx.designer.cs">
+      <DependentUpon>MANUALADD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operational_Access.aspx.cs">
+      <DependentUpon>Operational_Access.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operational_Access.aspx.designer.cs">
+      <DependentUpon>Operational_Access.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Other Center or Unit_Access_Control_Report.aspx.cs">
+      <DependentUpon>Other Center or Unit_Access_Control_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Other Center or Unit_Access_Control_Report.aspx.designer.cs">
+      <DependentUpon>Other Center or Unit_Access_Control_Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Multifilter_Access_Report.aspx.cs">
+      <DependentUpon>Multifilter_Access_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Multifilter_Access_Report.aspx.designer.cs">
+      <DependentUpon>Multifilter_Access_Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OTRpt.aspx.cs">
+      <DependentUpon>OTRpt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OTRpt.aspx.designer.cs">
+      <DependentUpon>OTRpt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OverstayedVisitorsReport.aspx.cs">
+      <DependentUpon>OverstayedVisitorsReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OverstayedVisitorsReport.aspx.designer.cs">
+      <DependentUpon>OverstayedVisitorsReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentAbsent_Report.aspx.cs">
+      <DependentUpon>PresentAbsent_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentAbsent_Report.aspx.designer.cs">
+      <DependentUpon>PresentAbsent_Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReadCSNR.aspx.cs">
+      <DependentUpon>ReadCSNR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReadCSNR.aspx.designer.cs">
+      <DependentUpon>ReadCSNR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reader_Message_Template.aspx.cs">
+      <DependentUpon>Reader_Message_Template.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reader_Message_Template.aspx.designer.cs">
+      <DependentUpon>Reader_Message_Template.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ResetPassword.aspx.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResetPassword.aspx.designer.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RestoreSql.aspx.cs">
+      <DependentUpon>RestoreSql.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RestoreSql.aspx.designer.cs">
+      <DependentUpon>RestoreSql.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="rptKeypadReport.aspx.cs">
+      <DependentUpon>rptKeypadReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rptKeypadReport.aspx.designer.cs">
+      <DependentUpon>rptKeypadReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="rptManagerWiseReport.aspx.cs">
+      <DependentUpon>rptManagerWiseReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rptManagerWiseReport.aspx.designer.cs">
+      <DependentUpon>rptManagerWiseReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SACCapturePersoDetails.aspx.cs">
+      <DependentUpon>SACCapturePersoDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SACCapturePersoDetails.aspx.designer.cs">
+      <DependentUpon>SACCapturePersoDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SACCapturePersoDetails_Idea.aspx.cs">
+      <DependentUpon>SACCapturePersoDetails_Idea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SACCapturePersoDetails_Idea.aspx.designer.cs">
+      <DependentUpon>SACCapturePersoDetails_Idea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SACCapturePersoDetails_Mahindra.aspx.cs">
+      <DependentUpon>SACCapturePersoDetails_Mahindra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SACCapturePersoDetails_Mahindra.aspx.designer.cs">
+      <DependentUpon>SACCapturePersoDetails_Mahindra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SACCreateMasterCard.aspx.cs">
+      <DependentUpon>SACCreateMasterCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SACCreateMasterCard.aspx.designer.cs">
+      <DependentUpon>SACCreateMasterCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SACDOSCard.aspx.cs">
+      <DependentUpon>SACDOSCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SACDOSCard.aspx.designer.cs">
+      <DependentUpon>SACDOSCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SACMasterCard.aspx.cs">
+      <DependentUpon>SACMasterCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SACMasterCard.aspx.designer.cs">
+      <DependentUpon>SACMasterCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SACPersoDataCapture.aspx.cs">
+      <DependentUpon>SACPersoDataCapture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SACPersoDataCapture.aspx.designer.cs">
+      <DependentUpon>SACPersoDataCapture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SACPersonalisationView.aspx.cs">
+      <DependentUpon>SACPersonalisationView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SACPersonalisationView.aspx.designer.cs">
+      <DependentUpon>SACPersonalisationView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SACRawOLDCard.aspx.cs">
+      <DependentUpon>SACRawOLDCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SACRawOLDCard.aspx.designer.cs">
+      <DependentUpon>SACRawOLDCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SACViewCard.aspx.cs">
+      <DependentUpon>SACViewCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SACViewCard.aspx.designer.cs">
+      <DependentUpon>SACViewCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tour_Details_Report.aspx.cs">
+      <DependentUpon>Tour_Details_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tour_Details_Report.aspx.designer.cs">
+      <DependentUpon>Tour_Details_Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LateMarkDeduction_Report.aspx.cs">
+      <DependentUpon>LateMarkDeduction_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LateMarkDeduction_Report.aspx.designer.cs">
+      <DependentUpon>LateMarkDeduction_Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Late_Report.aspx.cs">
+      <DependentUpon>Late_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Late_Report.aspx.designer.cs">
+      <DependentUpon>Late_Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LeaveADD.aspx.cs">
+      <DependentUpon>LeaveADD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LeaveADD.aspx.designer.cs">
+      <DependentUpon>LeaveADD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LeaveAppEdit.aspx.cs">
+      <DependentUpon>LeaveAppEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LeaveAppEdit.aspx.designer.cs">
+      <DependentUpon>LeaveAppEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LeaveAppView.aspx.cs">
+      <DependentUpon>LeaveAppView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LeaveAppView.aspx.designer.cs">
+      <DependentUpon>LeaveAppView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LeaveFileView.aspx.cs">
+      <DependentUpon>LeaveFileView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LeaveFileView.aspx.designer.cs">
+      <DependentUpon>LeaveFileView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Leave_Data_Upload.aspx.cs">
+      <DependentUpon>Leave_Data_Upload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Leave_Data_Upload.aspx.designer.cs">
+      <DependentUpon>Leave_Data_Upload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LevelAccessEdit.aspx.cs">
+      <DependentUpon>LevelAccessEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LevelAccessEdit.aspx.designer.cs">
+      <DependentUpon>LevelAccessEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LevelAccessPage.aspx.cs">
+      <DependentUpon>LevelAccessPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LevelAccessPage.aspx.designer.cs">
+      <DependentUpon>LevelAccessPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LevelAccessView.aspx.cs">
+      <DependentUpon>LevelAccessView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LevelAccessView.aspx.designer.cs">
+      <DependentUpon>LevelAccessView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LocateCardHolder.aspx.cs">
+      <DependentUpon>LocateCardHolder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LocateCardHolder.aspx.designer.cs">
+      <DependentUpon>LocateCardHolder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mail.cs" />
+    <Compile Include="Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MANUALADD.aspx.cs">
+      <DependentUpon>MANUALADD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManualAttendEdit.aspx.cs">
+      <DependentUpon>ManualAttendEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManualAttendEdit.aspx.designer.cs">
+      <DependentUpon>ManualAttendEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManualAttendView.aspx.cs">
+      <DependentUpon>ManualAttendView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManualAttendView.aspx.designer.cs">
+      <DependentUpon>ManualAttendView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterCard.aspx.cs">
+      <DependentUpon>MasterCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterCard.aspx.designer.cs">
+      <DependentUpon>MasterCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MenuBind.cs" />
+    <Compile Include="Mission.aspx.cs">
+      <DependentUpon>Mission.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mission.aspx.designer.cs">
+      <DependentUpon>Mission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleMain.master.cs">
+      <DependentUpon>ModuleMain.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModuleMain.master.designer.cs">
+      <DependentUpon>ModuleMain.master</DependentUpon>
+    </Compile>
+    <Compile Include="NetwrokUpdate.aspx.cs">
+      <DependentUpon>NetwrokUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NetwrokUpdate.aspx.designer.cs">
+      <DependentUpon>NetwrokUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ODADD.aspx.cs">
+      <DependentUpon>ODADD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ODADD.aspx.designer.cs">
+      <DependentUpon>ODADD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ODAppEdit.aspx.cs">
+      <DependentUpon>ODAppEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ODAppEdit.aspx.designer.cs">
+      <DependentUpon>ODAppEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ODAppView.aspx.cs">
+      <DependentUpon>ODAppView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ODAppView.aspx.designer.cs">
+      <DependentUpon>ODAppView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Personalization.aspx.cs">
+      <DependentUpon>Personalization.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Personalization.aspx.designer.cs">
+      <DependentUpon>Personalization.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pie.ashx.cs">
+      <DependentUpon>Pie.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RawCard.aspx.cs">
+      <DependentUpon>RawCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RawCard.aspx.designer.cs">
+      <DependentUpon>RawCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reader_Access_Point_Report.aspx.cs">
+      <DependentUpon>Reader_Access_Point_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reader_Access_Point_Report.aspx.designer.cs">
+      <DependentUpon>Reader_Access_Point_Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reader_Access_Report.aspx.cs">
+      <DependentUpon>Reader_Access_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reader_Access_Report.aspx.designer.cs">
+      <DependentUpon>Reader_Access_Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReasonFileView.aspx.cs">
+      <DependentUpon>ReasonFileView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReasonFileView.aspx.designer.cs">
+      <DependentUpon>ReasonFileView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SACPersonalisation.aspx.cs">
+      <DependentUpon>SACPersonalisation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SACPersonalisation.aspx.designer.cs">
+      <DependentUpon>SACPersonalisation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SACRawCard.aspx.cs">
+      <DependentUpon>SACRawCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SACRawCard.aspx.designer.cs">
+      <DependentUpon>SACRawCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SaveTemplate.aspx.cs">
+      <DependentUpon>SaveTemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SaveTemplate.aspx.designer.cs">
+      <DependentUpon>SaveTemplate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SchedulerSettings.aspx.cs">
+      <DependentUpon>SchedulerSettings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SchedulerSettings.aspx.designer.cs">
+      <DependentUpon>SchedulerSettings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleSettingView.aspx.cs">
+      <DependentUpon>ScheduleSettingView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScheduleSettingView.aspx.designer.cs">
+      <DependentUpon>ScheduleSettingView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search.cs" />
+    <Compile Include="ShiftMasterView.aspx.cs">
+      <DependentUpon>ShiftMasterView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShiftMasterView.aspx.designer.cs">
+      <DependentUpon>ShiftMasterView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShiftPatternView.aspx.cs">
+      <DependentUpon>ShiftPatternView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShiftPatternView.aspx.designer.cs">
+      <DependentUpon>ShiftPatternView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShiftScheduleCorrection.aspx.cs">
+      <DependentUpon>ShiftScheduleCorrection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShiftScheduleCorrection.aspx.designer.cs">
+      <DependentUpon>ShiftScheduleCorrection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TEClientMasterFile.aspx.cs">
+      <DependentUpon>TEClientMasterFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TEClientMasterFile.aspx.designer.cs">
+      <DependentUpon>TEClientMasterFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TEClientMasterView.aspx.cs">
+      <DependentUpon>TEClientMasterView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TEClientMasterView.aspx.designer.cs">
+      <DependentUpon>TEClientMasterView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TemporaryCardMaster.aspx.cs">
+      <DependentUpon>TemporaryCardMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TemporaryCardMaster.aspx.designer.cs">
+      <DependentUpon>TemporaryCardMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TemporaryCardViewMaster.aspx.cs">
+      <DependentUpon>TemporaryCardViewMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TemporaryCardViewMaster.aspx.designer.cs">
+      <DependentUpon>TemporaryCardViewMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TE_Activity.aspx.cs">
+      <DependentUpon>TE_Activity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TE_Activity.aspx.designer.cs">
+      <DependentUpon>TE_Activity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TE_ActivityAssignment.aspx.cs">
+      <DependentUpon>TE_ActivityAssignment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TE_ActivityAssignment.aspx.designer.cs">
+      <DependentUpon>TE_ActivityAssignment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TE_Milestone.aspx.cs">
+      <DependentUpon>TE_Milestone.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TE_Milestone.aspx.designer.cs">
+      <DependentUpon>TE_Milestone.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TE_Projects.aspx.cs">
+      <DependentUpon>TE_Projects.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TE_Projects.aspx.designer.cs">
+      <DependentUpon>TE_Projects.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TE_WBS.aspx.cs">
+      <DependentUpon>TE_WBS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TE_WBS.aspx.designer.cs">
+      <DependentUpon>TE_WBS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimeEntry.aspx.cs">
+      <DependentUpon>TimeEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimeEntry.aspx.designer.cs">
+      <DependentUpon>TimeEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimeZoneView.aspx.cs">
+      <DependentUpon>TimeZoneView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimeZoneView.aspx.designer.cs">
+      <DependentUpon>TimeZoneView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripleDESImplementation.cs" />
+    <Compile Include="UNOException.cs" />
+    <Compile Include="Uno_Dashboard.aspx.cs">
+      <DependentUpon>Uno_Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Uno_Dashboard.aspx.designer.cs">
+      <DependentUpon>Uno_Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdatePassword.aspx.cs">
+      <DependentUpon>UpdatePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdatePassword.aspx.designer.cs">
+      <DependentUpon>UpdatePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UploadTemplate.aspx.cs">
+      <DependentUpon>UploadTemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UploadTemplate.aspx.designer.cs">
+      <DependentUpon>UploadTemplate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserAccessPermissionBrowse.aspx.cs">
+      <DependentUpon>UserAccessPermissionBrowse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserAccessPermissionBrowse.aspx.designer.cs">
+      <DependentUpon>UserAccessPermissionBrowse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserAccessPermissionEdit.aspx.cs">
+      <DependentUpon>UserAccessPermissionEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserAccessPermissionEdit.aspx.designer.cs">
+      <DependentUpon>UserAccessPermissionEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserView.aspx.cs">
+      <DependentUpon>UserView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserView.aspx.designer.cs">
+      <DependentUpon>UserView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Master_Report.aspx.cs">
+      <DependentUpon>User_Master_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Master_Report.aspx.designer.cs">
+      <DependentUpon>User_Master_Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Profile_Report.aspx.cs">
+      <DependentUpon>User_Profile_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Profile_Report.aspx.designer.cs">
+      <DependentUpon>User_Profile_Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VEH_AdminOperations.aspx.cs">
+      <DependentUpon>VEH_AdminOperations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VEH_AdminOperations.aspx.designer.cs">
+      <DependentUpon>VEH_AdminOperations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VEH_Controller.aspx.cs">
+      <DependentUpon>VEH_Controller.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VEH_Controller.aspx.designer.cs">
+      <DependentUpon>VEH_Controller.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VEH_DailyEntryExit.cs">
+      <DependentUpon>VEH_DailyEntryExit.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VEH_DailyEntryExit.designer.cs">
+      <DependentUpon>VEH_DailyEntryExit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VEH_DailyEntryExitReport.aspx.cs">
+      <DependentUpon>VEH_DailyEntryExitReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VEH_DailyEntryExitReport.aspx.designer.cs">
+      <DependentUpon>VEH_DailyEntryExitReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VEH_ReportofRFIDtagInventory.aspx.cs">
+      <DependentUpon>VEH_ReportofRFIDtagInventory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VEH_ReportofRFIDtagInventory.aspx.designer.cs">
+      <DependentUpon>VEH_ReportofRFIDtagInventory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VEH_RFIDtagInventory.Designer.cs" />
+    <Compile Include="VEH_RFID_Inventory.aspx.cs">
+      <DependentUpon>VEH_RFID_Inventory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VEH_RFID_Inventory.aspx.designer.cs">
+      <DependentUpon>VEH_RFID_Inventory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VEH_RFID_Inventory_New.aspx.cs">
+      <DependentUpon>VEH_RFID_Inventory_New.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VEH_RFID_Inventory_New.aspx.designer.cs">
+      <DependentUpon>VEH_RFID_Inventory_New.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VEH_VehicleDenialReport.aspx.cs">
+      <DependentUpon>VEH_VehicleDenialReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VEH_VehicleDenialReport.aspx.designer.cs">
+      <DependentUpon>VEH_VehicleDenialReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VEH_VehicleDenialReportDS.Designer.cs" />
+    <Compile Include="VEH_VehicleEnromentl.aspx.cs">
+      <DependentUpon>VEH_VehicleEnromentl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VEH_VehicleEnromentl.aspx.designer.cs">
+      <DependentUpon>VEH_VehicleEnromentl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VEH_VehicleNumberDs.Designer.cs" />
+    <Compile Include="VEH_VehicleNumbeWiseReport.aspx.cs">
+      <DependentUpon>VEH_VehicleNumbeWiseReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VEH_VehicleNumbeWiseReport.aspx.designer.cs">
+      <DependentUpon>VEH_VehicleNumbeWiseReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewCard.aspx.cs">
+      <DependentUpon>ViewCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewCard.aspx.designer.cs">
+      <DependentUpon>ViewCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VisitorAccessMovementReport.aspx.cs">
+      <DependentUpon>VisitorAccessMovementReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VisitorAccessMovementReport.aspx.designer.cs">
+      <DependentUpon>VisitorAccessMovementReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VisitorRawCard.aspx.cs">
+      <DependentUpon>VisitorRawCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VisitorRawCard.aspx.designer.cs">
+      <DependentUpon>VisitorRawCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visitor_BlackList.aspx.cs">
+      <DependentUpon>Visitor_BlackList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visitor_BlackList.aspx.designer.cs">
+      <DependentUpon>Visitor_BlackList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visitor_Current_Strength.aspx.cs">
+      <DependentUpon>Visitor_Current_Strength.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visitor_Current_Strength.aspx.designer.cs">
+      <DependentUpon>Visitor_Current_Strength.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visitor_EmployeeRequest.aspx.cs">
+      <DependentUpon>Visitor_EmployeeRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visitor_EmployeeRequest.aspx.designer.cs">
+      <DependentUpon>Visitor_EmployeeRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visitor_List_Report.aspx.cs">
+      <DependentUpon>Visitor_List_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visitor_List_Report.aspx.designer.cs">
+      <DependentUpon>Visitor_List_Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visitor_VMSApproveRequest.aspx.cs">
+      <DependentUpon>Visitor_VMSApproveRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visitor_VMSApproveRequest.aspx.designer.cs">
+      <DependentUpon>Visitor_VMSApproveRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WeeklyOffView.aspx.cs">
+      <DependentUpon>WeeklyOffView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WeeklyOffView.aspx.designer.cs">
+      <DependentUpon>WeeklyOffView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkDayviewMaster.aspx.cs">
+      <DependentUpon>WorkDayviewMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkDayviewMaster.aspx.designer.cs">
+      <DependentUpon>WorkDayviewMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ZoneBrowse.aspx.cs">
+      <DependentUpon>ZoneBrowse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ZoneBrowse.aspx.designer.cs">
+      <DependentUpon>ZoneBrowse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ZoneEdit.aspx.cs">
+      <DependentUpon>ZoneEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ZoneEdit.aspx.designer.cs">
+      <DependentUpon>ZoneEdit.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Morpho\" />
+    <Folder Include="SlickGrid\Styles\Smoothness\images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Main.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ModuleMain.master" />
+    <Content Include="Pie.ashx" />
+    <Content Include="Handler1.ashx" />
+    <None Include="AccessLevelDetail.xsc">
+      <DependentUpon>AccessLevelDetail.xsd</DependentUpon>
+    </None>
+    <None Include="AccessLevelDetail.xsd" />
+    <None Include="AccessLevelDetail.xss">
+      <DependentUpon>AccessLevelDetail.xsd</DependentUpon>
+    </None>
+    <None Include="AssetRpt.xsc">
+      <DependentUpon>AssetRpt.xsd</DependentUpon>
+    </None>
+    <None Include="AssetRpt.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AssetRpt.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AssetRpt.xss">
+      <DependentUpon>AssetRpt.xsd</DependentUpon>
+    </None>
+    <None Include="assets\licence.md" />
+    <None Include="assets\README.markdown" />
+    <None Include="assets\webticker.jquery.json" />
+    <None Include="CardHolderActive.xsc">
+      <DependentUpon>CardHolderActive.xsd</DependentUpon>
+    </None>
+    <None Include="CardHolderActive.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CardHolderActive.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CardHolderActive.xss">
+      <DependentUpon>CardHolderActive.xsd</DependentUpon>
+    </None>
+    <None Include="ControllerEventLog.xsc">
+      <DependentUpon>ControllerEventLog.xsd</DependentUpon>
+    </None>
+    <None Include="ControllerEventLog.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ControllerEventLog.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ControllerEventLog.xss">
+      <DependentUpon>ControllerEventLog.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\Access_Report.xsc">
+      <DependentUpon>Access_Report.xsd</DependentUpon>
+    </None>
+    <Content Include="DataSets\Access_Report.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Access_Report.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="DataSets\Access_Report.xss">
+      <DependentUpon>Access_Report.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\Address.xsc">
+      <DependentUpon>Address.xsd</DependentUpon>
+    </None>
+    <Content Include="DataSets\Address.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Address.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="DataSets\Address.xss">
+      <DependentUpon>Address.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\AttandanceDataset.xsc">
+      <DependentUpon>AttandanceDataset.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\AttandanceDataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AttandanceDataset.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\AttandanceDataset.xss">
+      <DependentUpon>AttandanceDataset.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\AttendanceSummaryReport.xsc">
+      <DependentUpon>AttendanceSummaryReport.xsd</DependentUpon>
+    </None>
+    <Content Include="DataSets\AttendanceSummaryReport.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AttendanceSummaryReport.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="DataSets\AttendanceSummaryReport.xss">
+      <DependentUpon>AttendanceSummaryReport.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\Attendance_Report.xsc">
+      <DependentUpon>Attendance_Report.xsd</DependentUpon>
+    </None>
+    <Content Include="DataSets\Attendance_Report.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Attendance_Report.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="DataSets\Attendance_Report.xss">
+      <DependentUpon>Attendance_Report.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\Call_Performance.xsc">
+      <DependentUpon>Call_Performance.xsd</DependentUpon>
+    </None>
+    <Content Include="DataSets\Call_Performance.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Call_Performance.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="DataSets\Call_Performance.xss">
+      <DependentUpon>Call_Performance.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\Call_Status.xsc">
+      <DependentUpon>Call_Status.xsd</DependentUpon>
+    </None>
+    <Content Include="DataSets\Call_Status.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Call_Status.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="DataSets\Call_Status.xss">
+      <DependentUpon>Call_Status.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\Controllers.xsc">
+      <DependentUpon>Controllers.xsd</DependentUpon>
+    </None>
+    <Content Include="DataSets\Controllers.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Controllers.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="DataSets\Controllers.xss">
+      <DependentUpon>Controllers.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\Current_Emp_Strength.xsc">
+      <DependentUpon>Current_Emp_Strength.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\Current_Emp_Strength.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Current_Emp_Strength.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\Current_Emp_Strength.xss">
+      <DependentUpon>Current_Emp_Strength.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\Daily_Arrival.xsc">
+      <DependentUpon>Daily_Arrival.xsd</DependentUpon>
+    </None>
+    <Content Include="DataSets\Daily_Arrival.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Daily_Arrival.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="DataSets\Daily_Arrival.xss">
+      <DependentUpon>Daily_Arrival.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\Daily_Employee.xsc">
+      <DependentUpon>Daily_Employee.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\Daily_Employee.xsd" />
+    <None Include="DataSets\Daily_Employee.xss">
+      <DependentUpon>Daily_Employee.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\DatasetPresentAbsent.xsc">
+      <DependentUpon>DatasetPresentAbsent.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\DatasetPresentAbsent.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatasetPresentAbsent.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\DatasetPresentAbsent.xss">
+      <DependentUpon>DatasetPresentAbsent.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\DataSetWorkDayCalculation.xsc">
+      <DependentUpon>DataSetWorkDayCalculation.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\DataSetWorkDayCalculation.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetWorkDayCalculation.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\DataSetWorkDayCalculation.xss">
+      <DependentUpon>DataSetWorkDayCalculation.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\dsAccessHeadCount.xsc">
+      <DependentUpon>dsAccessHeadCount.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\dsAccessHeadCount.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsAccessHeadCount.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\dsAccessHeadCount.xss">
+      <DependentUpon>dsAccessHeadCount.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\dsAssetMovement.xsc">
+      <DependentUpon>dsAssetMovement.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\dsAssetMovement.xsd" />
+    <None Include="DataSets\dsAssetMovement.xss">
+      <DependentUpon>dsAssetMovement.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\dsMonthlyBiomentric.xsc">
+      <DependentUpon>dsMonthlyBiomentric.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\dsMonthlyBiomentric.xsd" />
+    <None Include="DataSets\dsMonthlyBiomentric.xss">
+      <DependentUpon>dsMonthlyBiomentric.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\dsMonthlyBiomentric1.xsc">
+      <DependentUpon>dsMonthlyBiomentric1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\dsMonthlyBiomentric1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsMonthlyBiomentric1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSets\dsMonthlyBiomentric1.xss">
+      <DependentUpon>dsMonthlyBiomentric1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\dsRptEmployeeMasterDetails.xsc">
+      <DependentUpon>dsRptEmployeeMasterDetails.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\dsRptEmployeeMasterDetails.xsd" />
+    <None Include="DataSets\dsRptEmployeeMasterDetails.xss">
+      <DependentUpon>dsRptEmployeeMasterDetails.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\dsSecondLevelAcces.xsc">
+      <DependentUpon>dsSecondLevelAcces.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\dsSecondLevelAcces.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSecondLevelAcces.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\dsSecondLevelAcces.xss">
+      <DependentUpon>dsSecondLevelAcces.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\dsVisitors.xsc">
+      <DependentUpon>dsVisitors.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\dsVisitors.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsVisitors1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\dsVisitors.xss">
+      <DependentUpon>dsVisitors.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\EL_Dataset.xsc">
+      <DependentUpon>EL_Dataset.xsd</DependentUpon>
+    </None>
+    <Content Include="DataSets\EL_Dataset.xsd" />
+    <None Include="DataSets\EL_Dataset.xss">
+      <DependentUpon>EL_Dataset.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\EmpAndNonEmpReport.xsc">
+      <DependentUpon>EmpAndNonEmpReport.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\EmpAndNonEmpReport.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmpAndNonEmpReport.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\EmpAndNonEmpReport.xss">
+      <DependentUpon>EmpAndNonEmpReport.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\Employee_Performance.xsc">
+      <DependentUpon>Employee_Performance.xsd</DependentUpon>
+    </None>
+    <Content Include="DataSets\Employee_Performance.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Employee_Performance.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="DataSets\Employee_Performance.xss">
+      <DependentUpon>Employee_Performance.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\GATEPASS_APPLICATION.xsc">
+      <DependentUpon>GATEPASS_APPLICATION.xsd</DependentUpon>
+    </None>
+    <Content Include="DataSets\GATEPASS_APPLICATION.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GATEPASS_APPLICATION.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="DataSets\GATEPASS_APPLICATION.xss">
+      <DependentUpon>GATEPASS_APPLICATION.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\getManagerAudit.xsc">
+      <DependentUpon>getManagerAudit.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\getManagerAudit.xsd" />
+    <None Include="DataSets\getManagerAudit.xss">
+      <DependentUpon>getManagerAudit.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\Holiday_Report.xsc">
+      <DependentUpon>Holiday_Report.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\Holiday_Report.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Holiday_Report.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\Holiday_Report.xss">
+      <DependentUpon>Holiday_Report.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\hourStayed.xsc">
+      <DependentUpon>hourStayed.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\hourStayed.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hourStayed.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\hourStayed.xss">
+      <DependentUpon>hourStayed.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\LateMarkDeduction_Report.xsc">
+      <DependentUpon>LateMarkDeduction_Report.xsd</DependentUpon>
+    </None>
+    <Content Include="DataSets\LateMarkDeduction_Report.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LateMarkDeduction_Report.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="DataSets\LateMarkDeduction_Report.xss">
+      <DependentUpon>LateMarkDeduction_Report.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\Late_Report.xsc">
+      <DependentUpon>Late_Report.xsd</DependentUpon>
+    </None>
+    <Content Include="DataSets\Late_Report.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Late_Report.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="DataSets\Late_Report.xss">
+      <DependentUpon>Late_Report.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\LEAVE.xsc">
+      <DependentUpon>LEAVE.xsd</DependentUpon>
+    </None>
+    <Content Include="DataSets\LEAVE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LEAVE.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="DataSets\LEAVE.xss">
+      <DependentUpon>LEAVE.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\LeaveConsumptionDS.xsc">
+      <DependentUpon>LeaveConsumptionDS.xsd</DependentUpon>
+    </None>
+    <Content Include="DataSets\LeaveConsumptionDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LeaveConsumptionDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="DataSets\LeaveConsumptionDS.xss">
+      <DependentUpon>LeaveConsumptionDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\LEAVE_APPLICATION.xsc">
+      <DependentUpon>LEAVE_APPLICATION.xsd</DependentUpon>
+    </None>
+    <Content Include="DataSets\LEAVE_APPLICATION.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LEAVE_APPLICATION.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="DataSets\LEAVE_APPLICATION.xss">
+      <DependentUpon>LEAVE_APPLICATION.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\MAttendance_Application.xsc">
+      <DependentUpon>MAttendance_Application.xsd</DependentUpon>
+    </None>
+    <Content Include="DataSets\MAttendance_Application.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MAttendance_Application.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="DataSets\MAttendance_Application.xss">
+      <DependentUpon>MAttendance_Application.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\Monthly_Leave_Consuption.xsc">
+      <DependentUpon>Monthly_Leave_Consuption.xsd</DependentUpon>
+    </None>
+    <Content Include="DataSets\Monthly_Leave_Consuption.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Monthly_Leave_Consuption.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="DataSets\Monthly_Leave_Consuption.xss">
+      <DependentUpon>Monthly_Leave_Consuption.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\MultifilterAccessDataSet.xsc">
+      <DependentUpon>MultifilterAccessDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\MultifilterAccessDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MultifilterAccessDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\MultifilterAccessDataSet.xss">
+      <DependentUpon>MultifilterAccessDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\OD_APPLICATION.xsc">
+      <DependentUpon>OD_APPLICATION.xsd</DependentUpon>
+    </None>
+    <Content Include="DataSets\OD_APPLICATION.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OD_APPLICATION.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="DataSets\OD_APPLICATION.xss">
+      <DependentUpon>OD_APPLICATION.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\OTDataSet.xsc">
+      <DependentUpon>OTDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\OTDataSet.xsd" />
+    <None Include="DataSets\OTDataSet.xss">
+      <DependentUpon>OTDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\OtheCenterUnitAccess.xsc">
+      <DependentUpon>OtheCenterUnitAccess.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\OtheCenterUnitAccess.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OtheCenterUnitAccess1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\OtheCenterUnitAccess.xss">
+      <DependentUpon>OtheCenterUnitAccess.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\Periodic_MusterDS.xsc">
+      <DependentUpon>Periodic_MusterDS.xsd</DependentUpon>
+    </None>
+    <Content Include="DataSets\Periodic_MusterDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Periodic_MusterDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="DataSets\Periodic_MusterDS.xss">
+      <DependentUpon>Periodic_MusterDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\Periodic_PerformanceDS.xsc">
+      <DependentUpon>Periodic_PerformanceDS.xsd</DependentUpon>
+    </None>
+    <Content Include="DataSets\Periodic_PerformanceDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Periodic_PerformanceDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="DataSets\Periodic_PerformanceDS.xss">
+      <DependentUpon>Periodic_PerformanceDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\Reader_Access.xsc">
+      <DependentUpon>Reader_Access.xsd</DependentUpon>
+    </None>
+    <Content Include="DataSets\Reader_Access.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Reader_Access.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="DataSets\Reader_Access.xss">
+      <DependentUpon>Reader_Access.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\Reader_Access_Point.xsc">
+      <DependentUpon>Reader_Access_Point.xsd</DependentUpon>
+    </None>
+    <Content Include="DataSets\Reader_Access_Point.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Reader_Access_Point.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="DataSets\Reader_Access_Point.xss">
+      <DependentUpon>Reader_Access_Point.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\rptKeypad.xsc">
+      <DependentUpon>rptKeypad.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\rptKeypad.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>rptKeypad1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\rptKeypad.xss">
+      <DependentUpon>rptKeypad.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\TOUR_REPORT.xsc">
+      <DependentUpon>TOUR_REPORT.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\TOUR_REPORT.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TOUR_REPORT.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\TOUR_REPORT.xss">
+      <DependentUpon>TOUR_REPORT.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\User Profile.xsc">
+      <DependentUpon>User Profile.xsd</DependentUpon>
+    </None>
+    <Content Include="DataSets\User Profile.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>User Profile.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="DataSets\User Profile.xss">
+      <DependentUpon>User Profile.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\User.xsc">
+      <DependentUpon>User.xsd</DependentUpon>
+    </None>
+    <Content Include="DataSets\User.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>User.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="DataSets\User.xss">
+      <DependentUpon>User.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\visitor_current_strength.xsc">
+      <DependentUpon>visitor_current_strength.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\visitor_current_strength.xsd" />
+    <None Include="DataSets\visitor_current_strength.xss">
+      <DependentUpon>visitor_current_strength.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\VMSCompanyWiseReport.xsc">
+      <DependentUpon>VMSCompanyWiseReport.xsd</DependentUpon>
+    </None>
+    <Content Include="DataSets\VMSCompanyWiseReport.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VMSCompanyWiseReport.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="DataSets\VMSCompanyWiseReport.xss">
+      <DependentUpon>VMSCompanyWiseReport.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\VMSDTWrpt.xsc">
+      <DependentUpon>VMSDTWrpt.xsd</DependentUpon>
+    </None>
+    <Content Include="DataSets\VMSDTWrpt.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VMSDTWrpt.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="DataSets\VMSDTWrpt.xss">
+      <DependentUpon>VMSDTWrpt.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\VMSEmployeeWiseReport.xsc">
+      <DependentUpon>VMSEmployeeWiseReport.xsd</DependentUpon>
+    </None>
+    <Content Include="DataSets\VMSEmployeeWiseReport.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VMSEmployeeWiseReport.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="DataSets\VMSEmployeeWiseReport.xss">
+      <DependentUpon>VMSEmployeeWiseReport.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\Zone.xsc">
+      <DependentUpon>Zone.xsd</DependentUpon>
+    </None>
+    <Content Include="DataSets\Zone.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Zone.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="DataSets\Zone.xss">
+      <DependentUpon>Zone.xsd</DependentUpon>
+    </None>
+    <None Include="dsEmployeeHierReport.xsc">
+      <DependentUpon>dsEmployeeHierReport.xsd</DependentUpon>
+    </None>
+    <None Include="dsEmployeeHierReport.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsEmployeeHierReport.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsEmployeeHierReport.xss">
+      <DependentUpon>dsEmployeeHierReport.xsd</DependentUpon>
+    </None>
+    <None Include="DS_EMPLOYEE_HIER_ERROR.xsc">
+      <DependentUpon>DS_EMPLOYEE_HIER_ERROR.xsd</DependentUpon>
+    </None>
+    <None Include="DS_EMPLOYEE_HIER_ERROR.xsd" />
+    <None Include="DS_EMPLOYEE_HIER_ERROR.xss">
+      <DependentUpon>DS_EMPLOYEE_HIER_ERROR.xsd</DependentUpon>
+    </None>
+    <None Include="DS_LVCUT_ERROR.xsc">
+      <DependentUpon>DS_LVCUT_ERROR.xsd</DependentUpon>
+    </None>
+    <None Include="DS_LVCUT_ERROR.xsd" />
+    <None Include="DS_LVCUT_ERROR.xss">
+      <DependentUpon>DS_LVCUT_ERROR.xsd</DependentUpon>
+    </None>
+    <None Include="IntrnlCmps.xsc">
+      <DependentUpon>IntrnlCmps.xsd</DependentUpon>
+    </None>
+    <Content Include="IntrnlCmps.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IntrnlCmps.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="IntrnlCmps.xss">
+      <DependentUpon>IntrnlCmps.xsd</DependentUpon>
+    </None>
+    <Content Include="Uploaded Folder\uploadformat.xls" />
+    <Content Include="Uploaded Folder\upload_Employee_Left_format.xls" />
+    <Content Include="Uploaded Folder\uploadEmployeeHierarchyformat.xls" />
+    <Content Include="Uploaded Folder\uploadLeaveCutformat.xls" />
+    <None Include="Syncfusion\Content\ej\common-images\ejicons.eot" />
+    <None Include="Syncfusion\Content\ej\common-images\ejicons.svg" />
+    <None Include="Syncfusion\Content\ej\common-images\ejicons.ttf" />
+    <None Include="Syncfusion\Content\ej\common-images\ejicons.woff" />
+    <None Include="Syncfusion\Content\ej\default-theme\ej.theme.less" />
+    <None Include="Uploaded Folder\costcentermapping.xls" />
+    <None Include="Uploaded Folder\costcentermapping.xlsx" />
+    <None Include="Uploaded Folder\Transaction_data.dat" />
+    <None Include="VEH_DailyEntryExit.xsc">
+      <DependentUpon>VEH_DailyEntryExit.xsd</DependentUpon>
+    </None>
+    <None Include="VEH_DailyEntryExit.xsd" />
+    <None Include="VEH_DailyEntryExit.xss">
+      <DependentUpon>VEH_DailyEntryExit.xsd</DependentUpon>
+    </None>
+    <None Include="VEH_RFIDtagInventory.xsc">
+      <DependentUpon>VEH_RFIDtagInventory.xsd</DependentUpon>
+    </None>
+    <None Include="VEH_RFIDtagInventory.xsd" />
+    <None Include="VEH_RFIDtagInventory.xss">
+      <DependentUpon>VEH_RFIDtagInventory.xsd</DependentUpon>
+    </None>
+    <None Include="VEH_VehicleDenialReportDS.xsc" />
+    <None Include="VEH_VehicleDenialReportDS.xsd" />
+    <None Include="VEH_VehicleDenialReportDS.xss" />
+    <None Include="VEH_VehicleNumberDs.xsc" />
+    <None Include="VEH_VehicleNumberDs.xsd" />
+    <None Include="VEH_VehicleNumberDs.xss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="RDLC\Access_Report.rdlc" />
+    <Content Include="RDLC\CallStatusReport.rdlc" />
+    <Content Include="RDLC\Call_Performance_Report.rdlc" />
+    <Content Include="RDLC\Controllers.rdlc" />
+    <Content Include="RDLC\Daily_Arrival.rdlc">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="RDLC\EmployeeWise_Acess.rdlc" />
+    <Content Include="RDLC\Employee_Performance.rdlc">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="RDLC\Reader_Access_Point.rdlc" />
+    <Content Include="RDLC\Reader_Acess.rdlc" />
+    <Content Include="RDLC\TestReport.rdlc" />
+    <Content Include="RDLC\User.rdlc" />
+    <Content Include="RDLC\User_Profile.rdlc" />
+    <Content Include="RDLC\VMSCompanyWiseReport.rdlc" />
+    <Content Include="RDLC\VMSDateWise_Report.rdlc" />
+    <Content Include="RDLC\VMSEmployeeWiseReport.rdlc" />
+    <Content Include="RDLC\Zone.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="RDLC\AttendanceSummary_Report.rdlc" />
+    <Content Include="RDLC\Attendance_Report.rdlc" />
+    <Content Include="RDLC\ELREPORT.rdlc" />
+    <Content Include="RDLC\LateMarkDeduction_Report.rdlc" />
+    <Content Include="RDLC\LV_CUT_REPORT.rdlc" />
+    <Content Include="RDLC\VEH_EntryExitReport.rdlc" />
+    <Content Include="RDLC\VEH_RFIDtagInventoryReport.rdlc" />
+    <Content Include="RDLC\VEH_VehicleDenialReport.rdlc" />
+    <Content Include="RDLC\VEH_VehicleNumberWiseReport.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="RDLC\Employee_Left.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="RDLC\EMPLOYEE_HIER_ERROR.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="RDLC\AccessLevelDetail.rdlc" />
+    <Content Include="RDLC\CardholderActivationdetails2.rdlc" />
+    <Content Include="RDLC\CardholderActivendetails.rdlc" />
+    <Content Include="RDLC\controller.rdlc" />
+    <Content Include="RDLC\CotrollerEvent.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="RDLC\AccessHeadCount.rdlc" />
+    <Content Include="RDLC\CurrentEmpStrength.rdlc" />
+    <Content Include="RDLC\Emp_AndNon_Emp_Strength.rdlc" />
+    <Content Include="RDLC\HolidayReport.rdlc" />
+    <Content Include="RDLC\hourStayed.rdlc" />
+    <Content Include="RDLC\IntnlCmpsReport.rdlc" />
+    <Content Include="RDLC\MultifilterAccess.rdlc" />
+    <Content Include="RDLC\OTReport.rdlc" />
+    <Content Include="RDLC\PresentAbsent.rdlc" />
+    <Content Include="RDLC\EmpHierReport.rdlc" />
+    <Content Include="RDLC\Second_Level_Access_Report.rdlc" />
+    <Content Include="RDLC\TOUR_DETAIL_REPORT.rdlc" />
+    <Content Include="RDLC\WORK_DayCalculation.rdlc" />
+    <Content Include="RDLC\Other_CenterAndUnit_Access.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="RDLC\Employee_Master_Report.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="RDLC\assetReport.rdlc" />
+    <Content Include="RDLC\assetMovement.rdlc" />
+    <EmbeddedResource Include="RDLC\Copy of rptMonthlyBiometric.rdlc" />
+    <EmbeddedResource Include="RDLC\Copy of rptMonthlyBiometric1.rdlc" />
+    <EmbeddedResource Include="RDLC\Daily_Employee.rdlc" />
+    <EmbeddedResource Include="RDLC\GetManagerAudit.rdlc" />
+    <EmbeddedResource Include="RDLC\rptKeypad.rdlc" />
+    <EmbeddedResource Include="RDLC\rptMonthlyBiometric.rdlc" />
+    <EmbeddedResource Include="RDLC\EarlyOrLate.rdlc" />
+    <EmbeddedResource Include="RDLC\Number Of Visitors.rdlc" />
+    <EmbeddedResource Include="RDLC\Over Stayed Vsitors.rdlc" />
+    <EmbeddedResource Include="RDLC\rptMonthlyBiometric1.rdlc" />
+    <EmbeddedResource Include="RDLC\VisitorAccessMovement.rdlc" />
+    <EmbeddedResource Include="RDLC\VisitorsList.rdlc" />
+    <EmbeddedResource Include="RDLC\Visitor_Current_Strength.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CMS.Framework.Common\CMS.Framework.Common.csproj">
+      <Project>{BE951E7D-9D9F-4DE2-A35D-46BAD966114F}</Project>
+      <Name>CMS.Framework.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CMS.UNO.Core.Handler\CMS.UNO.Core.Handler.csproj">
+      <Project>{4647DC28-CD31-4334-846C-36B8F811B26B}</Project>
+      <Name>CMS.UNO.Core.Handler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CMS.UNO.Framework.DataAccess\CMS.Framework.DataAccess.csproj">
+      <Project>{907E2C7F-1DB8-465E-B17B-F516E006B96C}</Project>
+      <Name>CMS.Framework.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CMS.UNO.Login.Handler\CMS.UNO.Login.Handler.csproj">
+      <Project>{FE9B339E-7664-4885-80DE-03CEB05F2BFA}</Project>
+      <Name>CMS.UNO.Login.Handler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CMS.UNO.Sentinel.Handler\CMS.UNO.Sentinel.Handler.csproj">
+      <Project>{5CFAB5AC-DE59-4777-9F0B-A37F0E92C129}</Project>
+      <Name>CMS.UNO.Sentinel.Handler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CMS.UNO.Tempus.Handler\CMS.UNO.Tempus.Handler.csproj">
+      <Project>{F66547BE-4448-4D4E-B044-B63B5543667A}</Project>
+      <Name>CMS.UNO.Tempus.Handler</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>7548</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/UNO</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

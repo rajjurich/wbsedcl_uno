@@ -1,0 +1,252 @@
+D:\UNO\Standard\23rdSept2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.dll
+D:\UNO\Standard\23rdSept2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\UNO\Standard\23rdSept2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.dll
+D:\UNO\Standard\23rdSept2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\UNO\Standard\23rdSept2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.pdb
+D:\UNO\Standard\23rdSept2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.pdb
+D:\UNO\Standard\23rdSept2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\obj\Debug\ResolveAssemblyReference.cache
+D:\UNO\Standard\23rdSept2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.dll
+D:\UNO\Standard\23rdSept2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\UNO\Standard\7thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.dll
+D:\UNO\Standard\7thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\UNO\Standard\7thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.dll
+D:\UNO\Standard\7thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\UNO\Standard\7thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.pdb
+D:\UNO\Standard\7thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.pdb
+D:\UNO\Standard\7thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\obj\Debug\ResolveAssemblyReference.cache
+D:\UNO\Standard\7thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.dll
+D:\UNO\Standard\7thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\UNO\Standard\8thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.dll
+D:\UNO\Standard\8thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\UNO\Standard\8thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.dll
+D:\UNO\Standard\8thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\UNO\Standard\8thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.pdb
+D:\UNO\Standard\8thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.pdb
+D:\UNO\Standard\8thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\obj\Debug\ResolveAssemblyReference.cache
+D:\UNO\Standard\8thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.dll
+D:\UNO\Standard\8thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\UNO\Standard\9thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.dll
+D:\UNO\Standard\9thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\UNO\Standard\9thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.dll
+D:\UNO\Standard\9thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\UNO\Standard\9thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.pdb
+D:\UNO\Standard\9thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.pdb
+D:\UNO\Standard\9thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\obj\Debug\ResolveAssemblyReference.cache
+D:\UNO\Standard\9thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.dll
+D:\UNO\Standard\9thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\UNO\Standard\10thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.dll
+D:\UNO\Standard\10thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\UNO\Standard\10thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.dll
+D:\UNO\Standard\10thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\UNO\Standard\10thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.pdb
+D:\UNO\Standard\10thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.pdb
+D:\UNO\Standard\10thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\obj\Debug\ResolveAssemblyReference.cache
+D:\UNO\Standard\10thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.dll
+D:\UNO\Standard\10thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\UNO\Standard\14thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.dll
+D:\UNO\Standard\14thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\UNO\Standard\14thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.dll
+D:\UNO\Standard\14thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\UNO\Standard\14thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.pdb
+D:\UNO\Standard\14thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.pdb
+D:\UNO\Standard\14thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\obj\Debug\ResolveAssemblyReference.cache
+D:\UNO\Standard\14thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.dll
+D:\UNO\Standard\14thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\UNO\Standard\21stOct2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.dll
+D:\UNO\Standard\21stOct2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\UNO\Standard\21stOct2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.dll
+D:\UNO\Standard\21stOct2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\UNO\Standard\21stOct2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.pdb
+D:\UNO\Standard\21stOct2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.pdb
+D:\UNO\Standard\21stOct2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\obj\Debug\ResolveAssemblyReference.cache
+D:\UNO\Standard\21stOct2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.dll
+D:\UNO\Standard\21stOct2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\UNO\Standard\26thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.dll
+D:\UNO\Standard\26thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\UNO\Standard\26thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.dll
+D:\UNO\Standard\26thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\UNO\Standard\26thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.pdb
+D:\UNO\Standard\26thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.pdb
+D:\UNO\Standard\26thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\obj\Debug\ResolveAssemblyReference.cache
+D:\UNO\Standard\26thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.dll
+D:\UNO\Standard\26thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\UNO\Standard\27thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.dll
+D:\UNO\Standard\27thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\UNO\Standard\27thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.dll
+D:\UNO\Standard\27thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\UNO\Standard\27thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.pdb
+D:\UNO\Standard\27thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.pdb
+D:\UNO\Standard\27thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\obj\Debug\ResolveAssemblyReference.cache
+D:\UNO\Standard\27thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.dll
+D:\UNO\Standard\27thOctober2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\UNO\Standard\02_11_2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.dll
+D:\UNO\Standard\02_11_2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\UNO\Standard\02_11_2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.dll
+D:\UNO\Standard\02_11_2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\UNO\Standard\02_11_2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.pdb
+D:\UNO\Standard\02_11_2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.pdb
+D:\UNO\Standard\02_11_2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\obj\Debug\ResolveAssemblyReference.cache
+D:\UNO\Standard\02_11_2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.dll
+D:\UNO\Standard\02_11_2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\UNO\Standard\04_11_2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.dll
+D:\UNO\Standard\04_11_2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\UNO\Standard\04_11_2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.dll
+D:\UNO\Standard\04_11_2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\UNO\Standard\04_11_2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.pdb
+D:\UNO\Standard\04_11_2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.pdb
+D:\UNO\Standard\04_11_2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.csprojResolveAssemblyReference.cache
+D:\UNO\Standard\04_11_2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.dll
+D:\UNO\Standard\04_11_2015\UNO_STANDARD\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\ajay\Projects\uno_standard\SVN\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.dll
+D:\ajay\Projects\uno_standard\SVN\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\ajay\Projects\uno_standard\SVN\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.dll
+D:\ajay\Projects\uno_standard\SVN\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\ajay\Projects\uno_standard\SVN\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.pdb
+D:\ajay\Projects\uno_standard\SVN\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.pdb
+D:\ajay\Projects\uno_standard\SVN\uno_standard\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.csprojResolveAssemblyReference.cache
+D:\ajay\Projects\uno_standard\SVN\uno_standard\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.dll
+D:\ajay\Projects\uno_standard\SVN\uno_standard\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\Project\UNO\SVN\UNO\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.dll
+D:\Project\UNO\SVN\UNO\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\Project\UNO\SVN\UNO\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.dll
+D:\Project\UNO\SVN\UNO\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\Project\UNO\SVN\UNO\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.pdb
+D:\Project\UNO\SVN\UNO\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.pdb
+D:\Project\UNO\SVN\UNO\CMS.UNO.Tempus.Handler\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\UNO\SVN\UNO\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.dll
+D:\Project\UNO\SVN\UNO\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\PROJECT_SVN\UNO_STANDARD\SVN\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.dll
+D:\PROJECT_SVN\UNO_STANDARD\SVN\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\PROJECT_SVN\UNO_STANDARD\SVN\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.dll
+D:\PROJECT_SVN\UNO_STANDARD\SVN\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\PROJECT_SVN\UNO_STANDARD\SVN\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.pdb
+D:\PROJECT_SVN\UNO_STANDARD\SVN\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.pdb
+D:\PROJECT_SVN\UNO_STANDARD\SVN\uno_standard\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.csprojResolveAssemblyReference.cache
+D:\PROJECT_SVN\UNO_STANDARD\SVN\uno_standard\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.dll
+D:\PROJECT_SVN\UNO_STANDARD\SVN\uno_standard\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\Nandkishor\Todays Work\UNO\Standerd\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.dll
+D:\Nandkishor\Todays Work\UNO\Standerd\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\Nandkishor\Todays Work\UNO\Standerd\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.dll
+D:\Nandkishor\Todays Work\UNO\Standerd\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\Nandkishor\Todays Work\UNO\Standerd\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.pdb
+D:\Nandkishor\Todays Work\UNO\Standerd\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.pdb
+D:\Nandkishor\Todays Work\UNO\Standerd\uno_standard\CMS.UNO.Tempus.Handler\obj\Debug\ResolveAssemblyReference.cache
+D:\Nandkishor\Todays Work\UNO\Standerd\uno_standard\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.dll
+D:\Nandkishor\Todays Work\UNO\Standerd\uno_standard\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\Uno\Haldia\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.dll
+D:\Uno\Haldia\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\Uno\Haldia\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.dll
+D:\Uno\Haldia\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\Uno\Haldia\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.pdb
+D:\Uno\Haldia\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.pdb
+D:\Uno\Haldia\uno_standard\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.csprojResolveAssemblyReference.cache
+D:\Uno\Haldia\uno_standard\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.dll
+D:\Uno\Haldia\uno_standard\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.dll
+D:\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.dll
+D:\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.pdb
+D:\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.pdb
+D:\uno_standard\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.csprojResolveAssemblyReference.cache
+D:\uno_standard\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.dll
+D:\uno_standard\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\Uno\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.dll
+D:\Uno\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\Uno\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.dll
+D:\Uno\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\Uno\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.pdb
+D:\Uno\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.pdb
+D:\Uno\uno_standard\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.csprojResolveAssemblyReference.cache
+D:\Uno\uno_standard\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.dll
+D:\Uno\uno_standard\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\Adil\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.dll
+D:\Adil\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\Adil\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.dll
+D:\Adil\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\Adil\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.pdb
+D:\Adil\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.pdb
+D:\Adil\uno_standard\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.csprojResolveAssemblyReference.cache
+D:\Adil\uno_standard\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.dll
+D:\Adil\uno_standard\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\prashant Project\uno_standard_07_04_2016\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.dll
+D:\prashant Project\uno_standard_07_04_2016\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\prashant Project\uno_standard_07_04_2016\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.dll
+D:\prashant Project\uno_standard_07_04_2016\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\prashant Project\uno_standard_07_04_2016\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.pdb
+D:\prashant Project\uno_standard_07_04_2016\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.pdb
+D:\prashant Project\uno_standard_07_04_2016\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.csprojResolveAssemblyReference.cache
+D:\prashant Project\uno_standard_07_04_2016\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.dll
+D:\prashant Project\uno_standard_07_04_2016\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\Shrikant\Projects\UNO_STANDARD\SVN\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.dll
+D:\Shrikant\Projects\UNO_STANDARD\SVN\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\Shrikant\Projects\UNO_STANDARD\SVN\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.dll
+D:\Shrikant\Projects\UNO_STANDARD\SVN\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\Shrikant\Projects\UNO_STANDARD\SVN\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.pdb
+D:\Shrikant\Projects\UNO_STANDARD\SVN\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.pdb
+D:\Shrikant\Projects\UNO_STANDARD\SVN\uno_standard\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.csprojResolveAssemblyReference.cache
+D:\Shrikant\Projects\UNO_STANDARD\SVN\uno_standard\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.dll
+D:\Shrikant\Projects\UNO_STANDARD\SVN\uno_standard\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.pdb
+E:\Rajneesh\SVN\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.dll
+E:\Rajneesh\SVN\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.pdb
+E:\Rajneesh\SVN\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.dll
+E:\Rajneesh\SVN\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.dll
+E:\Rajneesh\SVN\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.pdb
+E:\Rajneesh\SVN\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.pdb
+E:\Rajneesh\SVN\uno_standard\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.csprojResolveAssemblyReference.cache
+E:\Rajneesh\SVN\uno_standard\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.dll
+E:\Rajneesh\SVN\uno_standard\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\CMS PROJECT\Vaibhav\UNO STANDARD\SVN\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.dll
+D:\CMS PROJECT\Vaibhav\UNO STANDARD\SVN\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\CMS PROJECT\Vaibhav\UNO STANDARD\SVN\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.dll
+D:\CMS PROJECT\Vaibhav\UNO STANDARD\SVN\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\CMS PROJECT\Vaibhav\UNO STANDARD\SVN\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.pdb
+D:\CMS PROJECT\Vaibhav\UNO STANDARD\SVN\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.pdb
+D:\CMS PROJECT\Vaibhav\UNO STANDARD\SVN\uno_standard\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.csprojResolveAssemblyReference.cache
+D:\CMS PROJECT\Vaibhav\UNO STANDARD\SVN\uno_standard\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.dll
+D:\CMS PROJECT\Vaibhav\UNO STANDARD\SVN\uno_standard\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\Projects\UNO STANDARD\SVN\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.dll
+D:\Projects\UNO STANDARD\SVN\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\Projects\UNO STANDARD\SVN\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.dll
+D:\Projects\UNO STANDARD\SVN\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\Projects\UNO STANDARD\SVN\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.pdb
+D:\Projects\UNO STANDARD\SVN\uno_standard\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.pdb
+D:\Projects\UNO STANDARD\SVN\uno_standard\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.csprojResolveAssemblyReference.cache
+D:\Projects\UNO STANDARD\SVN\uno_standard\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.dll
+D:\Projects\UNO STANDARD\SVN\uno_standard\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\SVN\UNO_STANDARD_V2\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.dll
+D:\SVN\UNO_STANDARD_V2\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\SVN\UNO_STANDARD_V2\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.dll
+D:\SVN\UNO_STANDARD_V2\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\SVN\UNO_STANDARD_V2\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.pdb
+D:\SVN\UNO_STANDARD_V2\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.pdb
+D:\SVN\UNO_STANDARD_V2\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.csprojResolveAssemblyReference.cache
+D:\SVN\UNO_STANDARD_V2\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.dll
+D:\SVN\UNO_STANDARD_V2\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.pdb
+E:\Rajneesh\SVN\uno_standard_V2\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.dll
+E:\Rajneesh\SVN\uno_standard_V2\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.pdb
+E:\Rajneesh\SVN\uno_standard_V2\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.dll
+E:\Rajneesh\SVN\uno_standard_V2\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.dll
+E:\Rajneesh\SVN\uno_standard_V2\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.pdb
+E:\Rajneesh\SVN\uno_standard_V2\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.pdb
+E:\Rajneesh\SVN\uno_standard_V2\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.csprojResolveAssemblyReference.cache
+E:\Rajneesh\SVN\uno_standard_V2\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.dll
+E:\Rajneesh\SVN\uno_standard_V2\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\Devang Project\wbsedcl\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.dll
+D:\Devang Project\wbsedcl\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.pdb
+D:\Devang Project\wbsedcl\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.dll
+D:\Devang Project\wbsedcl\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\Devang Project\wbsedcl\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.pdb
+D:\Devang Project\wbsedcl\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.pdb
+D:\Devang Project\wbsedcl\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.csprojResolveAssemblyReference.cache
+D:\Devang Project\wbsedcl\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.dll
+D:\Devang Project\wbsedcl\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.pdb
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.dll
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Tempus.Handler.pdb
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.dll
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.dll
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\CMS.UNO.Tempus.Handler\bin\Debug\CMS.Framework.Common.pdb
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\CMS.UNO.Tempus.Handler\bin\Debug\CMS.UNO.Framework.DataAccess.pdb
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.csprojResolveAssemblyReference.cache
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.dll
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\CMS.UNO.Tempus.Handler\obj\Debug\CMS.UNO.Tempus.Handler.pdb

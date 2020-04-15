@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Daily Process Service", "Daily Process Service\Daily Process Service.csproj", "{0CD0FB0A-5348-47C8-8C7E-B2688B43C77A}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "DailyProcessService_Setup", "DailyProcessService_Setup\DailyProcessService_Setup.vdproj", "{E530F45C-1310-4C6F-BC51-FC65657B696A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0CD0FB0A-5348-47C8-8C7E-B2688B43C77A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CD0FB0A-5348-47C8-8C7E-B2688B43C77A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CD0FB0A-5348-47C8-8C7E-B2688B43C77A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CD0FB0A-5348-47C8-8C7E-B2688B43C77A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E530F45C-1310-4C6F-BC51-FC65657B696A}.Debug|Any CPU.ActiveCfg = Debug
+		{E530F45C-1310-4C6F-BC51-FC65657B696A}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

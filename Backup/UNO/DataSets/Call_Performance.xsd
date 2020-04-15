@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Call_Performance" targetNamespace="http://tempuri.org/Call_Performance.xsd" xmlns:mstns="http://tempuri.org/Call_Performance.xsd" xmlns="http://tempuri.org/Call_Performance.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="connection_string" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="connection_string (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.connection_string.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="connection_string (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select callno,description,calllogby,calldate,closedate,
+closedate-calldate as Downtime
+from CLM_Main</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="callno" DataSetColumn="callno" />
+              <Mapping SourceColumn="description" DataSetColumn="description" />
+              <Mapping SourceColumn="calllogby" DataSetColumn="calllogby" />
+              <Mapping SourceColumn="calldate" DataSetColumn="calldate" />
+              <Mapping SourceColumn="closedate" DataSetColumn="closedate" />
+              <Mapping SourceColumn="Downtime" DataSetColumn="Downtime" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Call_Performance" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Call_Performance" msprop:Generator_UserDSName="Call_Performance">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="callno" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columncallno" msprop:Generator_ColumnPropNameInRow="callno" msprop:Generator_ColumnPropNameInTable="callnoColumn" msprop:Generator_UserColumnName="callno" type="xs:int" />
+              <xs:element name="description" msprop:Generator_ColumnVarNameInTable="columndescription" msprop:Generator_ColumnPropNameInRow="description" msprop:Generator_ColumnPropNameInTable="descriptionColumn" msprop:Generator_UserColumnName="description" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="calllogby" msprop:Generator_ColumnVarNameInTable="columncalllogby" msprop:Generator_ColumnPropNameInRow="calllogby" msprop:Generator_ColumnPropNameInTable="calllogbyColumn" msprop:Generator_UserColumnName="calllogby" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="calldate" msprop:Generator_ColumnVarNameInTable="columncalldate" msprop:Generator_ColumnPropNameInRow="calldate" msprop:Generator_ColumnPropNameInTable="calldateColumn" msprop:Generator_UserColumnName="calldate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="closedate" msprop:Generator_ColumnVarNameInTable="columnclosedate" msprop:Generator_ColumnPropNameInRow="closedate" msprop:Generator_ColumnPropNameInTable="closedateColumn" msprop:Generator_UserColumnName="closedate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Downtime" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDowntime" msprop:Generator_ColumnPropNameInRow="Downtime" msprop:Generator_ColumnPropNameInTable="DowntimeColumn" msprop:Generator_UserColumnName="Downtime" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataTable1" />
+      <xs:field xpath="mstns:callno" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

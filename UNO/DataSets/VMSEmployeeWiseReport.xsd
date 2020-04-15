@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="VMSEmployeeWiseReport" targetNamespace="http://tempuri.org/VMSEmployeeWiseReport.xsd" xmlns:mstns="http://tempuri.org/VMSEmployeeWiseReport.xsd" xmlns="http://tempuri.org/VMSEmployeeWiseReport.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="connection_string" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="connection_string (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.connection_string.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="connection_string (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT GP_VISITOR_NAME,GP_COMPANY_NAME,GP_NATURE_OF_VISIT,ENT_EMPLOYEE_PERSONAL_DTLS.EPD_FIRST_NAME+' '+EPD_MIDDLE_NAME+' '+EPD_LAST_NAME GP_EMPLOYEE_NAME,
+L.OCE_DESCRIPTION AS GP_EMP_LOCATION,D.OCE_DESCRIPTION as GP_EMP_DEPARTMENT,
+ Convert(varchar(5),GP_ENTRY_TIME,108)GP_ENTRY_TIME,CONVERT (varchar(5),GP_EXIT_TIME,108)GP_EXIT_TIME
+FROM VMS_GATEPASS ,ENT_EMPLOYEE_OFFICIAL_DTLS,ENT_EMPLOYEE_PERSONAL_DTLS,
+(SELECT OCE_ID,OCE_DESCRIPTION from ENT_ORG_COMMON_ENTITIES WHERE CEM_ENTITY_ID='LOC')AS L,
+(SELECT OCE_ID,OCE_DESCRIPTION from ENT_ORG_COMMON_ENTITIES WHERE CEM_ENTITY_ID='DEP')AS D
+WHERE VMS_GATEPASS.GP_EMP_ID =ENT_EMPLOYEE_PERSONAL_DTLS.EPD_EMPID
+AND CONVERT(VARCHAR(10),GP_ENTRY_DATE,103) BETWEEN '01/02/1900'AND '01/01/1900'</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="GP_VISITOR_NAME" DataSetColumn="GP_VISITOR_NAME" />
+              <Mapping SourceColumn="GP_EMPLOYEE_NAME" DataSetColumn="GP_EMPLOYEE_NAME" />
+              <Mapping SourceColumn="GP_EMP_LOCATION" DataSetColumn="GP_EMP_LOCATION" />
+              <Mapping SourceColumn="GP_EMP_DEPARTMENT" DataSetColumn="GP_EMP_DEPARTMENT" />
+              <Mapping SourceColumn="GP_ENTRY_TIME" DataSetColumn="GP_ENTRY_TIME" />
+              <Mapping SourceColumn="GP_EXIT_TIME" DataSetColumn="GP_EXIT_TIME" />
+              <Mapping SourceColumn="GP_COMPANY_NAME" DataSetColumn="GP_COMPANY_NAME" />
+              <Mapping SourceColumn="GP_NATURE_OF_VISIT" DataSetColumn="GP_NATURE_OF_VISIT" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="VMSEmployeeWiseReport" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="VMSEmployeeWiseReport" msprop:Generator_UserDSName="VMSEmployeeWiseReport">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="GP_VISITOR_NAME" msprop:Generator_ColumnVarNameInTable="columnGP_VISITOR_NAME" msprop:Generator_ColumnPropNameInRow="GP_VISITOR_NAME" msprop:Generator_ColumnPropNameInTable="GP_VISITOR_NAMEColumn" msprop:Generator_UserColumnName="GP_VISITOR_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GP_EMPLOYEE_NAME" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnGP_EMPLOYEE_NAME" msprop:Generator_ColumnPropNameInRow="GP_EMPLOYEE_NAME" msprop:Generator_ColumnPropNameInTable="GP_EMPLOYEE_NAMEColumn" msprop:Generator_UserColumnName="GP_EMPLOYEE_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="152" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GP_EMP_LOCATION" msprop:Generator_ColumnVarNameInTable="columnGP_EMP_LOCATION" msprop:Generator_ColumnPropNameInRow="GP_EMP_LOCATION" msprop:Generator_ColumnPropNameInTable="GP_EMP_LOCATIONColumn" msprop:Generator_UserColumnName="GP_EMP_LOCATION" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GP_EMP_DEPARTMENT" msprop:Generator_ColumnVarNameInTable="columnGP_EMP_DEPARTMENT" msprop:Generator_ColumnPropNameInRow="GP_EMP_DEPARTMENT" msprop:Generator_ColumnPropNameInTable="GP_EMP_DEPARTMENTColumn" msprop:Generator_UserColumnName="GP_EMP_DEPARTMENT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GP_ENTRY_TIME" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnGP_ENTRY_TIME" msprop:Generator_ColumnPropNameInRow="GP_ENTRY_TIME" msprop:Generator_ColumnPropNameInTable="GP_ENTRY_TIMEColumn" msprop:Generator_UserColumnName="GP_ENTRY_TIME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GP_EXIT_TIME" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnGP_EXIT_TIME" msprop:Generator_ColumnPropNameInRow="GP_EXIT_TIME" msprop:Generator_ColumnPropNameInTable="GP_EXIT_TIMEColumn" msprop:Generator_UserColumnName="GP_EXIT_TIME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GP_COMPANY_NAME" msprop:Generator_ColumnVarNameInTable="columnGP_COMPANY_NAME" msprop:Generator_ColumnPropNameInRow="GP_COMPANY_NAME" msprop:Generator_ColumnPropNameInTable="GP_COMPANY_NAMEColumn" msprop:Generator_UserColumnName="GP_COMPANY_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GP_NATURE_OF_VISIT" msprop:Generator_ColumnVarNameInTable="columnGP_NATURE_OF_VISIT" msprop:Generator_ColumnPropNameInRow="GP_NATURE_OF_VISIT" msprop:Generator_ColumnPropNameInTable="GP_NATURE_OF_VISITColumn" msprop:Generator_UserColumnName="GP_NATURE_OF_VISIT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

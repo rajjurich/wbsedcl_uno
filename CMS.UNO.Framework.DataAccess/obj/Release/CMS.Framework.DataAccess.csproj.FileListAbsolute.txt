@@ -1,0 +1,8 @@
+D:\CMS PROJECT\Vaibhav\UNO STANDARD\SVN\uno_standard\CMS.UNO.Framework.DataAccess\bin\Release\CMS.UNO.Framework.DataAccess.dll
+D:\CMS PROJECT\Vaibhav\UNO STANDARD\SVN\uno_standard\CMS.UNO.Framework.DataAccess\bin\Release\CMS.UNO.Framework.DataAccess.pdb
+D:\CMS PROJECT\Vaibhav\UNO STANDARD\SVN\uno_standard\CMS.UNO.Framework.DataAccess\obj\Release\CMS.UNO.Framework.DataAccess.dll
+D:\CMS PROJECT\Vaibhav\UNO STANDARD\SVN\uno_standard\CMS.UNO.Framework.DataAccess\obj\Release\CMS.UNO.Framework.DataAccess.pdb
+E:\Rajneesh\SVN\uno_standard_V2\CMS.UNO.Framework.DataAccess\bin\Release\CMS.UNO.Framework.DataAccess.dll
+E:\Rajneesh\SVN\uno_standard_V2\CMS.UNO.Framework.DataAccess\bin\Release\CMS.UNO.Framework.DataAccess.pdb
+E:\Rajneesh\SVN\uno_standard_V2\CMS.UNO.Framework.DataAccess\obj\Release\CMS.UNO.Framework.DataAccess.dll
+E:\Rajneesh\SVN\uno_standard_V2\CMS.UNO.Framework.DataAccess\obj\Release\CMS.UNO.Framework.DataAccess.pdb

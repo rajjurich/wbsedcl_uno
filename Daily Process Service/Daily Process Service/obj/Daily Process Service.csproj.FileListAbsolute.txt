@@ -1,0 +1,39 @@
+D:\Nandkishor\Todays Work\TK\UNO\CODE\DAILY PROCESS SERVICE\Daily Process Service\Daily Process Service\bin\Debug\Daily Process Service.exe.config
+D:\Nandkishor\Todays Work\TK\UNO\CODE\DAILY PROCESS SERVICE\Daily Process Service\Daily Process Service\bin\Debug\Daily Process Service.exe
+D:\Nandkishor\Todays Work\TK\UNO\CODE\DAILY PROCESS SERVICE\Daily Process Service\Daily Process Service\bin\Debug\Daily Process Service.pdb
+D:\Nandkishor\Todays Work\TK\UNO\CODE\DAILY PROCESS SERVICE\Daily Process Service\Daily Process Service\obj\Debug\ResolveAssemblyReference.cache
+D:\Nandkishor\Todays Work\TK\UNO\CODE\DAILY PROCESS SERVICE\Daily Process Service\Daily Process Service\obj\Debug\Daily_Process_Service.ProjectInstaller.resources
+D:\Nandkishor\Todays Work\TK\UNO\CODE\DAILY PROCESS SERVICE\Daily Process Service\Daily Process Service\obj\Debug\Daily_Process_Service.Service1.resources
+D:\Nandkishor\Todays Work\TK\UNO\CODE\DAILY PROCESS SERVICE\Daily Process Service\Daily Process Service\obj\Debug\Daily Process Service.csproj.GenerateResource.Cache
+D:\Nandkishor\Todays Work\TK\UNO\CODE\DAILY PROCESS SERVICE\Daily Process Service\Daily Process Service\obj\Debug\Daily Process Service.exe
+D:\Nandkishor\Todays Work\TK\UNO\CODE\DAILY PROCESS SERVICE\Daily Process Service\Daily Process Service\obj\Debug\Daily Process Service.pdb
+D:\Nandkishor\Todays Work\TK\UNO\-\CODE\Daily Process Service\Daily Process Service\bin\Debug\Daily Process Service.exe.config
+D:\Nandkishor\Todays Work\TK\UNO\-\CODE\Daily Process Service\Daily Process Service\bin\Debug\Daily Process Service.exe
+D:\Nandkishor\Todays Work\TK\UNO\-\CODE\Daily Process Service\Daily Process Service\bin\Debug\Daily Process Service.pdb
+D:\Nandkishor\Todays Work\TK\UNO\-\CODE\Daily Process Service\Daily Process Service\obj\Debug\ResolveAssemblyReference.cache
+D:\Nandkishor\Todays Work\TK\UNO\-\CODE\Daily Process Service\Daily Process Service\obj\Debug\Daily_Process_Service.ProjectInstaller.resources
+D:\Nandkishor\Todays Work\TK\UNO\-\CODE\Daily Process Service\Daily Process Service\obj\Debug\Daily_Process_Service.Service1.resources
+D:\Nandkishor\Todays Work\TK\UNO\-\CODE\Daily Process Service\Daily Process Service\obj\Debug\Daily Process Service.csproj.GenerateResource.Cache
+D:\Nandkishor\Todays Work\TK\UNO\-\CODE\Daily Process Service\Daily Process Service\obj\Debug\Daily Process Service.exe
+D:\Nandkishor\Todays Work\TK\UNO\-\CODE\Daily Process Service\Daily Process Service\obj\Debug\Daily Process Service.pdb
+C:\PROJECTS\UNO\SACC\Daily Process Service\Daily Process Service\bin\Debug\Daily Process Service.exe.config
+C:\PROJECTS\UNO\SACC\Daily Process Service\Daily Process Service\bin\Debug\Daily Process Service.exe
+C:\PROJECTS\UNO\SACC\Daily Process Service\Daily Process Service\bin\Debug\Daily Process Service.pdb
+C:\PROJECTS\UNO\SACC\Daily Process Service\Daily Process Service\obj\Debug\ResolveAssemblyReference.cache
+C:\PROJECTS\UNO\SACC\Daily Process Service\Daily Process Service\obj\Debug\Daily_Process_Service.ProjectInstaller.resources
+C:\PROJECTS\UNO\SACC\Daily Process Service\Daily Process Service\obj\Debug\Daily_Process_Service.Service1.resources
+C:\PROJECTS\UNO\SACC\Daily Process Service\Daily Process Service\obj\Debug\Daily Process Service.csproj.GenerateResource.Cache
+C:\PROJECTS\UNO\SACC\Daily Process Service\Daily Process Service\obj\Debug\Daily Process Service.exe
+C:\PROJECTS\UNO\SACC\Daily Process Service\Daily Process Service\obj\Debug\Daily Process Service.pdb
+C:\PROJECTS\UNO\CMS\Code\Daily Process Service\Daily Process Service\bin\Debug\Daily Process Service.exe.config
+C:\PROJECTS\UNO\CMS\Code\Daily Process Service\Daily Process Service\bin\Debug\Daily Process Service.exe
+C:\PROJECTS\UNO\CMS\Code\Daily Process Service\Daily Process Service\bin\Debug\Daily Process Service.pdb
+C:\PROJECTS\UNO\CMS\Code\Daily Process Service\Daily Process Service\obj\Debug\ResolveAssemblyReference.cache
+C:\PROJECTS\UNO\CMS\Code\Daily Process Service\Daily Process Service\obj\Debug\Daily_Process_Service.ProjectInstaller.resources
+C:\PROJECTS\UNO\CMS\Code\Daily Process Service\Daily Process Service\obj\Debug\Daily_Process_Service.Service1.resources
+C:\PROJECTS\UNO\CMS\Code\Daily Process Service\Daily Process Service\obj\Debug\Daily Process Service.csproj.GenerateResource.Cache
+C:\PROJECTS\UNO\CMS\Code\Daily Process Service\Daily Process Service\obj\Debug\Daily Process Service.exe
+C:\PROJECTS\UNO\CMS\Code\Daily Process Service\Daily Process Service\obj\Debug\Daily Process Service.pdb
+D:\SVN\UNO_STANDARD_V2\Daily Process Service\Daily Process Service\bin\Debug\Daily Process Service.exe.config
+D:\SVN\UNO_STANDARD_V2\Daily Process Service\Daily Process Service\obj\Debug\Daily Process Service.exe
+D:\SVN\UNO_STANDARD_V2\Daily Process Service\Daily Process Service\obj\Debug\Daily Process Service.pdb

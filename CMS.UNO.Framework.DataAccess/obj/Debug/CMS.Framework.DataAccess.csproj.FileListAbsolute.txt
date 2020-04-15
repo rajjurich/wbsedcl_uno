@@ -1,0 +1,67 @@
+D:\PROJECT_SVN\UNO_STANDARD\SVN\uno_standard\CMS.UNO.Framework.DataAccess\bin\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\PROJECT_SVN\UNO_STANDARD\SVN\uno_standard\CMS.UNO.Framework.DataAccess\bin\Debug\CMS.UNO.Framework.DataAccess.pdb
+D:\PROJECT_SVN\UNO_STANDARD\SVN\uno_standard\CMS.UNO.Framework.DataAccess\obj\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\PROJECT_SVN\UNO_STANDARD\SVN\uno_standard\CMS.UNO.Framework.DataAccess\obj\Debug\CMS.UNO.Framework.DataAccess.pdb
+D:\Nandkishor\Todays Work\UNO\Standerd\uno_standard\CMS.UNO.Framework.DataAccess\bin\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\Nandkishor\Todays Work\UNO\Standerd\uno_standard\CMS.UNO.Framework.DataAccess\bin\Debug\CMS.UNO.Framework.DataAccess.pdb
+D:\Nandkishor\Todays Work\UNO\Standerd\uno_standard\CMS.UNO.Framework.DataAccess\obj\Debug\ResolveAssemblyReference.cache
+D:\Nandkishor\Todays Work\UNO\Standerd\uno_standard\CMS.UNO.Framework.DataAccess\obj\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\Nandkishor\Todays Work\UNO\Standerd\uno_standard\CMS.UNO.Framework.DataAccess\obj\Debug\CMS.UNO.Framework.DataAccess.pdb
+D:\Uno\Haldia\uno_standard\CMS.UNO.Framework.DataAccess\bin\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\Uno\Haldia\uno_standard\CMS.UNO.Framework.DataAccess\bin\Debug\CMS.UNO.Framework.DataAccess.pdb
+D:\Uno\Haldia\uno_standard\CMS.UNO.Framework.DataAccess\obj\Debug\CMS.Framework.DataAccess.csprojResolveAssemblyReference.cache
+D:\Uno\Haldia\uno_standard\CMS.UNO.Framework.DataAccess\obj\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\Uno\Haldia\uno_standard\CMS.UNO.Framework.DataAccess\obj\Debug\CMS.UNO.Framework.DataAccess.pdb
+D:\uno_standard\CMS.UNO.Framework.DataAccess\bin\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\uno_standard\CMS.UNO.Framework.DataAccess\bin\Debug\CMS.UNO.Framework.DataAccess.pdb
+D:\uno_standard\CMS.UNO.Framework.DataAccess\obj\Debug\CMS.Framework.DataAccess.csprojResolveAssemblyReference.cache
+D:\uno_standard\CMS.UNO.Framework.DataAccess\obj\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\uno_standard\CMS.UNO.Framework.DataAccess\obj\Debug\CMS.UNO.Framework.DataAccess.pdb
+D:\Uno\uno_standard\CMS.UNO.Framework.DataAccess\bin\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\Uno\uno_standard\CMS.UNO.Framework.DataAccess\bin\Debug\CMS.UNO.Framework.DataAccess.pdb
+D:\Uno\uno_standard\CMS.UNO.Framework.DataAccess\obj\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\Uno\uno_standard\CMS.UNO.Framework.DataAccess\obj\Debug\CMS.UNO.Framework.DataAccess.pdb
+D:\Adil\uno_standard\CMS.UNO.Framework.DataAccess\bin\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\Adil\uno_standard\CMS.UNO.Framework.DataAccess\bin\Debug\CMS.UNO.Framework.DataAccess.pdb
+D:\Adil\uno_standard\CMS.UNO.Framework.DataAccess\obj\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\Adil\uno_standard\CMS.UNO.Framework.DataAccess\obj\Debug\CMS.UNO.Framework.DataAccess.pdb
+D:\prashant Project\uno_standard_07_04_2016\CMS.UNO.Framework.DataAccess\bin\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\prashant Project\uno_standard_07_04_2016\CMS.UNO.Framework.DataAccess\bin\Debug\CMS.UNO.Framework.DataAccess.pdb
+D:\prashant Project\uno_standard_07_04_2016\CMS.UNO.Framework.DataAccess\obj\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\prashant Project\uno_standard_07_04_2016\CMS.UNO.Framework.DataAccess\obj\Debug\CMS.UNO.Framework.DataAccess.pdb
+D:\Shrikant\Projects\UNO_STANDARD\SVN\uno_standard\CMS.UNO.Framework.DataAccess\bin\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\Shrikant\Projects\UNO_STANDARD\SVN\uno_standard\CMS.UNO.Framework.DataAccess\bin\Debug\CMS.UNO.Framework.DataAccess.pdb
+D:\Shrikant\Projects\UNO_STANDARD\SVN\uno_standard\CMS.UNO.Framework.DataAccess\obj\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\Shrikant\Projects\UNO_STANDARD\SVN\uno_standard\CMS.UNO.Framework.DataAccess\obj\Debug\CMS.UNO.Framework.DataAccess.pdb
+E:\Rajneesh\SVN\uno_standard\CMS.UNO.Framework.DataAccess\bin\Debug\CMS.UNO.Framework.DataAccess.dll
+E:\Rajneesh\SVN\uno_standard\CMS.UNO.Framework.DataAccess\bin\Debug\CMS.UNO.Framework.DataAccess.pdb
+E:\Rajneesh\SVN\uno_standard\CMS.UNO.Framework.DataAccess\obj\Debug\CMS.UNO.Framework.DataAccess.dll
+E:\Rajneesh\SVN\uno_standard\CMS.UNO.Framework.DataAccess\obj\Debug\CMS.UNO.Framework.DataAccess.pdb
+D:\CMS PROJECT\Vaibhav\UNO STANDARD\SVN\uno_standard\CMS.UNO.Framework.DataAccess\bin\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\CMS PROJECT\Vaibhav\UNO STANDARD\SVN\uno_standard\CMS.UNO.Framework.DataAccess\bin\Debug\CMS.UNO.Framework.DataAccess.pdb
+D:\CMS PROJECT\Vaibhav\UNO STANDARD\SVN\uno_standard\CMS.UNO.Framework.DataAccess\obj\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\CMS PROJECT\Vaibhav\UNO STANDARD\SVN\uno_standard\CMS.UNO.Framework.DataAccess\obj\Debug\CMS.UNO.Framework.DataAccess.pdb
+D:\CMS PROJECT\Vaibhav\UNO STANDARD\SVN\uno_standard\CMS.UNO.Framework.DataAccess\obj\Debug\CMS.Framework.DataAccess.csprojResolveAssemblyReference.cache
+D:\Projects\UNO STANDARD\SVN\uno_standard\CMS.UNO.Framework.DataAccess\bin\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\Projects\UNO STANDARD\SVN\uno_standard\CMS.UNO.Framework.DataAccess\bin\Debug\CMS.UNO.Framework.DataAccess.pdb
+D:\Projects\UNO STANDARD\SVN\uno_standard\CMS.UNO.Framework.DataAccess\obj\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\Projects\UNO STANDARD\SVN\uno_standard\CMS.UNO.Framework.DataAccess\obj\Debug\CMS.UNO.Framework.DataAccess.pdb
+D:\SVN\UNO_STANDARD_V2\CMS.UNO.Framework.DataAccess\bin\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\SVN\UNO_STANDARD_V2\CMS.UNO.Framework.DataAccess\bin\Debug\CMS.UNO.Framework.DataAccess.pdb
+D:\SVN\UNO_STANDARD_V2\CMS.UNO.Framework.DataAccess\obj\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\SVN\UNO_STANDARD_V2\CMS.UNO.Framework.DataAccess\obj\Debug\CMS.UNO.Framework.DataAccess.pdb
+E:\Rajneesh\SVN\uno_standard_V2\CMS.UNO.Framework.DataAccess\bin\Debug\CMS.UNO.Framework.DataAccess.dll
+E:\Rajneesh\SVN\uno_standard_V2\CMS.UNO.Framework.DataAccess\bin\Debug\CMS.UNO.Framework.DataAccess.pdb
+E:\Rajneesh\SVN\uno_standard_V2\CMS.UNO.Framework.DataAccess\obj\Debug\CMS.UNO.Framework.DataAccess.dll
+E:\Rajneesh\SVN\uno_standard_V2\CMS.UNO.Framework.DataAccess\obj\Debug\CMS.UNO.Framework.DataAccess.pdb
+E:\Rajneesh\SVN\uno_standard_V2\CMS.UNO.Framework.DataAccess\obj\Debug\CMS.Framework.DataAccess.csprojResolveAssemblyReference.cache
+D:\Devang Project\wbsedcl\CMS.UNO.Framework.DataAccess\bin\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\Devang Project\wbsedcl\CMS.UNO.Framework.DataAccess\bin\Debug\CMS.UNO.Framework.DataAccess.pdb
+D:\Devang Project\wbsedcl\CMS.UNO.Framework.DataAccess\obj\Debug\CMS.Framework.DataAccess.csprojResolveAssemblyReference.cache
+D:\Devang Project\wbsedcl\CMS.UNO.Framework.DataAccess\obj\Debug\CMS.UNO.Framework.DataAccess.dll
+D:\Devang Project\wbsedcl\CMS.UNO.Framework.DataAccess\obj\Debug\CMS.UNO.Framework.DataAccess.pdb
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\CMS.UNO.Framework.DataAccess\bin\Debug\CMS.UNO.Framework.DataAccess.dll
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\CMS.UNO.Framework.DataAccess\bin\Debug\CMS.UNO.Framework.DataAccess.pdb
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\CMS.UNO.Framework.DataAccess\obj\Debug\CMS.UNO.Framework.DataAccess.dll
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\CMS.UNO.Framework.DataAccess\obj\Debug\CMS.UNO.Framework.DataAccess.pdb
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\CMS.UNO.Framework.DataAccess\obj\Debug\CMS.Framework.DataAccess.csprojResolveAssemblyReference.cache

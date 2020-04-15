@@ -1,0 +1,18 @@
+D:\CMS PROJECT\Vaibhav\UNO STANDARD\SVN\uno_standard\CMS.UNO.Core.Handler\bin\Release\CMS.UNO.Core.Handler.dll
+D:\CMS PROJECT\Vaibhav\UNO STANDARD\SVN\uno_standard\CMS.UNO.Core.Handler\bin\Release\CMS.UNO.Core.Handler.pdb
+D:\CMS PROJECT\Vaibhav\UNO STANDARD\SVN\uno_standard\CMS.UNO.Core.Handler\bin\Release\CMS.Framework.Common.dll
+D:\CMS PROJECT\Vaibhav\UNO STANDARD\SVN\uno_standard\CMS.UNO.Core.Handler\bin\Release\CMS.UNO.Framework.DataAccess.dll
+D:\CMS PROJECT\Vaibhav\UNO STANDARD\SVN\uno_standard\CMS.UNO.Core.Handler\bin\Release\CMS.UNO.Framework.DataAccess.pdb
+D:\CMS PROJECT\Vaibhav\UNO STANDARD\SVN\uno_standard\CMS.UNO.Core.Handler\bin\Release\CMS.Framework.Common.pdb
+D:\CMS PROJECT\Vaibhav\UNO STANDARD\SVN\uno_standard\CMS.UNO.Core.Handler\obj\Release\CMS.UNO.Core.Handler.csprojResolveAssemblyReference.cache
+D:\CMS PROJECT\Vaibhav\UNO STANDARD\SVN\uno_standard\CMS.UNO.Core.Handler\obj\Release\CMS.UNO.Core.Handler.dll
+D:\CMS PROJECT\Vaibhav\UNO STANDARD\SVN\uno_standard\CMS.UNO.Core.Handler\obj\Release\CMS.UNO.Core.Handler.pdb
+E:\Rajneesh\SVN\uno_standard_V2\CMS.UNO.Core.Handler\bin\Release\CMS.UNO.Core.Handler.dll
+E:\Rajneesh\SVN\uno_standard_V2\CMS.UNO.Core.Handler\bin\Release\CMS.UNO.Core.Handler.pdb
+E:\Rajneesh\SVN\uno_standard_V2\CMS.UNO.Core.Handler\bin\Release\CMS.Framework.Common.dll
+E:\Rajneesh\SVN\uno_standard_V2\CMS.UNO.Core.Handler\bin\Release\CMS.UNO.Framework.DataAccess.dll
+E:\Rajneesh\SVN\uno_standard_V2\CMS.UNO.Core.Handler\bin\Release\CMS.UNO.Framework.DataAccess.pdb
+E:\Rajneesh\SVN\uno_standard_V2\CMS.UNO.Core.Handler\bin\Release\CMS.Framework.Common.pdb
+E:\Rajneesh\SVN\uno_standard_V2\CMS.UNO.Core.Handler\obj\Release\CMS.UNO.Core.Handler.csprojResolveAssemblyReference.cache
+E:\Rajneesh\SVN\uno_standard_V2\CMS.UNO.Core.Handler\obj\Release\CMS.UNO.Core.Handler.dll
+E:\Rajneesh\SVN\uno_standard_V2\CMS.UNO.Core.Handler\obj\Release\CMS.UNO.Core.Handler.pdb

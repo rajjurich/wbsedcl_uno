@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="EmployeeHistory" targetNamespace="http://tempuri.org/EmployeeHistory.xsd" xmlns:mstns="http://tempuri.org/EmployeeHistory.xsd" xmlns="http://tempuri.org/EmployeeHistory.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="connection_string" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="connection_string (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.connection_string.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="connection_string (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select '' as SAP_ID,
+  '' as FirstName,
+ '' as LastName,
+ '' as PlaceOfPostingCode,
+ '' as Class,
+ '' as Date_of_joining_at_current_office,
+ '' as Date_of_release_from_last_office,
+ '' as Controlling_officer_SAP_ID,
+ '' as Date_of_superannuation,
+ '' as Designation
+</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="SAP_ID" DataSetColumn="SAP_ID" />
+              <Mapping SourceColumn="FirstName" DataSetColumn="FirstName" />
+              <Mapping SourceColumn="LastName" DataSetColumn="LastName" />
+              <Mapping SourceColumn="PlaceOfPostingCode" DataSetColumn="PlaceOfPostingCode" />
+              <Mapping SourceColumn="Class" DataSetColumn="Class" />
+              <Mapping SourceColumn="Date_of_joining_at_current_office" DataSetColumn="Date_of_joining_at_current_office" />
+              <Mapping SourceColumn="Date_of_release_from_last_office" DataSetColumn="Date_of_release_from_last_office" />
+              <Mapping SourceColumn="Controlling_officer_SAP_ID" DataSetColumn="Controlling_officer_SAP_ID" />
+              <Mapping SourceColumn="Date_of_superannuation" DataSetColumn="Date_of_superannuation" />
+              <Mapping SourceColumn="Designation" DataSetColumn="Designation" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="EmployeeHistory" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="EmployeeHistory" msprop:Generator_UserDSName="EmployeeHistory">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SAP_ID" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnSAP_ID" msprop:Generator_ColumnPropNameInRow="SAP_ID" msprop:Generator_ColumnPropNameInTable="SAP_IDColumn" msprop:Generator_UserColumnName="SAP_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FirstName" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnFirstName" msprop:Generator_ColumnPropNameInRow="FirstName" msprop:Generator_ColumnPropNameInTable="FirstNameColumn" msprop:Generator_UserColumnName="FirstName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastName" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnLastName" msprop:Generator_ColumnPropNameInRow="LastName" msprop:Generator_ColumnPropNameInTable="LastNameColumn" msprop:Generator_UserColumnName="LastName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PlaceOfPostingCode" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnPlaceOfPostingCode" msprop:Generator_ColumnPropNameInRow="PlaceOfPostingCode" msprop:Generator_ColumnPropNameInTable="PlaceOfPostingCodeColumn" msprop:Generator_UserColumnName="PlaceOfPostingCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Class" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnClass" msprop:Generator_ColumnPropNameInRow="Class" msprop:Generator_ColumnPropNameInTable="ClassColumn" msprop:Generator_UserColumnName="Class" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Date_of_joining_at_current_office" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDate_of_joining_at_current_office" msprop:Generator_ColumnPropNameInRow="Date_of_joining_at_current_office" msprop:Generator_ColumnPropNameInTable="Date_of_joining_at_current_officeColumn" msprop:Generator_UserColumnName="Date_of_joining_at_current_office" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Date_of_release_from_last_office" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDate_of_release_from_last_office" msprop:Generator_ColumnPropNameInRow="Date_of_release_from_last_office" msprop:Generator_ColumnPropNameInTable="Date_of_release_from_last_officeColumn" msprop:Generator_UserColumnName="Date_of_release_from_last_office" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Controlling_officer_SAP_ID" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnControlling_officer_SAP_ID" msprop:Generator_ColumnPropNameInRow="Controlling_officer_SAP_ID" msprop:Generator_ColumnPropNameInTable="Controlling_officer_SAP_IDColumn" msprop:Generator_UserColumnName="Controlling_officer_SAP_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Date_of_superannuation" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDate_of_superannuation" msprop:Generator_ColumnPropNameInRow="Date_of_superannuation" msprop:Generator_ColumnPropNameInTable="Date_of_superannuationColumn" msprop:Generator_UserColumnName="Date_of_superannuation" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Designation" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDesignation" msprop:Generator_ColumnPropNameInRow="Designation" msprop:Generator_ColumnPropNameInTable="DesignationColumn" msprop:Generator_UserColumnName="Designation" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

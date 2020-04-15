@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Attendance_Report" targetNamespace="http://tempuri.org/Attendance_Report.xsd" xmlns:mstns="http://tempuri.org/Attendance_Report.xsd" xmlns="http://tempuri.org/Attendance_Report.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="connection_string" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="connection_string (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.connection_string.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Attendance_ReportTableAdapter" GeneratorDataComponentClassName="Attendance_ReportTableAdapter" Name="Attendance_Report" UserDataComponentName="Attendance_ReportTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="connection_string (Web.config)" DbObjectName="uno.dbo.ENT_EMPLOYEE_PERSONAL_DTLS" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Fill" GenerateShortCommands="false" GeneratorSourceName="Fill" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>  SELECT EPD_EMPID,ENT_EMPLOYEE_PERSONAL_DTLS.EPD_FIRST_NAME+ ENT_EMPLOYEE_PERSONAL_DTLS.EPD_LAST_NAME AS EPD_FIRST_NAME,   
+			'' as IN_OUT_STATUS ,'' as DAY1, '' as DAY2,'' as DAY3,'' as DAY4,'' as DAY5,'' as DAY6,'' as DAY7,'' as DAY8,'' as DAY9,'' as DAY10,  		
+			'' as DAY11,'' as DAY12,'' as DAY13,'' as DAY14,'' as DAY15,'' as DAY16,'' as DAY17,'' as DAY18,'' as DAY19,      
+			'' as DAY20,'' as DAY21,'' as DAY22,'' as DAY23,'' as DAY24,'' as DAY25,'' as DAY26,'' as DAY27,'' as DAY28,'' as DAY29,    
+			'' as DAY30,'' as DAY31     
+			FROM ENT_EMPLOYEE_PERSONAL_DTLS   
+            INNER JOIN ENT_EMPLOYEE_OFFICIAL_DTLS ON
+              ENT_EMPLOYEE_PERSONAL_DTLS.EPD_EMPID = ENT_EMPLOYEE_OFFICIAL_DTLS.EOD_EMPID  </CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="EPD_EMPID" DataSetColumn="EPD_EMPID" />
+              <Mapping SourceColumn="EPD_FIRST_NAME" DataSetColumn="EPD_FIRST_NAME" />
+              <Mapping SourceColumn="IN_OUT_STATUS" DataSetColumn="IN_OUT_STATUS" />
+              <Mapping SourceColumn="DAY1" DataSetColumn="DAY1" />
+              <Mapping SourceColumn="DAY2" DataSetColumn="DAY2" />
+              <Mapping SourceColumn="DAY3" DataSetColumn="DAY3" />
+              <Mapping SourceColumn="DAY4" DataSetColumn="DAY4" />
+              <Mapping SourceColumn="DAY5" DataSetColumn="DAY5" />
+              <Mapping SourceColumn="DAY6" DataSetColumn="DAY6" />
+              <Mapping SourceColumn="DAY7" DataSetColumn="DAY7" />
+              <Mapping SourceColumn="DAY8" DataSetColumn="DAY8" />
+              <Mapping SourceColumn="DAY9" DataSetColumn="DAY9" />
+              <Mapping SourceColumn="DAY10" DataSetColumn="DAY10" />
+              <Mapping SourceColumn="DAY11" DataSetColumn="DAY11" />
+              <Mapping SourceColumn="DAY12" DataSetColumn="DAY12" />
+              <Mapping SourceColumn="DAY13" DataSetColumn="DAY13" />
+              <Mapping SourceColumn="DAY14" DataSetColumn="DAY14" />
+              <Mapping SourceColumn="DAY15" DataSetColumn="DAY15" />
+              <Mapping SourceColumn="DAY16" DataSetColumn="DAY16" />
+              <Mapping SourceColumn="DAY17" DataSetColumn="DAY17" />
+              <Mapping SourceColumn="DAY18" DataSetColumn="DAY18" />
+              <Mapping SourceColumn="DAY19" DataSetColumn="DAY19" />
+              <Mapping SourceColumn="DAY20" DataSetColumn="DAY20" />
+              <Mapping SourceColumn="DAY21" DataSetColumn="DAY21" />
+              <Mapping SourceColumn="DAY22" DataSetColumn="DAY22" />
+              <Mapping SourceColumn="DAY23" DataSetColumn="DAY23" />
+              <Mapping SourceColumn="DAY24" DataSetColumn="DAY24" />
+              <Mapping SourceColumn="DAY25" DataSetColumn="DAY25" />
+              <Mapping SourceColumn="DAY26" DataSetColumn="DAY26" />
+              <Mapping SourceColumn="DAY27" DataSetColumn="DAY27" />
+              <Mapping SourceColumn="DAY28" DataSetColumn="DAY28" />
+              <Mapping SourceColumn="DAY29" DataSetColumn="DAY29" />
+              <Mapping SourceColumn="DAY30" DataSetColumn="DAY30" />
+              <Mapping SourceColumn="DAY31" DataSetColumn="DAY31" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Attendance_Report" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Attendance_Report" msprop:Generator_UserDSName="Attendance_Report">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Attendance_Report" msprop:Generator_TableClassName="Attendance_ReportDataTable" msprop:Generator_TableVarName="tableAttendance_Report" msprop:Generator_TablePropName="_Attendance_Report" msprop:Generator_RowDeletingName="Attendance_ReportRowDeleting" msprop:Generator_UserTableName="Attendance_Report" msprop:Generator_RowChangingName="Attendance_ReportRowChanging" msprop:Generator_RowEvHandlerName="Attendance_ReportRowChangeEventHandler" msprop:Generator_RowDeletedName="Attendance_ReportRowDeleted" msprop:Generator_RowEvArgName="Attendance_ReportRowChangeEvent" msprop:Generator_RowChangedName="Attendance_ReportRowChanged" msprop:Generator_RowClassName="Attendance_ReportRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EPD_EMPID" msprop:Generator_ColumnVarNameInTable="columnEPD_EMPID" msprop:Generator_ColumnPropNameInRow="EPD_EMPID" msprop:Generator_ColumnPropNameInTable="EPD_EMPIDColumn" msprop:Generator_UserColumnName="EPD_EMPID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EPD_FIRST_NAME" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEPD_FIRST_NAME" msprop:Generator_ColumnPropNameInRow="EPD_FIRST_NAME" msprop:Generator_ColumnPropNameInTable="EPD_FIRST_NAMEColumn" msprop:Generator_UserColumnName="EPD_FIRST_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IN_OUT_STATUS" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnIN_OUT_STATUS" msprop:Generator_ColumnPropNameInRow="IN_OUT_STATUS" msprop:Generator_ColumnPropNameInTable="IN_OUT_STATUSColumn" msprop:Generator_UserColumnName="IN_OUT_STATUS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DAY1" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDAY1" msprop:Generator_ColumnPropNameInRow="DAY1" msprop:Generator_ColumnPropNameInTable="DAY1Column" msprop:Generator_UserColumnName="DAY1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DAY2" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDAY2" msprop:Generator_ColumnPropNameInRow="DAY2" msprop:Generator_ColumnPropNameInTable="DAY2Column" msprop:Generator_UserColumnName="DAY2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DAY3" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDAY3" msprop:Generator_ColumnPropNameInRow="DAY3" msprop:Generator_ColumnPropNameInTable="DAY3Column" msprop:Generator_UserColumnName="DAY3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DAY4" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDAY4" msprop:Generator_ColumnPropNameInRow="DAY4" msprop:Generator_ColumnPropNameInTable="DAY4Column" msprop:Generator_UserColumnName="DAY4" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DAY5" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDAY5" msprop:Generator_ColumnPropNameInRow="DAY5" msprop:Generator_ColumnPropNameInTable="DAY5Column" msprop:Generator_UserColumnName="DAY5" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DAY6" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDAY6" msprop:Generator_ColumnPropNameInRow="DAY6" msprop:Generator_ColumnPropNameInTable="DAY6Column" msprop:Generator_UserColumnName="DAY6" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DAY7" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDAY7" msprop:Generator_ColumnPropNameInRow="DAY7" msprop:Generator_ColumnPropNameInTable="DAY7Column" msprop:Generator_UserColumnName="DAY7" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DAY8" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDAY8" msprop:Generator_ColumnPropNameInRow="DAY8" msprop:Generator_ColumnPropNameInTable="DAY8Column" msprop:Generator_UserColumnName="DAY8" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DAY9" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDAY9" msprop:Generator_ColumnPropNameInRow="DAY9" msprop:Generator_ColumnPropNameInTable="DAY9Column" msprop:Generator_UserColumnName="DAY9" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DAY10" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDAY10" msprop:Generator_ColumnPropNameInRow="DAY10" msprop:Generator_ColumnPropNameInTable="DAY10Column" msprop:Generator_UserColumnName="DAY10" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DAY11" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDAY11" msprop:Generator_ColumnPropNameInRow="DAY11" msprop:Generator_ColumnPropNameInTable="DAY11Column" msprop:Generator_UserColumnName="DAY11" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DAY12" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDAY12" msprop:Generator_ColumnPropNameInRow="DAY12" msprop:Generator_ColumnPropNameInTable="DAY12Column" msprop:Generator_UserColumnName="DAY12" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DAY13" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDAY13" msprop:Generator_ColumnPropNameInRow="DAY13" msprop:Generator_ColumnPropNameInTable="DAY13Column" msprop:Generator_UserColumnName="DAY13" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DAY14" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDAY14" msprop:Generator_ColumnPropNameInRow="DAY14" msprop:Generator_ColumnPropNameInTable="DAY14Column" msprop:Generator_UserColumnName="DAY14" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DAY15" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDAY15" msprop:Generator_ColumnPropNameInRow="DAY15" msprop:Generator_ColumnPropNameInTable="DAY15Column" msprop:Generator_UserColumnName="DAY15" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DAY16" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDAY16" msprop:Generator_ColumnPropNameInRow="DAY16" msprop:Generator_ColumnPropNameInTable="DAY16Column" msprop:Generator_UserColumnName="DAY16" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DAY17" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDAY17" msprop:Generator_ColumnPropNameInRow="DAY17" msprop:Generator_ColumnPropNameInTable="DAY17Column" msprop:Generator_UserColumnName="DAY17" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DAY18" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDAY18" msprop:Generator_ColumnPropNameInRow="DAY18" msprop:Generator_ColumnPropNameInTable="DAY18Column" msprop:Generator_UserColumnName="DAY18" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DAY19" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDAY19" msprop:Generator_ColumnPropNameInRow="DAY19" msprop:Generator_ColumnPropNameInTable="DAY19Column" msprop:Generator_UserColumnName="DAY19" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DAY20" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDAY20" msprop:Generator_ColumnPropNameInRow="DAY20" msprop:Generator_ColumnPropNameInTable="DAY20Column" msprop:Generator_UserColumnName="DAY20" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DAY21" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDAY21" msprop:Generator_ColumnPropNameInRow="DAY21" msprop:Generator_ColumnPropNameInTable="DAY21Column" msprop:Generator_UserColumnName="DAY21" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DAY22" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDAY22" msprop:Generator_ColumnPropNameInRow="DAY22" msprop:Generator_ColumnPropNameInTable="DAY22Column" msprop:Generator_UserColumnName="DAY22" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DAY23" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDAY23" msprop:Generator_ColumnPropNameInRow="DAY23" msprop:Generator_ColumnPropNameInTable="DAY23Column" msprop:Generator_UserColumnName="DAY23" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DAY24" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDAY24" msprop:Generator_ColumnPropNameInRow="DAY24" msprop:Generator_ColumnPropNameInTable="DAY24Column" msprop:Generator_UserColumnName="DAY24" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DAY25" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDAY25" msprop:Generator_ColumnPropNameInRow="DAY25" msprop:Generator_ColumnPropNameInTable="DAY25Column" msprop:Generator_UserColumnName="DAY25" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DAY26" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDAY26" msprop:Generator_ColumnPropNameInRow="DAY26" msprop:Generator_ColumnPropNameInTable="DAY26Column" msprop:Generator_UserColumnName="DAY26" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DAY27" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDAY27" msprop:Generator_ColumnPropNameInRow="DAY27" msprop:Generator_ColumnPropNameInTable="DAY27Column" msprop:Generator_UserColumnName="DAY27" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DAY28" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDAY28" msprop:Generator_ColumnPropNameInRow="DAY28" msprop:Generator_ColumnPropNameInTable="DAY28Column" msprop:Generator_UserColumnName="DAY28" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DAY29" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDAY29" msprop:Generator_ColumnPropNameInRow="DAY29" msprop:Generator_ColumnPropNameInTable="DAY29Column" msprop:Generator_UserColumnName="DAY29" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DAY30" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDAY30" msprop:Generator_ColumnPropNameInRow="DAY30" msprop:Generator_ColumnPropNameInTable="DAY30Column" msprop:Generator_UserColumnName="DAY30" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DAY31" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDAY31" msprop:Generator_ColumnPropNameInRow="DAY31" msprop:Generator_ColumnPropNameInTable="DAY31Column" msprop:Generator_UserColumnName="DAY31" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SCompany" msprop:Generator_ColumnVarNameInTable="columnSCompany" msprop:Generator_ColumnPropNameInRow="SCompany" msprop:Generator_ColumnPropNameInTable="SCompanyColumn" msprop:Generator_UserColumnName="SCompany" type="xs:string" minOccurs="0" />
+              <xs:element name="Location" msprop:Generator_ColumnVarNameInTable="columnLocation" msprop:Generator_ColumnPropNameInRow="Location" msprop:Generator_ColumnPropNameInTable="LocationColumn" msprop:Generator_UserColumnName="Location" type="xs:string" minOccurs="0" />
+              <xs:element name="Division" msprop:Generator_ColumnVarNameInTable="columnDivision" msprop:Generator_ColumnPropNameInRow="Division" msprop:Generator_ColumnPropNameInTable="DivisionColumn" msprop:Generator_UserColumnName="Division" type="xs:string" minOccurs="0" />
+              <xs:element name="Department" msprop:Generator_ColumnVarNameInTable="columnDepartment" msprop:Generator_ColumnPropNameInRow="Department" msprop:Generator_ColumnPropNameInTable="DepartmentColumn" msprop:Generator_UserColumnName="Department" type="xs:string" minOccurs="0" />
+              <xs:element name="Grade" msprop:Generator_ColumnVarNameInTable="columnGrade" msprop:Generator_ColumnPropNameInRow="Grade" msprop:Generator_ColumnPropNameInTable="GradeColumn" msprop:Generator_UserColumnName="Grade" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Attendance_Report" />
+      <xs:field xpath="mstns:EPD_EMPID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

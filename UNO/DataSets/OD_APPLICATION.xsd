@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="OD_APPLICATION" targetNamespace="http://tempuri.org/OD_APPLICATION.xsd" xmlns:mstns="http://tempuri.org/OD_APPLICATION.xsd" xmlns="http://tempuri.org/OD_APPLICATION.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="connection_string" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="connection_string (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.connection_string.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ESS_TA_ODTableAdapter" GeneratorDataComponentClassName="ESS_TA_ODTableAdapter" Name="ESS_TA_OD" UserDataComponentName="ESS_TA_ODTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="connection_string (Web.config)" DbObjectName="UNO.dbo.ESS_TA_OD" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT 
+ESS_OD_RowID,
+ESS_OD_EMPID,
+'' AS EMPLOYEE_NAME,
+ESS_OD_RSNID,
+
+ESS_OD_REQUESTDT,
+ESS_OD_FROMDT,
+ESS_OD_TODT,
+DATEDIFF(DAY,ESS_OD_FROMDT,ESS_OD_TODT)+1 AS TOTAL_DAYS,
+ESS_OD_STATUS,
+ESS_OD_SANCID,
+'' AS APPROVED_BY
+FROM ESS_TA_OD
+</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ESS_OD_RowID" DataSetColumn="ESS_OD_RowID" />
+              <Mapping SourceColumn="ESS_OD_EMPID" DataSetColumn="ESS_OD_EMPID" />
+              <Mapping SourceColumn="EMPLOYEE_NAME" DataSetColumn="EMPLOYEE_NAME" />
+              <Mapping SourceColumn="ESS_OD_RSNID" DataSetColumn="ESS_OD_RSNID" />
+              <Mapping SourceColumn="ESS_OD_REQUESTDT" DataSetColumn="ESS_OD_REQUESTDT" />
+              <Mapping SourceColumn="ESS_OD_FROMDT" DataSetColumn="ESS_OD_FROMDT" />
+              <Mapping SourceColumn="ESS_OD_TODT" DataSetColumn="ESS_OD_TODT" />
+              <Mapping SourceColumn="TOTAL_DAYS" DataSetColumn="TOTAL_DAYS" />
+              <Mapping SourceColumn="ESS_OD_STATUS" DataSetColumn="ESS_OD_STATUS" />
+              <Mapping SourceColumn="ESS_OD_SANCID" DataSetColumn="ESS_OD_SANCID" />
+              <Mapping SourceColumn="APPROVED_BY" DataSetColumn="APPROVED_BY" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="OD_APPLICATION" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="OD_APPLICATION" msprop:Generator_UserDSName="OD_APPLICATION">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ESS_TA_OD" msprop:Generator_TableClassName="ESS_TA_ODDataTable" msprop:Generator_TableVarName="tableESS_TA_OD" msprop:Generator_TablePropName="ESS_TA_OD" msprop:Generator_RowDeletingName="ESS_TA_ODRowDeleting" msprop:Generator_UserTableName="ESS_TA_OD" msprop:Generator_RowChangingName="ESS_TA_ODRowChanging" msprop:Generator_RowEvHandlerName="ESS_TA_ODRowChangeEventHandler" msprop:Generator_RowDeletedName="ESS_TA_ODRowDeleted" msprop:Generator_RowEvArgName="ESS_TA_ODRowChangeEvent" msprop:Generator_RowChangedName="ESS_TA_ODRowChanged" msprop:Generator_RowClassName="ESS_TA_ODRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ESS_OD_RowID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnESS_OD_RowID" msprop:Generator_ColumnPropNameInRow="ESS_OD_RowID" msprop:Generator_ColumnPropNameInTable="ESS_OD_RowIDColumn" msprop:Generator_UserColumnName="ESS_OD_RowID" type="xs:long" />
+              <xs:element name="ESS_OD_EMPID" msprop:Generator_ColumnVarNameInTable="columnESS_OD_EMPID" msprop:Generator_ColumnPropNameInRow="ESS_OD_EMPID" msprop:Generator_ColumnPropNameInTable="ESS_OD_EMPIDColumn" msprop:Generator_UserColumnName="ESS_OD_EMPID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EMPLOYEE_NAME" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEMPLOYEE_NAME" msprop:Generator_ColumnPropNameInRow="EMPLOYEE_NAME" msprop:Generator_ColumnPropNameInTable="EMPLOYEE_NAMEColumn" msprop:Generator_UserColumnName="EMPLOYEE_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ESS_OD_RSNID" msprop:Generator_ColumnVarNameInTable="columnESS_OD_RSNID" msprop:Generator_ColumnPropNameInRow="ESS_OD_RSNID" msprop:Generator_ColumnPropNameInTable="ESS_OD_RSNIDColumn" msprop:Generator_UserColumnName="ESS_OD_RSNID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ESS_OD_REQUESTDT" msprop:Generator_ColumnVarNameInTable="columnESS_OD_REQUESTDT" msprop:Generator_ColumnPropNameInRow="ESS_OD_REQUESTDT" msprop:Generator_ColumnPropNameInTable="ESS_OD_REQUESTDTColumn" msprop:Generator_UserColumnName="ESS_OD_REQUESTDT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ESS_OD_FROMDT" msprop:Generator_ColumnVarNameInTable="columnESS_OD_FROMDT" msprop:Generator_ColumnPropNameInRow="ESS_OD_FROMDT" msprop:Generator_ColumnPropNameInTable="ESS_OD_FROMDTColumn" msprop:Generator_UserColumnName="ESS_OD_FROMDT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ESS_OD_TODT" msprop:Generator_ColumnVarNameInTable="columnESS_OD_TODT" msprop:Generator_ColumnPropNameInRow="ESS_OD_TODT" msprop:Generator_ColumnPropNameInTable="ESS_OD_TODTColumn" msprop:Generator_UserColumnName="ESS_OD_TODT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TOTAL_DAYS" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTOTAL_DAYS" msprop:Generator_ColumnPropNameInRow="TOTAL_DAYS" msprop:Generator_ColumnPropNameInTable="TOTAL_DAYSColumn" msprop:Generator_UserColumnName="TOTAL_DAYS" type="xs:int" minOccurs="0" />
+              <xs:element name="ESS_OD_STATUS" msprop:Generator_ColumnVarNameInTable="columnESS_OD_STATUS" msprop:Generator_ColumnPropNameInRow="ESS_OD_STATUS" msprop:Generator_ColumnPropNameInTable="ESS_OD_STATUSColumn" msprop:Generator_UserColumnName="ESS_OD_STATUS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ESS_OD_SANCID" msprop:Generator_ColumnVarNameInTable="columnESS_OD_SANCID" msprop:Generator_ColumnPropNameInRow="ESS_OD_SANCID" msprop:Generator_ColumnPropNameInTable="ESS_OD_SANCIDColumn" msprop:Generator_UserColumnName="ESS_OD_SANCID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="APPROVED_BY" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnAPPROVED_BY" msprop:Generator_ColumnPropNameInRow="APPROVED_BY" msprop:Generator_ColumnPropNameInTable="APPROVED_BYColumn" msprop:Generator_UserColumnName="APPROVED_BY" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

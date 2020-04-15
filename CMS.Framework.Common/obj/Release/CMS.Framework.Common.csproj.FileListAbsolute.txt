@@ -1,0 +1,8 @@
+D:\CMS PROJECT\Vaibhav\UNO STANDARD\SVN\uno_standard\CMS.Framework.Common\bin\Release\CMS.Framework.Common.dll
+D:\CMS PROJECT\Vaibhav\UNO STANDARD\SVN\uno_standard\CMS.Framework.Common\bin\Release\CMS.Framework.Common.pdb
+D:\CMS PROJECT\Vaibhav\UNO STANDARD\SVN\uno_standard\CMS.Framework.Common\obj\Release\CMS.Framework.Common.dll
+D:\CMS PROJECT\Vaibhav\UNO STANDARD\SVN\uno_standard\CMS.Framework.Common\obj\Release\CMS.Framework.Common.pdb
+E:\Rajneesh\SVN\uno_standard_V2\CMS.Framework.Common\bin\Release\CMS.Framework.Common.dll
+E:\Rajneesh\SVN\uno_standard_V2\CMS.Framework.Common\bin\Release\CMS.Framework.Common.pdb
+E:\Rajneesh\SVN\uno_standard_V2\CMS.Framework.Common\obj\Release\CMS.Framework.Common.dll
+E:\Rajneesh\SVN\uno_standard_V2\CMS.Framework.Common\obj\Release\CMS.Framework.Common.pdb

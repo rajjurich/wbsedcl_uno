@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Daily_Employee" targetNamespace="http://tempuri.org/Daily_Employee.xsd" xmlns:mstns="http://tempuri.org/Daily_Employee.xsd" xmlns="http://tempuri.org/Daily_Employee.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="connection_string" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="connection_string (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.connection_string.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ENT_ORG_COMMON_ENTITIESTableAdapter" GeneratorDataComponentClassName="ENT_ORG_COMMON_ENTITIESTableAdapter" Name="ENT_ORG_COMMON_ENTITIES" UserDataComponentName="ENT_ORG_COMMON_ENTITIESTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="connection_string (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText> select sum(total) as  Employee_Strength,sum(present) as Employee_Present,sum(registeredFinger)+sum(registeredPin) as Employee_Registered,
+  isnull(( sum(present)*100) /  NULLIF(sum(total),0),0)   as PercentPresent
+
+,div.OCE_DESCRIPTION  AS Profit_Centre_Name,loc.OCE_DESCRIPTION AS Cost_Centre_Name,div.oce_id as Profit_Centre_Code,loc.oce_id AS Cost_Centre_Code,designation
+from
+(
+
+select EOD_TYPE,EOD_LOCATION_ID,EOD_DIVISION_ID,desg.OCE_DESCRIPTION as designation,1 as total
+,case when TDAY_STATUS = 'PR' or TDAY_INTIME is not null then 1 else 0 end as present
+,case when FingerID is null then 0 else 1 end as registeredFinger
+,case when CARD_CODE is null then 0 else 1 end as registeredPin
+ from ent_employee_official_dtls eod
+left join Finger_Template ft on ft.EmployeeCD=eod.EOD_EMPID and (IsDeleted is null or IsDeleted=0)
+left join ACS_CARD_CONFIG cc on cc.cc_emp_id=eod.EOD_EMPID and (ACE_isdeleted is null or ACE_isdeleted=0) 
+and cc.cc_emp_id not in ( select EmployeeCD from   Finger_Template  where (IsDeleted is null or IsDeleted=0))
+left join  tday td on td.TDAY_EMPCDE=eod.EOD_EMPID  And CONVERT(VARCHAR(50),TDAY_DATE,103)='24/01/2019' left join 	ENT_ORG_COMMON_ENTITIES AS Desg ON eod.EOD_DESIGNATION_ID=Desg.OCE_ID AND Desg.CEM_ENTITY_ID='DES'  where eod_active=1 and EOD_LOCATION_ID&lt;&gt;'' and EOD_DIVISION_ID&lt;&gt;''
+)b
+
+INNER JOIN 	ENT_ORG_COMMON_ENTITIES AS DIV ON b.EOD_DIVISION_ID=DIV.OCE_ID AND DIV.CEM_ENTITY_ID='DIV'  
+INNER JOIN ENT_ORG_COMMON_ENTITIES AS LOC ON b.EOD_LOCATION_ID=LOC.OCE_ID AND LOC.CEM_ENTITY_ID='LOC'      
+where 1=1          AND isnull(b.EOD_TYPE,'E') = 'E' group by loc.OCE_DESCRIPTION,div.OCE_DESCRIPTION,div.oce_id,loc.oce_id,designation   order by  loc.OCE_DESCRIPTION 
+
+</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Cost_Centre_Code" DataSetColumn="Cost_Centre_Code" />
+              <Mapping SourceColumn="Cost_Centre_Name" DataSetColumn="Cost_Centre_Name" />
+              <Mapping SourceColumn="Profit_Centre_Code" DataSetColumn="Profit_Centre_Code" />
+              <Mapping SourceColumn="Profit_Centre_Name" DataSetColumn="Profit_Centre_Name" />
+              <Mapping SourceColumn="Employee_Strength" DataSetColumn="Employee_Strength" />
+              <Mapping SourceColumn="Employee_Registered" DataSetColumn="Employee_Registered" />
+              <Mapping SourceColumn="Employee_Present" DataSetColumn="Employee_Present" />
+              <Mapping SourceColumn="PercentPresent" DataSetColumn="PercentPresent" />
+              <Mapping SourceColumn="designation" DataSetColumn="designation" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Daily_Employee" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Daily_Employee" msprop:Generator_UserDSName="Daily_Employee">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ENT_ORG_COMMON_ENTITIES" msprop:Generator_TableClassName="ENT_ORG_COMMON_ENTITIESDataTable" msprop:Generator_TableVarName="tableENT_ORG_COMMON_ENTITIES" msprop:Generator_RowChangedName="ENT_ORG_COMMON_ENTITIESRowChanged" msprop:Generator_TablePropName="ENT_ORG_COMMON_ENTITIES" msprop:Generator_RowDeletingName="ENT_ORG_COMMON_ENTITIESRowDeleting" msprop:Generator_RowChangingName="ENT_ORG_COMMON_ENTITIESRowChanging" msprop:Generator_RowEvHandlerName="ENT_ORG_COMMON_ENTITIESRowChangeEventHandler" msprop:Generator_RowDeletedName="ENT_ORG_COMMON_ENTITIESRowDeleted" msprop:Generator_RowClassName="ENT_ORG_COMMON_ENTITIESRow" msprop:Generator_UserTableName="ENT_ORG_COMMON_ENTITIES" msprop:Generator_RowEvArgName="ENT_ORG_COMMON_ENTITIESRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cost_Centre_Code" msprop:Generator_ColumnVarNameInTable="columnCost_Centre_Code" msprop:Generator_ColumnPropNameInRow="Cost_Centre_Code" msprop:Generator_ColumnPropNameInTable="Cost_Centre_CodeColumn" msprop:Generator_UserColumnName="Cost_Centre_Code" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cost_Centre_Name" msprop:Generator_ColumnVarNameInTable="columnCost_Centre_Name" msprop:Generator_ColumnPropNameInRow="Cost_Centre_Name" msprop:Generator_ColumnPropNameInTable="Cost_Centre_NameColumn" msprop:Generator_UserColumnName="Cost_Centre_Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Profit_Centre_Code" msprop:Generator_ColumnVarNameInTable="columnProfit_Centre_Code" msprop:Generator_ColumnPropNameInRow="Profit_Centre_Code" msprop:Generator_ColumnPropNameInTable="Profit_Centre_CodeColumn" msprop:Generator_UserColumnName="Profit_Centre_Code" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Profit_Centre_Name" msprop:Generator_ColumnVarNameInTable="columnProfit_Centre_Name" msprop:Generator_ColumnPropNameInRow="Profit_Centre_Name" msprop:Generator_ColumnPropNameInTable="Profit_Centre_NameColumn" msprop:Generator_UserColumnName="Profit_Centre_Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Employee_Strength" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEmployee_Strength" msprop:Generator_ColumnPropNameInRow="Employee_Strength" msprop:Generator_ColumnPropNameInTable="Employee_StrengthColumn" msprop:Generator_UserColumnName="Employee_Strength" type="xs:int" minOccurs="0" />
+              <xs:element name="Employee_Registered" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEmployee_Registered" msprop:Generator_ColumnPropNameInRow="Employee_Registered" msprop:Generator_ColumnPropNameInTable="Employee_RegisteredColumn" msprop:Generator_UserColumnName="Employee_Registered" type="xs:int" minOccurs="0" />
+              <xs:element name="Employee_Present" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEmployee_Present" msprop:Generator_ColumnPropNameInRow="Employee_Present" msprop:Generator_ColumnPropNameInTable="Employee_PresentColumn" msprop:Generator_UserColumnName="Employee_Present" type="xs:int" minOccurs="0" />
+              <xs:element name="PercentPresent" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnPercentPresent" msprop:Generator_ColumnPropNameInRow="PercentPresent" msprop:Generator_ColumnPropNameInTable="PercentPresentColumn" msprop:Generator_UserColumnName="PercentPresent" type="xs:int" minOccurs="0" />
+              <xs:element name="designation" msprop:Generator_ColumnVarNameInTable="columndesignation" msprop:Generator_ColumnPropNameInRow="designation" msprop:Generator_ColumnPropNameInTable="designationColumn" msprop:Generator_UserColumnName="designation" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

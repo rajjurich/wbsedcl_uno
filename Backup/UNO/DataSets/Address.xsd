@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Address" targetNamespace="http://tempuri.org/Address.xsd" xmlns:mstns="http://tempuri.org/Address.xsd" xmlns="http://tempuri.org/Address.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="connection_string" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="connection_string (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.connection_string.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ENT_COMPANYTableAdapter" GeneratorDataComponentClassName="ENT_COMPANYTableAdapter" Name="ENT_COMPANY" UserDataComponentName="ENT_COMPANYTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="connection_string (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>  SELECT     COMPANY_NAME + ' ' + COMPANY_ADDRESS + ' ' + COMPANY_CITY AS COMPANY_DESC 
+       FROM         ENT_COMPANY 
+     WHERE     (COMPANY_ID = '00001') </CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="COMPANY_DESC" DataSetColumn="COMPANY_DESC" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Address" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Address" msprop:Generator_UserDSName="Address">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ENT_COMPANY" msprop:Generator_TableClassName="ENT_COMPANYDataTable" msprop:Generator_TableVarName="tableENT_COMPANY" msprop:Generator_TablePropName="ENT_COMPANY" msprop:Generator_RowDeletingName="ENT_COMPANYRowDeleting" msprop:Generator_UserTableName="ENT_COMPANY" msprop:Generator_RowChangingName="ENT_COMPANYRowChanging" msprop:Generator_RowEvHandlerName="ENT_COMPANYRowChangeEventHandler" msprop:Generator_RowDeletedName="ENT_COMPANYRowDeleted" msprop:Generator_RowEvArgName="ENT_COMPANYRowChangeEvent" msprop:Generator_RowChangedName="ENT_COMPANYRowChanged" msprop:Generator_RowClassName="ENT_COMPANYRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="COMPANY_DESC" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_DESC" msprop:Generator_ColumnPropNameInRow="COMPANY_DESC" msprop:Generator_ColumnPropNameInTable="COMPANY_DESCColumn" msprop:Generator_UserColumnName="COMPANY_DESC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="222" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Access_Report" targetNamespace="http://tempuri.org/Access_Report.xsd" xmlns:mstns="http://tempuri.org/Access_Report.xsd" xmlns="http://tempuri.org/Access_Report.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="connection_string" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="connection_string (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.connection_string.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="connection_string (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>
+SELECT CONVERT(VARCHAR(20),Event_Datetime,103) AS EVENT_DATE
+		,CONVERT(VARCHAR(20),Event_Datetime,108) AS EVENT_TIME
+,ENT_EMPLOYEE_PERSONAL_DTLS.EPD_EMPID
+,ENT_EMPLOYEE_PERSONAL_DTLS.EPD_FIRST_NAME +' '+ ENT_EMPLOYEE_PERSONAL_DTLS.EPD_LAST_NAME AS NAME
+,ACS_EVENTS.Event_Controller_ID,
+ACS_CONTROLLER.CTLR_DESCRIPTION,
+ACS_EVENTS.Event_Reader_ID,
+ACS_READER.READER_DESCRIPTION
+,
+CASE Event_Status
+WHEN 0 THEN 'Not Used'
+WHEN 1 THEN 'Access Granted'
+WHEN 2 THEN 'Card No not in Employee Profile List'
+WHEN 3 THEN 'Card has expired'
+WHEN 4 THEN 'Reader is Disabled'
+WHEN 5 THEN 'Invalid Access Time'
+END AS EVENT_STATUS
+
+FROM ACS_EVENTS
+INNER JOIN ENT_EMPLOYEE_PERSONAL_DTLS ON ACS_EVENTS.Event_Employee_Code=ENT_EMPLOYEE_PERSONAL_DTLS.EPD_EMPID
+INNER JOIN ACS_CONTROLLER ON   ACS_EVENTS.Event_Controller_ID=ACS_CONTROLLER.CTLR_ID
+INNER JOIN ACS_READER ON ACS_EVENTS.Event_Reader_ID=ACS_READER.READER_ID 
+                         AND ACS_EVENTS.Event_Controller_ID=ACS_READER.CTLR_ID</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="EPD_EMPID" DataSetColumn="EPD_EMPID" />
+              <Mapping SourceColumn="NAME" DataSetColumn="NAME" />
+              <Mapping SourceColumn="Event_Controller_ID" DataSetColumn="Event_Controller_ID" />
+              <Mapping SourceColumn="CTLR_DESCRIPTION" DataSetColumn="CTLR_DESCRIPTION" />
+              <Mapping SourceColumn="Event_Reader_ID" DataSetColumn="Event_Reader_ID" />
+              <Mapping SourceColumn="READER_DESCRIPTION" DataSetColumn="READER_DESCRIPTION" />
+              <Mapping SourceColumn="EVENT_DATE" DataSetColumn="EVENT_DATE" />
+              <Mapping SourceColumn="EVENT_TIME" DataSetColumn="EVENT_TIME" />
+              <Mapping SourceColumn="EVENT_STATUS" DataSetColumn="EVENT_STATUS" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Access_Report" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Access_Report" msprop:Generator_UserDSName="Access_Report">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EPD_EMPID" msprop:Generator_ColumnVarNameInTable="columnEPD_EMPID" msprop:Generator_ColumnPropNameInRow="EPD_EMPID" msprop:Generator_ColumnPropNameInTable="EPD_EMPIDColumn" msprop:Generator_UserColumnName="EPD_EMPID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NAME" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnNAME" msprop:Generator_ColumnPropNameInRow="NAME" msprop:Generator_ColumnPropNameInTable="NAMEColumn" msprop:Generator_UserColumnName="NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="101" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Event_Controller_ID" msprop:Generator_ColumnVarNameInTable="columnEvent_Controller_ID" msprop:Generator_ColumnPropNameInRow="Event_Controller_ID" msprop:Generator_ColumnPropNameInTable="Event_Controller_IDColumn" msprop:Generator_UserColumnName="Event_Controller_ID" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CTLR_DESCRIPTION" msprop:Generator_ColumnVarNameInTable="columnCTLR_DESCRIPTION" msprop:Generator_ColumnPropNameInRow="CTLR_DESCRIPTION" msprop:Generator_ColumnPropNameInTable="CTLR_DESCRIPTIONColumn" msprop:Generator_UserColumnName="CTLR_DESCRIPTION" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Event_Reader_ID" msprop:Generator_ColumnVarNameInTable="columnEvent_Reader_ID" msprop:Generator_ColumnPropNameInRow="Event_Reader_ID" msprop:Generator_ColumnPropNameInTable="Event_Reader_IDColumn" msprop:Generator_UserColumnName="Event_Reader_ID" type="xs:decimal" minOccurs="0" />
+              <xs:element name="READER_DESCRIPTION" msprop:Generator_ColumnVarNameInTable="columnREADER_DESCRIPTION" msprop:Generator_ColumnPropNameInRow="READER_DESCRIPTION" msprop:Generator_ColumnPropNameInTable="READER_DESCRIPTIONColumn" msprop:Generator_UserColumnName="READER_DESCRIPTION" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EVENT_DATE" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEVENT_DATE" msprop:Generator_ColumnPropNameInRow="EVENT_DATE" msprop:Generator_ColumnPropNameInTable="EVENT_DATEColumn" msprop:Generator_UserColumnName="EVENT_DATE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EVENT_TIME" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEVENT_TIME" msprop:Generator_ColumnPropNameInRow="EVENT_TIME" msprop:Generator_ColumnPropNameInTable="EVENT_TIMEColumn" msprop:Generator_UserColumnName="EVENT_TIME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EVENT_STATUS" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEVENT_STATUS" msprop:Generator_ColumnPropNameInRow="EVENT_STATUS" msprop:Generator_ColumnPropNameInTable="EVENT_STATUSColumn" msprop:Generator_UserColumnName="EVENT_STATUS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="36" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataTable1" />
+      <xs:field xpath="mstns:EPD_EMPID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

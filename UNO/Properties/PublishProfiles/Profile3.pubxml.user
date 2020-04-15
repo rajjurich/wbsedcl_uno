@@ -1,0 +1,1849 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile>2017-05-18T10:22:59.0064835+05:30</TimeStampOfAssociatedLegacyPublishXmlFile>
+    <_PublishTargetUrl>C:\Users\yogesh_fulsundar\Desktop\UNO Standard</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Aboutus.aspx">
+      <publishTime>10/03/2016 11:31:55</publishTime>
+    </File>
+    <File Include="AccessLevelAdd.aspx">
+      <publishTime>10/03/2016 11:31:36</publishTime>
+    </File>
+    <File Include="AccessLevelBrowse.aspx">
+      <publishTime>04/25/2017 16:12:24</publishTime>
+    </File>
+    <File Include="AccessLevelEdit.aspx">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="AccessLevelReport.aspx">
+      <publishTime>11/07/2016 13:19:43</publishTime>
+    </File>
+    <File Include="AccessLevelReport_SecondLevel.aspx">
+      <publishTime>01/06/2017 17:56:33</publishTime>
+    </File>
+    <File Include="AccessReport_HeadCount.aspx">
+      <publishTime>10/03/2016 11:32:52</publishTime>
+    </File>
+    <File Include="Access_Report.aspx">
+      <publishTime>10/03/2016 11:31:03</publishTime>
+    </File>
+    <File Include="Access_Settings.aspx">
+      <publishTime>10/03/2016 11:31:56</publishTime>
+    </File>
+    <File Include="AcsPointAdd.aspx">
+      <publishTime>10/03/2016 11:32:01</publishTime>
+    </File>
+    <File Include="AcsPointBrowse.aspx">
+      <publishTime>10/03/2016 11:31:48</publishTime>
+    </File>
+    <File Include="ActivityBrowser.aspx">
+      <publishTime>11/14/2016 11:53:22</publishTime>
+    </File>
+    <File Include="AdminAnnouncement.aspx">
+      <publishTime>10/03/2016 11:31:34</publishTime>
+    </File>
+    <File Include="AssetMovement.aspx">
+      <publishTime>10/03/2016 11:31:58</publishTime>
+    </File>
+    <File Include="AssetReport.aspx">
+      <publishTime>10/03/2016 11:31:34</publishTime>
+    </File>
+    <File Include="assets/jquery.webticker.js">
+      <publishTime>10/03/2016 11:31:45</publishTime>
+    </File>
+    <File Include="assets/jquery.webticker.min.js">
+      <publishTime>10/03/2016 11:31:45</publishTime>
+    </File>
+    <File Include="assets/left.png">
+      <publishTime>10/03/2016 11:31:45</publishTime>
+    </File>
+    <File Include="assets/right.png">
+      <publishTime>10/03/2016 11:31:45</publishTime>
+    </File>
+    <File Include="assets/webticker.css">
+      <publishTime>10/03/2016 11:31:45</publishTime>
+    </File>
+    <File Include="Asset_ControllerMaster.aspx">
+      <publishTime>10/03/2016 11:32:53</publishTime>
+    </File>
+    <File Include="Asset_EventViewer.aspx">
+      <publishTime>05/11/2017 14:28:28</publishTime>
+    </File>
+    <File Include="Asset_Master_Entry.aspx">
+      <publishTime>01/24/2017 15:25:24</publishTime>
+    </File>
+    <File Include="Asset_Tag_Inventory.aspx">
+      <publishTime>01/31/2017 14:20:00</publishTime>
+    </File>
+    <File Include="Attendance_Report.aspx">
+      <publishTime>10/03/2016 11:31:56</publishTime>
+    </File>
+    <File Include="Attendance_Summary_Report.aspx">
+      <publishTime>01/17/2017 14:50:02</publishTime>
+    </File>
+    <File Include="AutoCardLookup.aspx">
+      <publishTime>10/03/2016 11:31:42</publishTime>
+    </File>
+    <File Include="AutoScheduledBackupConfig.aspx">
+      <publishTime>10/03/2016 11:31:43</publishTime>
+    </File>
+    <File Include="bin/AjaxControlToolkit.dll">
+      <publishTime>12/13/2016 16:14:37</publishTime>
+    </File>
+    <File Include="bin/AjaxMin.dll">
+      <publishTime>12/13/2016 16:14:38</publishTime>
+    </File>
+    <File Include="bin/CMS.Framework.Common.dll">
+      <publishTime>08/16/2017 17:40:25</publishTime>
+    </File>
+    <File Include="bin/CMS.UNO.Core.Handler.dll">
+      <publishTime>08/16/2017 17:47:46</publishTime>
+    </File>
+    <File Include="bin/CMS.UNO.Framework.DataAccess.dll">
+      <publishTime>08/16/2017 17:40:25</publishTime>
+    </File>
+    <File Include="bin/CMS.UNO.Login.Handler.dll">
+      <publishTime>08/16/2017 17:40:26</publishTime>
+    </File>
+    <File Include="bin/CMS.UNO.Sentinel.Handler.dll">
+      <publishTime>08/16/2017 17:40:26</publishTime>
+    </File>
+    <File Include="bin/CMS.UNO.Tempus.Handler.dll">
+      <publishTime>08/16/2017 17:40:26</publishTime>
+    </File>
+    <File Include="bin/CMSDateTime.dll">
+      <publishTime>12/13/2016 16:14:38</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.Data.Edm.resources.dll">
+      <publishTime>10/03/2016 11:30:52</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.Data.OData.resources.dll">
+      <publishTime>10/03/2016 11:30:59</publishTime>
+    </File>
+    <File Include="bin/de/System.Spatial.resources.dll">
+      <publishTime>10/03/2016 11:30:51</publishTime>
+    </File>
+    <File Include="bin/DemoGrid.dll">
+      <publishTime>12/13/2016 16:14:37</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.Data.Edm.resources.dll">
+      <publishTime>10/03/2016 11:30:52</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.Data.OData.resources.dll">
+      <publishTime>10/03/2016 11:30:59</publishTime>
+    </File>
+    <File Include="bin/es/System.Spatial.resources.dll">
+      <publishTime>10/03/2016 11:30:51</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.Data.Edm.resources.dll">
+      <publishTime>10/03/2016 11:30:52</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.Data.OData.resources.dll">
+      <publishTime>10/03/2016 11:30:59</publishTime>
+    </File>
+    <File Include="bin/fr/System.Spatial.resources.dll">
+      <publishTime>10/03/2016 11:30:51</publishTime>
+    </File>
+    <File Include="bin/HtmlAgilityPack.dll">
+      <publishTime>10/03/2016 11:30:48</publishTime>
+    </File>
+    <File Include="bin/Interop.ContactlessCardRW.dll">
+      <publishTime>12/13/2016 16:14:37</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.Data.Edm.resources.dll">
+      <publishTime>10/03/2016 11:30:53</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.Data.OData.resources.dll">
+      <publishTime>10/03/2016 11:30:59</publishTime>
+    </File>
+    <File Include="bin/it/System.Spatial.resources.dll">
+      <publishTime>10/03/2016 11:30:51</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.Data.Edm.resources.dll">
+      <publishTime>10/03/2016 11:30:52</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.Data.OData.resources.dll">
+      <publishTime>10/03/2016 11:30:59</publishTime>
+    </File>
+    <File Include="bin/ja/System.Spatial.resources.dll">
+      <publishTime>10/03/2016 11:30:51</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.Data.Edm.resources.dll">
+      <publishTime>10/03/2016 11:30:52</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.Data.OData.resources.dll">
+      <publishTime>10/03/2016 11:30:59</publishTime>
+    </File>
+    <File Include="bin/ko/System.Spatial.resources.dll">
+      <publishTime>10/03/2016 11:30:51</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Data.Edm.dll">
+      <publishTime>10/03/2016 11:30:52</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Data.OData.dll">
+      <publishTime>10/03/2016 11:30:59</publishTime>
+    </File>
+    <File Include="bin/Microsoft.WindowsAzure.Configuration.dll">
+      <publishTime>10/03/2016 11:30:47</publishTime>
+    </File>
+    <File Include="bin/Microsoft.WindowsAzure.Storage.dll">
+      <publishTime>10/03/2016 11:30:53</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>12/13/2016 16:14:38</publishTime>
+    </File>
+    <File Include="bin/Obout.Ajax.UI.dll">
+      <publishTime>12/13/2016 16:14:37</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.Data.Edm.resources.dll">
+      <publishTime>10/03/2016 11:30:52</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.Data.OData.resources.dll">
+      <publishTime>10/03/2016 11:30:59</publishTime>
+    </File>
+    <File Include="bin/ru/System.Spatial.resources.dll">
+      <publishTime>10/03/2016 11:30:51</publishTime>
+    </File>
+    <File Include="bin/scardsyn.dll">
+      <publishTime>12/13/2016 16:14:38</publishTime>
+    </File>
+    <File Include="bin/Syncfusion.Chart.Wpf.dll">
+      <publishTime>12/13/2016 16:14:37</publishTime>
+    </File>
+    <File Include="bin/Syncfusion.Compression.Base.dll">
+      <publishTime>12/13/2016 16:14:37</publishTime>
+    </File>
+    <File Include="bin/Syncfusion.Core.dll">
+      <publishTime>12/13/2016 16:14:38</publishTime>
+    </File>
+    <File Include="bin/Syncfusion.DocIO.Base.dll">
+      <publishTime>12/13/2016 16:14:37</publishTime>
+    </File>
+    <File Include="bin/Syncfusion.DocToPDFConverter.Base.dll">
+      <publishTime>12/13/2016 16:14:38</publishTime>
+    </File>
+    <File Include="bin/Syncfusion.EJ.dll">
+      <publishTime>12/13/2016 16:14:38</publishTime>
+    </File>
+    <File Include="bin/Syncfusion.EJ.Export.dll">
+      <publishTime>12/13/2016 16:14:38</publishTime>
+    </File>
+    <File Include="bin/Syncfusion.EJ.Olap.dll">
+      <publishTime>12/13/2016 16:14:38</publishTime>
+    </File>
+    <File Include="bin/Syncfusion.EJ.ReportViewer.dll">
+      <publishTime>12/13/2016 16:14:37</publishTime>
+    </File>
+    <File Include="bin/Syncfusion.EJ.Web.dll">
+      <publishTime>12/13/2016 16:14:38</publishTime>
+    </File>
+    <File Include="bin/Syncfusion.ExcelToPdfConverter.Base.dll">
+      <publishTime>12/13/2016 16:14:37</publishTime>
+    </File>
+    <File Include="bin/Syncfusion.Gauge.WPF.dll">
+      <publishTime>12/13/2016 16:14:38</publishTime>
+    </File>
+    <File Include="bin/Syncfusion.Grid.Wpf.dll">
+      <publishTime>12/13/2016 16:14:38</publishTime>
+    </File>
+    <File Include="bin/Syncfusion.GridCommon.Wpf.dll">
+      <publishTime>12/13/2016 16:14:37</publishTime>
+    </File>
+    <File Include="bin/Syncfusion.HtmlConverter.Base.dll">
+      <publishTime>12/13/2016 16:14:37</publishTime>
+    </File>
+    <File Include="bin/Syncfusion.Linq.Base.dll">
+      <publishTime>12/13/2016 16:14:38</publishTime>
+    </File>
+    <File Include="bin/Syncfusion.OCRProcessor.Base.dll">
+      <publishTime>12/13/2016 16:14:37</publishTime>
+    </File>
+    <File Include="bin/Syncfusion.OfficeChart.Base.dll">
+      <publishTime>12/13/2016 16:14:37</publishTime>
+    </File>
+    <File Include="bin/Syncfusion.OfficeChartToImageConverter.Wpf.dll">
+      <publishTime>12/13/2016 16:14:38</publishTime>
+    </File>
+    <File Include="bin/Syncfusion.Olap.Base.dll">
+      <publishTime>12/13/2016 16:14:37</publishTime>
+    </File>
+    <File Include="bin/Syncfusion.Pdf.Base.dll">
+      <publishTime>12/13/2016 16:14:37</publishTime>
+    </File>
+    <File Include="bin/Syncfusion.PivotAnalysis.Base.dll">
+      <publishTime>12/13/2016 16:14:38</publishTime>
+    </File>
+    <File Include="bin/Syncfusion.Presentation.Base.dll">
+      <publishTime>12/13/2016 16:14:38</publishTime>
+    </File>
+    <File Include="bin/Syncfusion.PresentationToPdfConverter.Base.dll">
+      <publishTime>12/13/2016 16:14:37</publishTime>
+    </File>
+    <File Include="bin/Syncfusion.ReportControls.WPF.dll">
+      <publishTime>12/13/2016 16:14:37</publishTime>
+    </File>
+    <File Include="bin/Syncfusion.ReportWriter.Base.dll">
+      <publishTime>12/13/2016 16:14:37</publishTime>
+    </File>
+    <File Include="bin/Syncfusion.RichTextBoxAdv.WPF.dll">
+      <publishTime>12/13/2016 16:14:37</publishTime>
+    </File>
+    <File Include="bin/Syncfusion.SfChart.WPF.dll">
+      <publishTime>12/13/2016 16:14:37</publishTime>
+    </File>
+    <File Include="bin/Syncfusion.SfMaps.WPF.dll">
+      <publishTime>12/13/2016 16:14:37</publishTime>
+    </File>
+    <File Include="bin/Syncfusion.Shared.Wpf.dll">
+      <publishTime>12/13/2016 16:14:38</publishTime>
+    </File>
+    <File Include="bin/Syncfusion.XlsIO.Base.dll">
+      <publishTime>12/13/2016 16:14:38</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.dll">
+      <publishTime>07/09/2013 11:04:48</publishTime>
+    </File>
+    <File Include="bin/System.Spatial.dll">
+      <publishTime>10/03/2016 11:30:51</publishTime>
+    </File>
+    <File Include="bin/UNO.dll">
+      <publishTime>08/16/2017 17:47:49</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/Microsoft.Data.Edm.resources.dll">
+      <publishTime>10/03/2016 11:30:52</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/Microsoft.Data.OData.resources.dll">
+      <publishTime>10/03/2016 11:30:59</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Spatial.resources.dll">
+      <publishTime>10/03/2016 11:30:51</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/Microsoft.Data.Edm.resources.dll">
+      <publishTime>10/03/2016 11:30:52</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/Microsoft.Data.OData.resources.dll">
+      <publishTime>10/03/2016 11:30:59</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/System.Spatial.resources.dll">
+      <publishTime>10/03/2016 11:30:51</publishTime>
+    </File>
+    <File Include="BiometricCardSetting.aspx">
+      <publishTime>10/03/2016 11:31:55</publishTime>
+    </File>
+    <File Include="CardholderActivationdetails.aspx">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="CardHolderExpiryDetails.aspx">
+      <publishTime>10/03/2016 11:31:35</publishTime>
+    </File>
+    <File Include="Card_Design.aspx">
+      <publishTime>10/03/2016 11:31:35</publishTime>
+    </File>
+    <File Include="Card_View.aspx">
+      <publishTime>10/03/2016 11:32:52</publishTime>
+    </File>
+    <File Include="CategaryMasterView.aspx">
+      <publishTime>10/03/2016 11:31:45</publishTime>
+    </File>
+    <File Include="CategoryLeaveRelation.aspx">
+      <publishTime>10/03/2016 11:31:49</publishTime>
+    </File>
+    <File Include="ChronicLateEarly.aspx">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="CommonViewMstr.aspx">
+      <publishTime>05/05/2017 11:19:23</publishTime>
+    </File>
+    <File Include="CompanyMasterView.aspx">
+      <publishTime>04/11/2017 12:32:54</publishTime>
+    </File>
+    <File Include="ControllerEvents.aspx">
+      <publishTime>10/03/2016 11:31:52</publishTime>
+    </File>
+    <File Include="controllerReport.aspx">
+      <publishTime>10/03/2016 11:31:54</publishTime>
+    </File>
+    <File Include="ControllerStatus.aspx">
+      <publishTime>11/14/2016 11:53:22</publishTime>
+    </File>
+    <File Include="ControllerView.aspx">
+      <publishTime>12/13/2016 16:15:10</publishTime>
+    </File>
+    <File Include="Controller_Master.aspx">
+      <publishTime>10/03/2016 11:31:58</publishTime>
+    </File>
+    <File Include="Current_Emp_Strength.aspx">
+      <publishTime>10/03/2016 11:32:53</publishTime>
+    </File>
+    <File Include="Daily_Arrival_Report.aspx">
+      <publishTime>01/03/2017 18:34:47</publishTime>
+    </File>
+    <File Include="DataSets/Access_Report.xsd">
+      <publishTime>10/03/2016 11:31:36</publishTime>
+    </File>
+    <File Include="DataSets/Address.xsd">
+      <publishTime>10/03/2016 11:31:40</publishTime>
+    </File>
+    <File Include="DataSets/AttendanceSummaryReport.xsd">
+      <publishTime>10/03/2016 11:31:39</publishTime>
+    </File>
+    <File Include="DataSets/Attendance_Report.xsd">
+      <publishTime>10/03/2016 11:31:38</publishTime>
+    </File>
+    <File Include="DataSets/Call_Performance.xsd">
+      <publishTime>10/03/2016 11:31:37</publishTime>
+    </File>
+    <File Include="DataSets/Call_Status.xsd">
+      <publishTime>10/03/2016 11:31:37</publishTime>
+    </File>
+    <File Include="DataSets/Controllers.xsd">
+      <publishTime>10/03/2016 11:31:36</publishTime>
+    </File>
+    <File Include="DataSets/Daily_Arrival.xsd">
+      <publishTime>10/03/2016 11:31:39</publishTime>
+    </File>
+    <File Include="DataSets/EL_Dataset.Designer.cs">
+      <publishTime>10/03/2016 11:31:39</publishTime>
+    </File>
+    <File Include="DataSets/EL_Dataset.xsd">
+      <publishTime>10/03/2016 11:31:38</publishTime>
+    </File>
+    <File Include="DataSets/Employee_Performance.xsd">
+      <publishTime>10/03/2016 11:31:37</publishTime>
+    </File>
+    <File Include="DataSets/GATEPASS_APPLICATION.xsd">
+      <publishTime>10/03/2016 11:31:37</publishTime>
+    </File>
+    <File Include="DataSets/LateMarkDeduction_Report.xsd">
+      <publishTime>10/03/2016 11:31:37</publishTime>
+    </File>
+    <File Include="DataSets/Late_Report.xsd">
+      <publishTime>10/03/2016 11:31:37</publishTime>
+    </File>
+    <File Include="DataSets/LEAVE.xsd">
+      <publishTime>10/03/2016 11:31:38</publishTime>
+    </File>
+    <File Include="DataSets/LeaveConsumptionDS.xsd">
+      <publishTime>10/03/2016 11:31:36</publishTime>
+    </File>
+    <File Include="DataSets/LEAVE_APPLICATION.xsd">
+      <publishTime>10/03/2016 11:31:39</publishTime>
+    </File>
+    <File Include="DataSets/MAttendance_Application.xsd">
+      <publishTime>10/03/2016 11:31:39</publishTime>
+    </File>
+    <File Include="DataSets/Monthly_Leave_Consuption.xsd">
+      <publishTime>10/03/2016 11:31:36</publishTime>
+    </File>
+    <File Include="DataSets/OD_APPLICATION.xsd">
+      <publishTime>10/03/2016 11:31:39</publishTime>
+    </File>
+    <File Include="DataSets/Periodic_MusterDS.xsd">
+      <publishTime>10/03/2016 11:31:37</publishTime>
+    </File>
+    <File Include="DataSets/Periodic_PerformanceDS.xsd">
+      <publishTime>10/03/2016 11:31:36</publishTime>
+    </File>
+    <File Include="DataSets/Reader_Access.xsd">
+      <publishTime>10/03/2016 11:31:36</publishTime>
+    </File>
+    <File Include="DataSets/Reader_Access_Point.xsd">
+      <publishTime>10/03/2016 11:31:37</publishTime>
+    </File>
+    <File Include="DataSets/User Profile.xsd">
+      <publishTime>10/03/2016 11:31:40</publishTime>
+    </File>
+    <File Include="DataSets/User.xsd">
+      <publishTime>10/03/2016 11:31:39</publishTime>
+    </File>
+    <File Include="DataSets/VMSCompanyWiseReport.xsd">
+      <publishTime>10/03/2016 11:31:38</publishTime>
+    </File>
+    <File Include="DataSets/VMSDTWrpt.xsd">
+      <publishTime>10/03/2016 11:31:36</publishTime>
+    </File>
+    <File Include="DataSets/VMSEmployeeWiseReport.xsd">
+      <publishTime>10/03/2016 11:31:37</publishTime>
+    </File>
+    <File Include="DataSets/Zone.xsd">
+      <publishTime>10/03/2016 11:31:36</publishTime>
+    </File>
+    <File Include="DirectoryPopup.aspx">
+      <publishTime>10/03/2016 11:31:58</publishTime>
+    </File>
+    <File Include="DOSCardPersonalisation.aspx">
+      <publishTime>10/03/2016 11:31:49</publishTime>
+    </File>
+    <File Include="EmpAndNonEmpStrength.aspx">
+      <publishTime>10/03/2016 11:31:55</publishTime>
+    </File>
+    <File Include="EmpImage/11121314.jpg">
+      <publishTime>10/03/2016 11:31:58</publishTime>
+    </File>
+    <File Include="EmpImage/11121315.jpg">
+      <publishTime>10/03/2016 11:31:58</publishTime>
+    </File>
+    <File Include="EmpImage/12345670.jpg">
+      <publishTime>10/03/2016 11:31:58</publishTime>
+    </File>
+    <File Include="EmpImage/14785236.jpg">
+      <publishTime>10/03/2016 11:31:58</publishTime>
+    </File>
+    <File Include="EmpImage/225555554.jpg">
+      <publishTime>10/03/2016 11:31:58</publishTime>
+    </File>
+    <File Include="EmpImage/36985214.jpg">
+      <publishTime>10/03/2016 11:31:58</publishTime>
+    </File>
+    <File Include="EmpImage/Default_Female.JPG">
+      <publishTime>10/03/2016 11:31:58</publishTime>
+    </File>
+    <File Include="EmpImage/Default_Male.JPG">
+      <publishTime>10/03/2016 11:31:58</publishTime>
+    </File>
+    <File Include="EmpImage/Default_Preview.jpg">
+      <publishTime>10/03/2016 11:31:58</publishTime>
+    </File>
+    <File Include="EmpImage/Default_Preview.png">
+      <publishTime>10/03/2016 11:31:58</publishTime>
+    </File>
+    <File Include="EmpImage/Default_Preview_old.JPG">
+      <publishTime>10/03/2016 11:31:58</publishTime>
+    </File>
+    <File Include="EmpImage/L3.jpg">
+      <publishTime>10/03/2016 11:31:58</publishTime>
+    </File>
+    <File Include="EmpImage/M1.jpg">
+      <publishTime>10/03/2016 11:31:58</publishTime>
+    </File>
+    <File Include="EmpImage/M2.jpg">
+      <publishTime>10/03/2016 11:31:58</publishTime>
+    </File>
+    <File Include="EmpImage/S2.jpg">
+      <publishTime>10/03/2016 11:31:58</publishTime>
+    </File>
+    <File Include="EmployeeCardConfigureADD.aspx">
+      <publishTime>11/07/2016 13:19:46</publishTime>
+    </File>
+    <File Include="EmployeeCardConfigView.aspx">
+      <publishTime>12/13/2016 16:15:16</publishTime>
+    </File>
+    <File Include="EmployeeTimeAttendanceADD.aspx">
+      <publishTime>11/07/2016 13:19:46</publishTime>
+    </File>
+    <File Include="EmployeeTimeAttendanceView.aspx">
+      <publishTime>10/24/2016 14:51:30</publishTime>
+    </File>
+    <File Include="Employee_Left.aspx">
+      <publishTime>11/14/2016 11:53:22</publishTime>
+    </File>
+    <File Include="Employee_Performance_Report.aspx">
+      <publishTime>10/03/2016 11:31:43</publishTime>
+    </File>
+    <File Include="Emp_Asset_Tag_Mapping.aspx">
+      <publishTime>10/03/2016 11:31:58</publishTime>
+    </File>
+    <File Include="EnglishToHindi.aspx">
+      <publishTime>10/03/2016 11:31:45</publishTime>
+    </File>
+    <File Include="EnglishToHindiView.aspx">
+      <publishTime>10/03/2016 11:31:56</publishTime>
+    </File>
+    <File Include="EnrollmentView.aspx">
+      <publishTime>10/03/2016 11:31:35</publishTime>
+    </File>
+    <File Include="EPDViewNew.aspx">
+      <publishTime>04/12/2017 14:49:31</publishTime>
+    </File>
+    <File Include="ESS_Dashboard.aspx">
+      <publishTime>10/03/2016 11:32:52</publishTime>
+    </File>
+    <File Include="ESS_PendingRequest.aspx">
+      <publishTime>10/03/2016 11:31:58</publishTime>
+    </File>
+    <File Include="ESS_Sanc_View.aspx">
+      <publishTime>10/03/2016 11:32:52</publishTime>
+    </File>
+    <File Include="ESS_TA_CO_VIEW.aspx">
+      <publishTime>10/03/2016 11:32:52</publishTime>
+    </File>
+    <File Include="ESS_TA_GP_View.aspx">
+      <publishTime>10/03/2016 11:31:58</publishTime>
+    </File>
+    <File Include="ESS_TA_LV_View.aspx">
+      <publishTime>10/03/2016 11:31:45</publishTime>
+    </File>
+    <File Include="ESS_TA_MA_View.aspx">
+      <publishTime>10/03/2016 11:31:35</publishTime>
+    </File>
+    <File Include="ESS_TA_OD_Edit.aspx">
+      <publishTime>10/03/2016 11:31:56</publishTime>
+    </File>
+    <File Include="ESS_TA_OD_View.aspx">
+      <publishTime>10/03/2016 11:31:58</publishTime>
+    </File>
+    <File Include="EventBrowser.aspx">
+      <publishTime>12/13/2016 16:15:10</publishTime>
+    </File>
+    <File Include="EventBrowser_old.aspx">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="ExpenseEntry.aspx">
+      <publishTime>10/03/2016 11:31:58</publishTime>
+    </File>
+    <File Include="FeedBack.aspx">
+      <publishTime>10/03/2016 11:31:49</publishTime>
+    </File>
+    <File Include="Filter/Filter.asmx">
+      <publishTime>10/03/2016 11:31:57</publishTime>
+    </File>
+    <File Include="FingerEnrollment.aspx">
+      <publishTime>10/03/2016 11:31:58</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>10/03/2016 11:31:35</publishTime>
+    </File>
+    <File Include="Handler1.ashx">
+      <publishTime>10/03/2016 11:31:52</publishTime>
+    </File>
+    <File Include="HierarchyManagerLinkAdd.aspx">
+      <publishTime>05/16/2017 15:03:46</publishTime>
+    </File>
+    <File Include="HierarchyManagerView.aspx">
+      <publishTime>11/14/2016 11:53:22</publishTime>
+    </File>
+    <File Include="HolidayView.aspx">
+      <publishTime>12/13/2016 16:15:16</publishTime>
+    </File>
+    <File Include="Holiday_Attendance_Report.aspx">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Home.aspx">
+      <publishTime>10/03/2016 11:31:40</publishTime>
+    </File>
+    <File Include="HoursStayed.aspx">
+      <publishTime>10/03/2016 11:31:01</publishTime>
+    </File>
+    <File Include="iFrame.aspx">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="images/276.GIF">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="images/AccessControlSystem.png">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="images/advancedsettings.png">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="images/arrow.png">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="images/arrows.png">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="images/blk_1.gif">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="images/Bulb_art_cms.jpg">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="images/b_1.gif">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="images/calendar.gif">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="images/CanteenManagement.png">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="images/CardManagement.png">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="images/close-button.png">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="images/Core.gif">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="images/cross.png">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="images/emp.png">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="images/Excelicon.png">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="images/Folder.jpg">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="images/g_1.gif">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="images/home.png">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="images/h_1.gif">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="images/h_2.gif">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="images/h_3.gif">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="images/icon-loading-animated.gif">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="images/iconSpritImage1.png">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="images/ImageAttribution.txt">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="images/improve_data_quality.png">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="images/Invalid.png">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="images/layout_1_999px_a_08.gif">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="images/l_t_1.png">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="images/minus.png">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="images/Next_track_play_previous.png">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="images/our-mission-shadow.png">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="images/palm.bmp">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="images/pattern.png">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="images/plus.png">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="images/Previous_track_next.png">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="images/TimeAttendance.png">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="images/top_arr.png">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="images/twig.gif">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="images/VisitorManagement.png">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="images/y_1.gif">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="ImageUploadIframe.aspx">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="img/add_image.png">
+      <publishTime>10/03/2016 11:32:02</publishTime>
+    </File>
+    <File Include="img/bgcolor1.jpeg">
+      <publishTime>10/03/2016 11:32:02</publishTime>
+    </File>
+    <File Include="img/delete.jpg">
+      <publishTime>10/03/2016 11:32:02</publishTime>
+    </File>
+    <File Include="img/EPD_PHOTOURL.jpeg">
+      <publishTime>10/03/2016 11:32:02</publishTime>
+    </File>
+    <File Include="img/ForeColor1.jpeg">
+      <publishTime>10/03/2016 11:32:02</publishTime>
+    </File>
+    <File Include="img/progress-anim.gif">
+      <publishTime>10/03/2016 11:32:02</publishTime>
+    </File>
+    <File Include="InternlCampus.aspx">
+      <publishTime>10/03/2016 11:31:02</publishTime>
+    </File>
+    <File Include="IntrnlCmps.xsd">
+      <publishTime>10/03/2016 11:31:35</publishTime>
+    </File>
+    <File Include="LateMarkDeduction_Report.aspx">
+      <publishTime>10/03/2016 11:31:52</publishTime>
+    </File>
+    <File Include="Late_Report.aspx">
+      <publishTime>10/03/2016 11:31:52</publishTime>
+    </File>
+    <File Include="LeaveADD.aspx">
+      <publishTime>10/03/2016 11:31:43</publishTime>
+    </File>
+    <File Include="LeaveAppEdit.aspx">
+      <publishTime>10/14/2016 12:26:46</publishTime>
+    </File>
+    <File Include="LeaveAppView.aspx">
+      <publishTime>10/03/2016 11:31:49</publishTime>
+    </File>
+    <File Include="LeaveFileView.aspx">
+      <publishTime>10/03/2016 11:32:53</publishTime>
+    </File>
+    <File Include="LeaveRuleNew.aspx">
+      <publishTime>10/03/2016 11:32:53</publishTime>
+    </File>
+    <File Include="Leave_Data_Upload.aspx">
+      <publishTime>10/24/2016 14:51:40</publishTime>
+    </File>
+    <File Include="LevelAccessEdit.aspx">
+      <publishTime>10/03/2016 11:31:53</publishTime>
+    </File>
+    <File Include="LevelAccessPage.aspx">
+      <publishTime>10/03/2016 11:32:01</publishTime>
+    </File>
+    <File Include="LevelAccessView.aspx">
+      <publishTime>11/14/2016 11:53:22</publishTime>
+    </File>
+    <File Include="LocateCardHolder.aspx">
+      <publishTime>10/03/2016 11:31:43</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>10/03/2016 11:31:43</publishTime>
+    </File>
+    <File Include="Main.Master">
+      <publishTime>08/16/2017 17:47:20</publishTime>
+    </File>
+    <File Include="Manager_Dashboard.aspx">
+      <publishTime>10/03/2016 11:32:51</publishTime>
+    </File>
+    <File Include="MANUALADD.aspx">
+      <publishTime>10/03/2016 11:31:53</publishTime>
+    </File>
+    <File Include="ManualAttendEdit.aspx">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="ManualAttendView.aspx">
+      <publishTime>10/03/2016 11:31:43</publishTime>
+    </File>
+    <File Include="MasterCard.aspx">
+      <publishTime>10/03/2016 11:31:55</publishTime>
+    </File>
+    <File Include="Mission.aspx">
+      <publishTime>10/03/2016 11:31:40</publishTime>
+    </File>
+    <File Include="ModuleMain.master">
+      <publishTime>01/04/2017 10:44:48</publishTime>
+    </File>
+    <File Include="Multifilter_Access_Report.aspx">
+      <publishTime>10/03/2016 11:31:56</publishTime>
+    </File>
+    <File Include="NetwrokUpdate.aspx">
+      <publishTime>10/03/2016 11:31:03</publishTime>
+    </File>
+    <File Include="ODADD.aspx">
+      <publishTime>10/03/2016 11:31:48</publishTime>
+    </File>
+    <File Include="ODAppEdit.aspx">
+      <publishTime>10/03/2016 11:31:40</publishTime>
+    </File>
+    <File Include="ODAppView.aspx">
+      <publishTime>10/03/2016 11:31:43</publishTime>
+    </File>
+    <File Include="Operational_Access.aspx">
+      <publishTime>07/24/2017 16:58:59</publishTime>
+    </File>
+    <File Include="Other Center or Unit_Access_Control_Report.aspx">
+      <publishTime>10/03/2016 11:31:34</publishTime>
+    </File>
+    <File Include="OTRpt.aspx">
+      <publishTime>10/03/2016 11:31:34</publishTime>
+    </File>
+    <File Include="OutPassADD.aspx">
+      <publishTime>10/03/2016 11:32:01</publishTime>
+    </File>
+    <File Include="OutpassView.aspx">
+      <publishTime>11/07/2016 13:19:43</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>10/03/2016 11:31:45</publishTime>
+    </File>
+    <File Include="Personalization.aspx">
+      <publishTime>10/03/2016 11:31:35</publishTime>
+    </File>
+    <File Include="Pie.ashx">
+      <publishTime>10/03/2016 11:31:45</publishTime>
+    </File>
+    <File Include="PresentAbsent_Report.aspx">
+      <publishTime>10/03/2016 11:32:52</publishTime>
+    </File>
+    <File Include="RawCard.aspx">
+      <publishTime>10/03/2016 11:31:58</publishTime>
+    </File>
+    <File Include="RDLC/AccessHeadCount.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="RDLC/AccessLevelDetail.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="RDLC/Access_Report.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="RDLC/assetMovement.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="RDLC/assetReport.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="RDLC/AttendanceSummary_Report.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="RDLC/Attendance_Report.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="RDLC/CallStatusReport.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="RDLC/Call_Performance_Report.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="RDLC/CardholderActivationdetails2.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="RDLC/CardholderActivendetails.rdlc">
+      <publishTime>10/03/2016 11:32:52</publishTime>
+    </File>
+    <File Include="RDLC/controller.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="RDLC/Controllers.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="RDLC/CotrollerEvent.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="RDLC/CurrentEmpStrength.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="RDLC/Daily_Arrival.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="RDLC/EarlyOrLate.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="RDLC/ELREPORT.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="RDLC/EmpHierReport.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="RDLC/EmployeeWise_Acess.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="RDLC/EMPLOYEE_HIER_ERROR.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="RDLC/Employee_Left.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="RDLC/Employee_Master_Report.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="RDLC/Employee_Performance.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="RDLC/Emp_AndNon_Emp_Strength.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="RDLC/HolidayReport.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="RDLC/hourStayed.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="RDLC/IntnlCmpsReport.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="RDLC/LateMarkDeduction_Report.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="RDLC/LV_CUT_REPORT.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="RDLC/MultifilterAccess.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="RDLC/Other_CenterAndUnit_Access.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="RDLC/OTReport.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="RDLC/PresentAbsent.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="RDLC/Reader_Access_Point.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="RDLC/Reader_Acess.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="RDLC/Second_Level_Access_Report.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="RDLC/TestReport.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="RDLC/TOUR_DETAIL_REPORT.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="RDLC/User.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="RDLC/User_Profile.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="RDLC/VEH_EntryExitReport.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="RDLC/VEH_RFIDtagInventoryReport.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="RDLC/VEH_VehicleDenialReport.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="RDLC/VEH_VehicleNumberWiseReport.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="RDLC/VMSCompanyWiseReport.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="RDLC/VMSDateWise_Report.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="RDLC/VMSEmployeeWiseReport.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="RDLC/WORK_DayCalculation.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="RDLC/Zone.rdlc">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="ReadCSNR.aspx">
+      <publishTime>10/14/2016 10:43:48</publishTime>
+    </File>
+    <File Include="Reader_Access_Point_Report.aspx">
+      <publishTime>10/03/2016 11:31:51</publishTime>
+    </File>
+    <File Include="Reader_Access_Report.aspx">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="ReasonFileView.aspx">
+      <publishTime>12/13/2016 16:15:19</publishTime>
+    </File>
+    <File Include="ResetPassword.aspx">
+      <publishTime>10/03/2016 11:31:34</publishTime>
+    </File>
+    <File Include="RestoreSql.aspx">
+      <publishTime>10/03/2016 11:31:35</publishTime>
+    </File>
+    <File Include="SACCapturePersoDetails.aspx">
+      <publishTime>10/03/2016 11:31:49</publishTime>
+    </File>
+    <File Include="SACCapturePersoDetails_Idea.aspx">
+      <publishTime>10/03/2016 11:32:53</publishTime>
+    </File>
+    <File Include="SACCapturePersoDetails_Mahindra.aspx">
+      <publishTime>10/03/2016 11:32:52</publishTime>
+    </File>
+    <File Include="SACCreateMasterCard.aspx">
+      <publishTime>10/03/2016 11:31:48</publishTime>
+    </File>
+    <File Include="SACDOSCard.aspx">
+      <publishTime>10/03/2016 11:32:02</publishTime>
+    </File>
+    <File Include="SACMasterCard.aspx">
+      <publishTime>10/03/2016 11:31:56</publishTime>
+    </File>
+    <File Include="SACPersoDataCapture.aspx">
+      <publishTime>12/13/2016 15:00:05</publishTime>
+    </File>
+    <File Include="SACPersonalisation.aspx">
+      <publishTime>10/14/2016 12:26:43</publishTime>
+    </File>
+    <File Include="SACPersonalisationView.aspx">
+      <publishTime>10/03/2016 11:32:01</publishTime>
+    </File>
+    <File Include="SACRawCard.aspx">
+      <publishTime>12/13/2016 16:15:10</publishTime>
+    </File>
+    <File Include="SACViewCard.aspx">
+      <publishTime>12/16/2016 17:10:35</publishTime>
+    </File>
+    <File Include="SaveTemplate.aspx">
+      <publishTime>10/03/2016 11:32:22</publishTime>
+    </File>
+    <File Include="SchedulerSettings.aspx">
+      <publishTime>10/03/2016 11:31:41</publishTime>
+    </File>
+    <File Include="ScheduleSettingView.aspx">
+      <publishTime>10/03/2016 11:31:55</publishTime>
+    </File>
+    <File Include="Scripts/1.8.23-jquery-ui.min.js">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Scripts/calendar.js">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Scripts/CalendarControl.js">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Scripts/cbpHorizontalMenu.js">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Scripts/cbpHorizontalMenu.min.js">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Scripts/Choosen/chosen-sprite%402x.png">
+      <publishTime>10/03/2016 11:32:01</publishTime>
+    </File>
+    <File Include="Scripts/Choosen/chosen-sprite.png">
+      <publishTime>10/03/2016 11:32:01</publishTime>
+    </File>
+    <File Include="Scripts/Choosen/chosen.css">
+      <publishTime>10/03/2016 11:32:01</publishTime>
+    </File>
+    <File Include="Scripts/Choosen/chosen.jquery.js">
+      <publishTime>10/03/2016 11:32:01</publishTime>
+    </File>
+    <File Include="Scripts/Choosen/chosen.jquery.min.js">
+      <publishTime>10/03/2016 11:32:01</publishTime>
+    </File>
+    <File Include="Scripts/Choosen/chosen.min.css">
+      <publishTime>10/03/2016 11:32:01</publishTime>
+    </File>
+    <File Include="Scripts/Choosen/chosen.proto.js">
+      <publishTime>10/03/2016 11:32:01</publishTime>
+    </File>
+    <File Include="Scripts/Choosen/chosen.proto.min.js">
+      <publishTime>10/03/2016 11:32:01</publishTime>
+    </File>
+    <File Include="Scripts/Choosen/docsupport/chosen.png">
+      <publishTime>10/03/2016 11:32:01</publishTime>
+    </File>
+    <File Include="Scripts/Choosen/docsupport/oss-credit.png">
+      <publishTime>10/03/2016 11:32:01</publishTime>
+    </File>
+    <File Include="Scripts/Choosen/docsupport/prism.css">
+      <publishTime>10/03/2016 11:32:01</publishTime>
+    </File>
+    <File Include="Scripts/Choosen/docsupport/prism.js">
+      <publishTime>10/03/2016 11:32:01</publishTime>
+    </File>
+    <File Include="Scripts/Choosen/docsupport/style.css">
+      <publishTime>10/03/2016 11:32:01</publishTime>
+    </File>
+    <File Include="Scripts/Choosen/index.html">
+      <publishTime>10/03/2016 11:32:01</publishTime>
+    </File>
+    <File Include="Scripts/Choosen/index.proto.html">
+      <publishTime>10/03/2016 11:32:01</publishTime>
+    </File>
+    <File Include="Scripts/Choosen/options.html">
+      <publishTime>10/03/2016 11:32:01</publishTime>
+    </File>
+    <File Include="Scripts/html2canvas.js">
+      <publishTime>10/03/2016 11:32:01</publishTime>
+    </File>
+    <File Include="Scripts/html5.js">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.11.3.min.js">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.9.1.js">
+      <publishTime>12/16/2016 17:38:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery.complexify.js">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery.contentcarousel.js">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery.easing.1.3.js">
+      <publishTime>10/03/2016 11:32:01</publishTime>
+    </File>
+    <File Include="Scripts/Jquery.min.1.8.2.js">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery.min.js">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery.mousewheel.js">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery.ruler.js">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery1.9.min.js">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Scripts/keyboard.js">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Scripts/modernizr.custom.js">
+      <publishTime>10/03/2016 11:32:01</publishTime>
+    </File>
+    <File Include="Scripts/modernizr.min.js">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Scripts/Ricebox/Close Icon.gif">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Scripts/Ricebox/jquery-1.4.4.js">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Scripts/Ricebox/ricePhoto.js">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Scripts/Ricebox/ricePhoto1.js">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Scripts/Ricebox/ricePhotoClose.gif">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Scripts/Ricebox/ricePhotoLoading.gif">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Scripts/Ricebox/ricePhotoMaskLoading.gif">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Scripts/Ricebox/ricePhotoNav.gif">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Scripts/Ricebox/ricePhotoNext.gif">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Scripts/Ricebox/ricePhotoNext.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Scripts/Ricebox/ricePhotoPrevious.gif">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Scripts/Ricebox/ricePhotoPrevious.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Scripts/Searchbox/jquery-ui.css">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Scripts/Searchbox/jquery-ui.min.js">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Scripts/Searchbox/jquery.js">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Scripts/Searchbox/jquery.multiselect.css">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Scripts/Searchbox/jquery.multiselect.filter.css">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Scripts/Searchbox/jquery.multiselect.filter.js">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Scripts/Searchbox/jquery.multiselect.js">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Scripts/Searchbox/prettify.css">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Scripts/Searchbox/prettify.js">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Scripts/Searchbox/style.css">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Scripts/timepicki.js">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Scripts/Validation.js">
+      <publishTime>05/05/2017 12:27:07</publishTime>
+    </File>
+    <File Include="ShiftMasterView.aspx">
+      <publishTime>04/10/2017 18:00:33</publishTime>
+    </File>
+    <File Include="ShiftPatternView.aspx">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="ShiftScheduleCorrection.aspx">
+      <publishTime>10/03/2016 11:32:52</publishTime>
+    </File>
+    <File Include="SlickGrid/Scripts/dataview.js">
+      <publishTime>10/03/2016 11:31:35</publishTime>
+    </File>
+    <File Include="SlickGrid/Scripts/jquery-1.7.min.js">
+      <publishTime>10/03/2016 11:31:35</publishTime>
+    </File>
+    <File Include="SlickGrid/Scripts/jquery.event.drag-2.2.js">
+      <publishTime>10/03/2016 11:31:35</publishTime>
+    </File>
+    <File Include="SlickGrid/Scripts/jquery.event.drop-2.2.js">
+      <publishTime>10/03/2016 11:31:35</publishTime>
+    </File>
+    <File Include="SlickGrid/Scripts/slick.core.js">
+      <publishTime>10/03/2016 11:31:35</publishTime>
+    </File>
+    <File Include="SlickGrid/Scripts/slick.grid.js">
+      <publishTime>10/03/2016 11:31:35</publishTime>
+    </File>
+    <File Include="SlickGrid/Scripts/slick.pager.js">
+      <publishTime>10/03/2016 11:31:35</publishTime>
+    </File>
+    <File Include="SlickGrid/Styles/examples.css">
+      <publishTime>10/03/2016 11:31:36</publishTime>
+    </File>
+    <File Include="SlickGrid/Styles/slick-default-theme.css">
+      <publishTime>10/03/2016 11:31:36</publishTime>
+    </File>
+    <File Include="SlickGrid/Styles/slick.grid.css">
+      <publishTime>10/03/2016 11:31:35</publishTime>
+    </File>
+    <File Include="SlickGrid/Styles/slick.pager.css">
+      <publishTime>10/03/2016 11:31:36</publishTime>
+    </File>
+    <File Include="SlickGrid/Styles/SlickGridImages/sort-asc.gif">
+      <publishTime>10/03/2016 11:31:35</publishTime>
+    </File>
+    <File Include="SlickGrid/Styles/SlickGridImages/sort-desc.gif">
+      <publishTime>10/03/2016 11:31:35</publishTime>
+    </File>
+    <File Include="SlickGrid/Styles/Smoothness/jquery-ui-1.8.16.custom.css">
+      <publishTime>10/03/2016 11:31:36</publishTime>
+    </File>
+    <File Include="Styles/calendar.css">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="Styles/CalendarControl.css">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="Styles/component.css">
+      <publishTime>10/03/2016 11:32:52</publishTime>
+    </File>
+    <File Include="Styles/default.css">
+      <publishTime>05/02/2017 11:51:32</publishTime>
+    </File>
+    <File Include="Styles/demo.css">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="Styles/jquery-ui.css">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="Styles/jquery.jscrollpane.css">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="Styles/Keyboard.css">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="Styles/Login.css">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="Styles/reset.css">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="Styles/ruler.css">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="Styles/style.css">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="Styles/style_Flyout.css">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="Styles/timepicki.css">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/common-images/colorpicker_dark.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/common-images/colorpicker_light.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/common-images/diagram_context.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/common-images/diagram_context1.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/common-images/icons-black.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/common-images/icons-gray.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/common-images/icons-halfwhite.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/common-images/icons-white.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/common-images/maps/Arrow_Bootom.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/common-images/maps/Arrow_Bootom_hover.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/common-images/maps/Arrow_Left.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/common-images/maps/Arrow_Left_hover.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/common-images/maps/Arrow_Right.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/common-images/maps/Arrow_Right_hover.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/common-images/maps/Arrow_Top.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/common-images/maps/Arrow_Top_hover.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/common-images/maps/Bar.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/common-images/maps/Home.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/common-images/maps/Home_hover.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/common-images/maps/Home_hover_lime.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/common-images/maps/Home_hover_saffron.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/common-images/maps/Home_lime.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/common-images/maps/Home_saffron.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/common-images/maps/Navicatior.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/common-images/maps/Zoom-In.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/common-images/maps/Zoom-In_hover.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/common-images/maps/Zoom-out.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/common-images/maps/Zoom-out_hover.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/common-images/olapkpi/circle.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/common-images/olapkpi/diamond.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/common-images/olapkpi/down-arrow.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/common-images/olapkpi/green.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/common-images/olapkpi/red.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/common-images/olapkpi/right-arrow.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/common-images/olapkpi/three-color.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/common-images/olapkpi/triangle.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/common-images/olapkpi/up-arrow.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/common-images/radialmenu/back.png">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/common-images/radialmenu/radial.png">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/common-images/reports/down.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/common-images/reports/minus.gif">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/common-images/reports/plus.gif">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/common-images/reports/up.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/common-images/reports/updown.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/common-images/Rotate.cur">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/default-theme/bootstrap.css">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/default-theme/bootstrap.min.css">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/default-theme/default-responsive.css">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/default-theme/default.css">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/default-theme/ej.theme.css">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/default-theme/ej.theme.min.css">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/default-theme/ej.web.all.css">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/default-theme/ej.web.all.min.css">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/default-theme/ej.widgets.all.css">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/default-theme/ej.widgets.all.min.css">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/default-theme/ej.widgets.core.css">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/default-theme/images/ajax-loader.gif">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/default-theme/images/arrow-hover.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/default-theme/images/checkedtick.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/default-theme/images/dot.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/default-theme/images/drop-sibling.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/default-theme/images/gradient.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/default-theme/images/olap-gridbutton.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/default-theme/images/olap-kpi.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/default-theme/images/olap-toolbar.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/default-theme/images/olap-treeview.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/default-theme/images/palette-arrow.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/default-theme/images/rating-star.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/default-theme/images/rotator-icon.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/default-theme/images/tgarrow.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/default-theme/images/toggle-text.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/default-theme/images/toolbar_icons.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/default-theme/images/ui-icon.png">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/default-theme/images/waitingpopup.gif">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/ej.icons.css">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/ej.widgets.core.css">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/ej/ej.widgets.core.min.css">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/responsive-css/ej.responsive.css">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/responsive-css/ejgrid.responsive.css">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Content/responsive-css/ejschedule.responsive.css">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="Syncfusion/Scripts/angular.min.js">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="Syncfusion/Scripts/bootstrap-notify.js">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="Syncfusion/Scripts/bootstrap.min.js">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="Syncfusion/Scripts/canvg.js">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="Syncfusion/Scripts/ej/ej.unobtrusive.min.js">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="Syncfusion/Scripts/ej/ej.web.all.min.js">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="Syncfusion/Scripts/ej/ej.webform.min.js">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="Syncfusion/Scripts/ej/ej.widget.angular.min.js">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="Syncfusion/Scripts/ej/ej.widget.ko.min.js">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="Syncfusion/Scripts/excanvas.min.js">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="Syncfusion/Scripts/jquery-1.10.2.min.js">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="Syncfusion/Scripts/jquery.easing-1.3.min.js">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="Syncfusion/Scripts/jquery.globalize.min.js">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="Syncfusion/Scripts/jquery.signalR-1.1.4.min.js">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="Syncfusion/Scripts/jquery.validate-vsdoc.js">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="Syncfusion/Scripts/jquery.validate.min.js">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="Syncfusion/Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="Syncfusion/Scripts/jsondata.js">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="Syncfusion/Scripts/jsondata.min.js">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="Syncfusion/Scripts/jsondatachart.js">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="Syncfusion/Scripts/jsrender.min.js">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="Syncfusion/Scripts/jsviews.min.js">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="Syncfusion/Scripts/knockout-min.js">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="Syncfusion/Scripts/modernizr-2.5.3.js">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="Syncfusion/Scripts/onlinedata.js">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="Syncfusion/Scripts/Popup.js">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="Syncfusion/Scripts/properties.js">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="Syncfusion/Scripts/respond.js">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="Syncfusion/Scripts/rgbcolor.js">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="Syncfusion/Scripts/sampleBrowserSite.js">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="Syncfusion/Scripts/sampleslist.js">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="Syncfusion/Scripts/StackBlur.js">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="Syncfusion/Scripts/treemapdata.js">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="Syncfusion/Scripts/ZeroClipboard.js">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="Syncfusion/Scripts/ZeroClipboard.swf">
+      <publishTime>10/03/2016 11:31:59</publishTime>
+    </File>
+    <File Include="TEClientMasterFile.aspx">
+      <publishTime>10/03/2016 11:31:52</publishTime>
+    </File>
+    <File Include="TEClientMasterView.aspx">
+      <publishTime>10/03/2016 11:31:34</publishTime>
+    </File>
+    <File Include="TemporaryCardMaster.aspx">
+      <publishTime>10/03/2016 11:31:02</publishTime>
+    </File>
+    <File Include="TemporaryCardViewMaster.aspx">
+      <publishTime>10/03/2016 11:31:58</publishTime>
+    </File>
+    <File Include="TE_Activity.aspx">
+      <publishTime>10/03/2016 11:31:49</publishTime>
+    </File>
+    <File Include="TE_ActivityAssignment.aspx">
+      <publishTime>10/03/2016 11:31:01</publishTime>
+    </File>
+    <File Include="TE_Milestone.aspx">
+      <publishTime>10/03/2016 11:31:42</publishTime>
+    </File>
+    <File Include="TE_Projects.aspx">
+      <publishTime>10/03/2016 11:31:49</publishTime>
+    </File>
+    <File Include="TE_WBS.aspx">
+      <publishTime>10/03/2016 11:31:49</publishTime>
+    </File>
+    <File Include="TimeEntry.aspx">
+      <publishTime>10/03/2016 11:31:34</publishTime>
+    </File>
+    <File Include="TimeZoneView.aspx">
+      <publishTime>05/02/2017 11:05:36</publishTime>
+    </File>
+    <File Include="Tour_Details_Report.aspx">
+      <publishTime>10/03/2016 11:31:40</publishTime>
+    </File>
+    <File Include="Uno_Dashboard.aspx">
+      <publishTime>10/03/2016 11:31:45</publishTime>
+    </File>
+    <File Include="UpdatePassword.aspx">
+      <publishTime>10/03/2016 11:31:45</publishTime>
+    </File>
+    <File Include="Uploaded Folder/uploadEmployeeHierarchyformat.xls">
+      <publishTime>11/07/2016 13:19:39</publishTime>
+    </File>
+    <File Include="Uploaded Folder/uploadformat.xls">
+      <publishTime>10/03/2016 11:31:55</publishTime>
+    </File>
+    <File Include="Uploaded Folder/uploadLeaveCutformat.xls">
+      <publishTime>10/14/2016 12:26:46</publishTime>
+    </File>
+    <File Include="Uploaded Folder/upload_Employee_Left_format.xls">
+      <publishTime>10/03/2016 11:31:55</publishTime>
+    </File>
+    <File Include="uploadImg/add_image.png">
+      <publishTime>10/03/2016 11:31:34</publishTime>
+    </File>
+    <File Include="uploadImg/Blue hills.jpg">
+      <publishTime>10/03/2016 11:31:34</publishTime>
+    </File>
+    <File Include="uploadImg/Water lilies.jpg">
+      <publishTime>10/03/2016 11:31:34</publishTime>
+    </File>
+    <File Include="UploadTemplate.aspx">
+      <publishTime>10/03/2016 11:31:34</publishTime>
+    </File>
+    <File Include="UserAccessPermissionBrowse.aspx">
+      <publishTime>03/30/2017 12:00:31</publishTime>
+    </File>
+    <File Include="UserAccessPermissionEdit.aspx">
+      <publishTime>10/03/2016 11:31:55</publishTime>
+    </File>
+    <File Include="UserView.aspx">
+      <publishTime>11/14/2016 11:53:22</publishTime>
+    </File>
+    <File Include="User_Master_Report.aspx">
+      <publishTime>10/03/2016 11:31:58</publishTime>
+    </File>
+    <File Include="User_Profile_Report.aspx">
+      <publishTime>10/03/2016 11:31:49</publishTime>
+    </File>
+    <File Include="VEH_AdminOperations.aspx">
+      <publishTime>10/03/2016 11:31:34</publishTime>
+    </File>
+    <File Include="VEH_Controller.aspx">
+      <publishTime>10/03/2016 17:49:43</publishTime>
+    </File>
+    <File Include="VEH_DailyEntryExitReport.aspx">
+      <publishTime>10/03/2016 11:31:40</publishTime>
+    </File>
+    <File Include="VEH_ReportofRFIDtagInventory.aspx">
+      <publishTime>10/03/2016 11:31:58</publishTime>
+    </File>
+    <File Include="VEH_RFID_Inventory.aspx">
+      <publishTime>10/03/2016 11:31:56</publishTime>
+    </File>
+    <File Include="VEH_RFID_Inventory_New.aspx">
+      <publishTime>10/03/2016 17:49:43</publishTime>
+    </File>
+    <File Include="VEH_VehicleDenialReport.aspx">
+      <publishTime>10/03/2016 11:31:40</publishTime>
+    </File>
+    <File Include="VEH_VehicleEnromentl.aspx">
+      <publishTime>10/03/2016 17:49:43</publishTime>
+    </File>
+    <File Include="VEH_VehicleNumbeWiseReport.aspx">
+      <publishTime>10/03/2016 17:49:43</publishTime>
+    </File>
+    <File Include="ViewCard.aspx">
+      <publishTime>10/03/2016 11:31:40</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>08/16/2017 17:40:29</publishTime>
+    </File>
+    <File Include="WeeklyOffView.aspx">
+      <publishTime>10/03/2016 11:32:00</publishTime>
+    </File>
+    <File Include="WorkDayviewMaster.aspx">
+      <publishTime>10/03/2016 11:31:40</publishTime>
+    </File>
+    <File Include="ZoneBrowse.aspx">
+      <publishTime>05/02/2017 15:35:58</publishTime>
+    </File>
+    <File Include="ZoneEdit.aspx">
+      <publishTime>10/03/2016 11:31:50</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

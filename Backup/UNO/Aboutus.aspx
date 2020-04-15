@@ -1,0 +1,223 @@
+﻿
+<%@ Page Title="" Language="C#" MasterPageFile="~/ModuleMain.master"
+    CodeBehind="Aboutus.aspx.cs" Inherits="UNO.Aboutus" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link rel="stylesheet" type="text/css" href="Styles/demo.css" />
+       <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet'
+        type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Coustard:900' rel='stylesheet'
+        type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Rochester' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" type="text/css" href="Styles/style.css" />
+
+<style type="text/css">
+
+  .heading1
+        {
+            background: #47a3da;
+            padding: 5px;
+            text-align: left;
+            font-size: 20px;
+            color: #fff;
+            font-family: 'HLHC';
+            text-shadow: 2px 2px 2px #666666;
+        }
+        .our-mission-content
+        {
+            padding: 10px;
+            color: #222222;
+            background: #fff;
+            font-family: 'Segoe UI';
+            position: relative;
+        }
+        .our-mission-content span
+        {
+            color: #000;
+            font-size: 40px;
+            text-align: center;
+            display: inline-block;
+            margin: 50px 0 34px 0%;
+            border-bottom: 1px solid #bf2c2f;
+            font-weight: 900 !important;
+        }
+        .bulb-art
+        {
+            background: url(images/Bulb_art_cms.jpg) no-repeat;
+            position: absolute;
+            height: 170px;
+            width: 258px;
+            top: 0;
+            left: 0px;
+            opacity: 0.2;
+        }
+        .our-mission-content p
+        {
+            font-size: 16px;
+            color: #333333;
+            text-align: center;
+        }
+        .shadow-mission
+        {
+            background: url(images/our-mission-shadow.png) no-repeat;
+            width: 100%;
+            height: 21px;
+        }
+        .mission-body
+        {
+            position: relative;
+        }
+        .mission-body span
+        {
+            color: #000;
+            text-transform: uppercase;
+            border-bottom: 1px solid #106891;
+            margin: 8px 0 34px 0%;
+        }
+        .mission-body p
+        {
+            padding: 0 20px 10px 20px;
+        }
+        .art-2
+        {
+            background: url(images/improve_data_quality.png) no-repeat;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            opacity: 0.6;
+        }
+        .wrapper
+        {
+            width: 1031px;
+            margin: 0 auto 10px;
+            position: relative;
+        }
+        .t-con
+        {
+            font-family: 'OpenSansLight';
+        }
+        #about_bg
+        {
+            background: #fff;
+            opacity: 0.9;
+            margin-top: 10px;
+            position: relative;
+        }
+        
+        .shadow-mission
+        {
+            background: url(images/our-mission-shadow.png) no-repeat;
+            width: 100%;
+            height: 21px;
+        }
+
+
+</style>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    
+    <center>
+        <asp:UpdatePanel ID="UpdatePanel2" runat="server">
+            <ContentTemplate>
+             <div id="wrapper" class="wrapper">
+               <div class="t-con">
+               
+                    <div id="about_bg">
+                        <div class="heading1" style="text-align:center" runat="server" id="UnoVersion">
+                       This product is licensed to
+                        </div>
+                         <asp:Panel ID="Visi" runat="server">
+                        <table>
+                            <tr>
+                           
+                                <td colspan="2" style="font-weight:bold; text-align:center"  >
+                                  <span style="font-weight:bold; font-size: 18px; text-align:center">  </span> 
+                                    <div style="border-style:groove; text-align:center" class="wrapper">
+                                     <asp:Label ID="lblName" runat="server" Text="Label" Font-Bold="True" 
+                                            Font-Size="22pt"></asp:Label>
+                                     <br />
+                                   
+                                    <span style="font-weight:bold;font-size:14pt;"> </span> 
+                                     <asp:Label ID="lblAddress" runat="server" Text="Label" 
+                                            Font-Size="13pt" ></asp:Label>
+                                    </div>
+                                    
+                                </td>
+                                </tr>
+                                <tr> 
+                                <td colspan="2">
+                                  <div class="shadow-mission"></div>
+                                <div style="font-weight:bold; font-size: 22px; text-align:center">
+                                        Activated Modules </div></td></tr>
+                                <tr>
+                                  <td>&nbsp;</td>
+                                <td>
+                                   
+                                    <asp:ListView ID="lstModule" runat="server">
+                                        <LayoutTemplate>
+                                            <ul>
+                                                <asp:PlaceHolder ID="itemPlaceholder" runat="server" />
+                                            </ul>
+                                        </LayoutTemplate>
+                                        <ItemTemplate>
+                                       
+                                            <li style="text-align:center; font-weight:bold; font-size:18px;list-style:none;">                                             
+                                                <span ><%#Eval("LicenseKey")%></span>
+                                            </li>
+                                       
+                                        </ItemTemplate>
+                                        <EmptyDataTemplate>
+                                            <p>
+                                                No Modules Found.</p>
+                                        </EmptyDataTemplate>
+                                    </asp:ListView>
+                                </td>
+                            </tr>
+                            <tr>
+                            <td colspan="2"></td>
+                            </tr>
+                            <tr>
+                            <td colspan="2"></td>
+                            </tr>
+                        </table>
+                        <div class="shadow-mission"></div>
+                        </asp:Panel>
+                        <asp:Button ID="btnCancelA" runat="server" Text="Close" CssClass="button1" 
+                            Visible="False" />
+                    </div>
+                </div>
+            </div>
+            </ContentTemplate>
+            <Triggers>
+            </Triggers>
+        </asp:UpdatePanel>
+    </center>
+ 
+  <asp:LinkButton ID="lnkDummy" runat="server" Style="display: none;">dummy</asp:LinkButton>
+        <asp:Panel ID="pnlMessage" runat="server" CssClass="popupPannel" Style="min-width: 150px;
+            min-height: 50px;">
+            <table style="width: 100%; height: 100%; min-height: 100%; max-width: 100%;">
+                <tr>
+                    <td style="padding-bottom: 20px;">
+                        <asp:Label ID="lblMessage" runat="server" Text="" Style="font-family: Arial; font-weight: bold;"></asp:Label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:Button ID="btnMessageOK" runat="server" Text="OK" />
+                    </td>
+                </tr>
+            </table>
+        </asp:Panel>
+        <ajaxToolkit:ModalPopupExtender ID="mpeMessage" runat="server" TargetControlID="lnkDummy"
+            PopupControlID="pnlMessage" OkControlID="btnMessageOK" BackgroundCssClass="modalBackground">
+        </ajaxToolkit:ModalPopupExtender>
+
+        
+
+
+
+ 
+
+</asp:Content>

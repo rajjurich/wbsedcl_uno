@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Reader_Access" targetNamespace="http://tempuri.org/Reader_Access.xsd" xmlns:mstns="http://tempuri.org/Reader_Access.xsd" xmlns="http://tempuri.org/Reader_Access.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="connection_string" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="connection_string (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.connection_string.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="connection_string (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText> SELECT	EMPLOYEE_CODE
+		, ENT_EMPLOYEE_PERSONAL_DTLS.EPD_FIRST_NAME +' '+ENT_EMPLOYEE_PERSONAL_DTLS.EPD_LAST_NAME AS NAME
+		, DEP.OCE_ID AS DEP_ID, DEP.OCE_DESCRIPTION AS DEP_DESC
+		,DESG.OCE_ID AS DESG_ID, DESG.OCE_DESCRIPTION AS DESG_DESC  
+			
+		,ACS_CARD_CONFIG.ACTIVATION_DATE ,ACS_CARD_CONFIG.EXPIRY_DATE
+		,ACS_ACCESSLEVEL_RELATION.RD_ZN_ID ,ACS_READER.READER_DESCRIPTION 
+		,ACS_READER.READER_ID
+		,ACS_ACCESSLEVEL_RELATION.CONTROLLER_ID ,ACS_CONTROLLER.CTLR_DESCRIPTION 
+		
+		
+FROM EAL_CONFIG	
+	INNER JOIN ENT_EMPLOYEE_PERSONAL_DTLS ON EAL_CONFIG.EMPLOYEE_CODE= ENT_EMPLOYEE_PERSONAL_DTLS.EPD_EMPID 
+	INNER JOIN ENT_EMPLOYEE_OFFICIAL_DTLS ON ENT_EMPLOYEE_OFFICIAL_DTLS.EOD_EMPID=ENT_EMPLOYEE_PERSONAL_DTLS.EPD_EMPID  
+	INNER JOIN ENT_ORG_COMMON_ENTITIES AS DEP ON ENT_EMPLOYEE_OFFICIAL_DTLS.EOD_DEPARTMENT_ID=DEP.OCE_ID AND DEP.CEM_ENTITY_ID='DEP' 
+	INNER JOIN ENT_ORG_COMMON_ENTITIES AS DESG ON ENT_EMPLOYEE_OFFICIAL_DTLS.EOD_DESIGNATION_ID=DESG.OCE_ID AND DESG.CEM_ENTITY_ID='DES' 
+	INNER JOIN ACS_ACCESSLEVEL ON EAL_CONFIG.AL_ID=ACS_ACCESSLEVEL.AL_ID  
+	
+	INNER JOIN ACS_ACCESSLEVEL_RELATION ON ACS_ACCESSLEVEL.AL_ID= ACS_ACCESSLEVEL_RELATION.AL_ID AND ACS_ACCESSLEVEL_RELATION.AL_ENTITY_TYPE='R'  
+	INNER JOIN ACS_CARD_CONFIG ON  EAL_CONFIG.EMPLOYEE_CODE=ACS_CARD_CONFIG.CC_EMP_ID  
+	INNER JOIN ACS_READER ON ACS_READER.READER_ID=ACS_ACCESSLEVEL_RELATION.RD_ZN_ID   
+	 AND CTLR_ID=ACS_ACCESSLEVEL_RELATION.CONTROLLER_ID  
+	 INNER JOIN ACS_CONTROLLER ON ACS_CONTROLLER.CTLR_ID=ACS_ACCESSLEVEL_RELATION.CONTROLLER_ID </CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="EMPLOYEE_CODE" DataSetColumn="EMPLOYEE_CODE" />
+              <Mapping SourceColumn="DEP_ID" DataSetColumn="DEP_ID" />
+              <Mapping SourceColumn="DEP_DESC" DataSetColumn="DEP_DESC" />
+              <Mapping SourceColumn="DESG_ID" DataSetColumn="DESG_ID" />
+              <Mapping SourceColumn="DESG_DESC" DataSetColumn="DESG_DESC" />
+              <Mapping SourceColumn="RD_ZN_ID" DataSetColumn="RD_ZN_ID" />
+              <Mapping SourceColumn="READER_DESCRIPTION" DataSetColumn="READER_DESCRIPTION" />
+              <Mapping SourceColumn="NAME" DataSetColumn="NAME" />
+              <Mapping SourceColumn="ACTIVATION_DATE" DataSetColumn="ACTIVATION_DATE" />
+              <Mapping SourceColumn="EXPIRY_DATE" DataSetColumn="EXPIRY_DATE" />
+              <Mapping SourceColumn="READER_ID" DataSetColumn="READER_ID" />
+              <Mapping SourceColumn="CONTROLLER_ID" DataSetColumn="CONTROLLER_ID" />
+              <Mapping SourceColumn="CTLR_DESCRIPTION" DataSetColumn="CTLR_DESCRIPTION" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Reader_Access" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Reader_Access" msprop:Generator_UserDSName="Reader_Access">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EMPLOYEE_CODE" msprop:Generator_ColumnVarNameInTable="columnEMPLOYEE_CODE" msprop:Generator_ColumnPropNameInRow="EMPLOYEE_CODE" msprop:Generator_ColumnPropNameInTable="EMPLOYEE_CODEColumn" msprop:Generator_UserColumnName="EMPLOYEE_CODE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEP_ID" msprop:Generator_ColumnVarNameInTable="columnDEP_ID" msprop:Generator_ColumnPropNameInRow="DEP_ID" msprop:Generator_ColumnPropNameInTable="DEP_IDColumn" msprop:Generator_UserColumnName="DEP_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEP_DESC" msprop:Generator_ColumnVarNameInTable="columnDEP_DESC" msprop:Generator_ColumnPropNameInRow="DEP_DESC" msprop:Generator_ColumnPropNameInTable="DEP_DESCColumn" msprop:Generator_UserColumnName="DEP_DESC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DESG_ID" msprop:Generator_ColumnVarNameInTable="columnDESG_ID" msprop:Generator_ColumnPropNameInRow="DESG_ID" msprop:Generator_ColumnPropNameInTable="DESG_IDColumn" msprop:Generator_UserColumnName="DESG_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DESG_DESC" msprop:Generator_ColumnVarNameInTable="columnDESG_DESC" msprop:Generator_ColumnPropNameInRow="DESG_DESC" msprop:Generator_ColumnPropNameInTable="DESG_DESCColumn" msprop:Generator_UserColumnName="DESG_DESC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RD_ZN_ID" msprop:Generator_ColumnVarNameInTable="columnRD_ZN_ID" msprop:Generator_ColumnPropNameInRow="RD_ZN_ID" msprop:Generator_ColumnPropNameInTable="RD_ZN_IDColumn" msprop:Generator_UserColumnName="RD_ZN_ID" type="xs:decimal" />
+              <xs:element name="READER_DESCRIPTION" msprop:Generator_ColumnVarNameInTable="columnREADER_DESCRIPTION" msprop:Generator_ColumnPropNameInRow="READER_DESCRIPTION" msprop:Generator_ColumnPropNameInTable="READER_DESCRIPTIONColumn" msprop:Generator_UserColumnName="READER_DESCRIPTION" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NAME" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnNAME" msprop:Generator_ColumnPropNameInRow="NAME" msprop:Generator_ColumnPropNameInTable="NAMEColumn" msprop:Generator_UserColumnName="NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="101" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ACTIVATION_DATE" msprop:Generator_ColumnVarNameInTable="columnACTIVATION_DATE" msprop:Generator_ColumnPropNameInRow="ACTIVATION_DATE" msprop:Generator_ColumnPropNameInTable="ACTIVATION_DATEColumn" msprop:Generator_UserColumnName="ACTIVATION_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EXPIRY_DATE" msprop:Generator_ColumnVarNameInTable="columnEXPIRY_DATE" msprop:Generator_ColumnPropNameInRow="EXPIRY_DATE" msprop:Generator_ColumnPropNameInTable="EXPIRY_DATEColumn" msprop:Generator_UserColumnName="EXPIRY_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="READER_ID" msprop:Generator_ColumnVarNameInTable="columnREADER_ID" msprop:Generator_ColumnPropNameInRow="READER_ID" msprop:Generator_ColumnPropNameInTable="READER_IDColumn" msprop:Generator_UserColumnName="READER_ID" type="xs:decimal" />
+              <xs:element name="CONTROLLER_ID" msprop:Generator_ColumnVarNameInTable="columnCONTROLLER_ID" msprop:Generator_ColumnPropNameInRow="CONTROLLER_ID" msprop:Generator_ColumnPropNameInTable="CONTROLLER_IDColumn" msprop:Generator_UserColumnName="CONTROLLER_ID" type="xs:decimal" />
+              <xs:element name="CTLR_DESCRIPTION" msprop:Generator_ColumnVarNameInTable="columnCTLR_DESCRIPTION" msprop:Generator_ColumnPropNameInRow="CTLR_DESCRIPTION" msprop:Generator_ColumnPropNameInTable="CTLR_DESCRIPTIONColumn" msprop:Generator_UserColumnName="CTLR_DESCRIPTION" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

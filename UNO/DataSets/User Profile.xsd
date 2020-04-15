@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="User_Profile" targetNamespace="http://tempuri.org/User Profile.xsd" xmlns:mstns="http://tempuri.org/User Profile.xsd" xmlns="http://tempuri.org/User Profile.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="connection_string" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="connection_string (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.connection_string.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="connection_string (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>
+SELECT  '' AS SR_NO,
+		EPD_CARD_ID,
+		EPD_EMPID,
+		EPD_FIRST_NAME +' '+EPD_MIDDLE_NAME+' '+EPD_LAST_NAME AS NAME,
+		DEP.OCE_ID AS DEP_ID,
+		DEP.OCE_DESCRIPTION AS DEP_DESC,
+		DESG.OCE_ID AS DESG_ID,
+		DESG.OCE_DESCRIPTION AS DESG_DESC
+FROM ENT_EMPLOYEE_PERSONAL_DTLS
+INNER JOIN ENT_EMPLOYEE_OFFICIAL_DTLS ON ENT_EMPLOYEE_OFFICIAL_DTLS.EOD_EMPID=ENT_EMPLOYEE_PERSONAL_DTLS.EPD_EMPID
+INNER JOIN ENT_ORG_COMMON_ENTITIES AS DEP ON ENT_EMPLOYEE_OFFICIAL_DTLS.EOD_DEPARTMENT_ID=DEP.OCE_ID AND DEP.CEM_ENTITY_ID='DEP'
+INNER JOIN ENT_ORG_COMMON_ENTITIES AS DESG ON ENT_EMPLOYEE_OFFICIAL_DTLS.EOD_DESIGNATION_ID=DESG.OCE_ID AND DESG.CEM_ENTITY_ID='DES'</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="SR_NO" DataSetColumn="SR_NO" />
+              <Mapping SourceColumn="EPD_CARD_ID" DataSetColumn="EPD_CARD_ID" />
+              <Mapping SourceColumn="EPD_EMPID" DataSetColumn="EPD_EMPID" />
+              <Mapping SourceColumn="NAME" DataSetColumn="NAME" />
+              <Mapping SourceColumn="DEP_ID" DataSetColumn="DEP_ID" />
+              <Mapping SourceColumn="DEP_DESC" DataSetColumn="DEP_DESC" />
+              <Mapping SourceColumn="DESG_ID" DataSetColumn="DESG_ID" />
+              <Mapping SourceColumn="DESG_DESC" DataSetColumn="DESG_DESC" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="User_Profile" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="User_Profile" msprop:Generator_UserDSName="User_Profile">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SR_NO" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnSR_NO" msprop:Generator_ColumnPropNameInRow="SR_NO" msprop:Generator_ColumnPropNameInTable="SR_NOColumn" msprop:Generator_UserColumnName="SR_NO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EPD_CARD_ID" msprop:Generator_ColumnVarNameInTable="columnEPD_CARD_ID" msprop:Generator_ColumnPropNameInRow="EPD_CARD_ID" msprop:Generator_ColumnPropNameInTable="EPD_CARD_IDColumn" msprop:Generator_UserColumnName="EPD_CARD_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EPD_EMPID" msprop:Generator_ColumnVarNameInTable="columnEPD_EMPID" msprop:Generator_ColumnPropNameInRow="EPD_EMPID" msprop:Generator_ColumnPropNameInTable="EPD_EMPIDColumn" msprop:Generator_UserColumnName="EPD_EMPID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NAME" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnNAME" msprop:Generator_ColumnPropNameInRow="NAME" msprop:Generator_ColumnPropNameInTable="NAMEColumn" msprop:Generator_UserColumnName="NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="152" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEP_ID" msprop:Generator_ColumnVarNameInTable="columnDEP_ID" msprop:Generator_ColumnPropNameInRow="DEP_ID" msprop:Generator_ColumnPropNameInTable="DEP_IDColumn" msprop:Generator_UserColumnName="DEP_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEP_DESC" msprop:Generator_ColumnVarNameInTable="columnDEP_DESC" msprop:Generator_ColumnPropNameInRow="DEP_DESC" msprop:Generator_ColumnPropNameInTable="DEP_DESCColumn" msprop:Generator_UserColumnName="DEP_DESC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DESG_ID" msprop:Generator_ColumnVarNameInTable="columnDESG_ID" msprop:Generator_ColumnPropNameInRow="DESG_ID" msprop:Generator_ColumnPropNameInTable="DESG_IDColumn" msprop:Generator_UserColumnName="DESG_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DESG_DESC" msprop:Generator_ColumnVarNameInTable="columnDESG_DESC" msprop:Generator_ColumnPropNameInRow="DESG_DESC" msprop:Generator_ColumnPropNameInTable="DESG_DESCColumn" msprop:Generator_UserColumnName="DESG_DESC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LeaveConsumptionDS" targetNamespace="http://tempuri.org/LeaveConsumptionDS.xsd" xmlns:mstns="http://tempuri.org/LeaveConsumptionDS.xsd" xmlns="http://tempuri.org/LeaveConsumptionDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="connection_string" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="connection_string (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.connection_string.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="connection_string (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>
+
+
+
+SELECT	ESS_LA_LVCD,ENT_EMPLOYEE_PERSONAL_DTLS.EPD_EMPID,
+		ENT_EMPLOYEE_PERSONAL_DTLS.EPD_FIRST_NAME+ ENT_EMPLOYEE_PERSONAL_DTLS.EPD_LAST_NAME AS EPD_FIRST_NAME,
+		ENT_COMPANY.COMPANY_ID,
+		ENT_COMPANY.COMPANY_NAME,
+		ENT_CATEGORY.CAT_CATEGORY_ID,
+		ENT_CATEGORY.CAT_CATEGORY_DESCRIPTION,
+		LOC.OCE_ID AS LOC_ID,
+		LOC.OCE_DESCRIPTION AS LOC_DESC,
+		DIV.OCE_ID AS DIV_ID,
+		DIV.OCE_DESCRIPTION AS DIV_DESC,
+		DEP.OCE_ID AS DEP_ID,
+		DEP.OCE_DESCRIPTION AS DEP_DESC,
+		DESG.OCE_ID AS DESG_ID,
+		DESG.OCE_DESCRIPTION AS DESG_DESC,
+		GRP.OCE_ID AS GRP_ID,
+		GRP.OCE_DESCRIPTION AS GRP_DESC,
+		GRD.OCE_ID AS GRD_ID,
+		GRD.OCE_DESCRIPTION AS GRD_DESC
+		,ESS_TA_LA.ESS_LA_FROMDT
+		,ESS_TA_LA.ESS_LA_TODT
+		,ESS_LA_LVDAYS
+		,ESS_LA_SANCID
+		,EMP_SNCTION.EPD_FIRST_NAME+ EMP_SNCTION.EPD_LAST_NAME  AS SACTIONED_BY
+,' ' AS Half_Full_Day
+        
+FROM ENT_EMPLOYEE_PERSONAL_DTLS 
+INNER JOIN ENT_EMPLOYEE_OFFICIAL_DTLS ON  ENT_EMPLOYEE_PERSONAL_DTLS.EPD_EMPID = ENT_EMPLOYEE_OFFICIAL_DTLS.EOD_EMPID
+INNER JOIN ENT_COMPANY ON  ENT_EMPLOYEE_OFFICIAL_DTLS.EOD_COMPANY_ID=ENT_COMPANY.COMPANY_ID
+INNER JOIN ENT_CATEGORY ON ENT_EMPLOYEE_OFFICIAL_DTLS.EOD_CATEGORY_ID=ENT_CATEGORY.CAT_CATEGORY_ID
+INNER JOIN ENT_ORG_COMMON_ENTITIES AS LOC ON ENT_EMPLOYEE_OFFICIAL_DTLS.EOD_LOCATION_ID=LOC.OCE_ID AND LOC.CEM_ENTITY_ID='LOC'
+INNER JOIN ENT_ORG_COMMON_ENTITIES AS DIV ON ENT_EMPLOYEE_OFFICIAL_DTLS.EOD_DIVISION_ID=DIV.OCE_ID AND DIV.CEM_ENTITY_ID='DIV'
+INNER JOIN ENT_ORG_COMMON_ENTITIES AS DEP ON ENT_EMPLOYEE_OFFICIAL_DTLS.EOD_DEPARTMENT_ID=DEP.OCE_ID AND DEP.CEM_ENTITY_ID='DEP'
+INNER JOIN ENT_ORG_COMMON_ENTITIES AS DESG ON ENT_EMPLOYEE_OFFICIAL_DTLS.EOD_DESIGNATION_ID=DESG.OCE_ID AND DESG.CEM_ENTITY_ID='DES'
+INNER JOIN ENT_ORG_COMMON_ENTITIES AS GRP ON ENT_EMPLOYEE_OFFICIAL_DTLS.EOD_GROUP_ID=GRP.OCE_ID AND GRP.CEM_ENTITY_ID='GRP'
+INNER JOIN ENT_ORG_COMMON_ENTITIES AS GRD ON ENT_EMPLOYEE_OFFICIAL_DTLS.EOD_GRADE_ID=GRD.OCE_ID AND GRD.CEM_ENTITY_ID='GRD'
+
+INNER JOIN ESS_TA_LA ON ESS_TA_LA.ESS_LA_EMPID=ENT_EMPLOYEE_PERSONAL_DTLS.EPD_EMPID
+LEFT OUTER JOIN ENT_EMPLOYEE_PERSONAL_DTLS EMP_SNCTION ON ESS_TA_LA.ESS_LA_EMPID=ENT_EMPLOYEE_PERSONAL_DTLS.EPD_EMPID
+
+WHERE ENT_EMPLOYEE_PERSONAL_DTLS.EPD_EMPID='09056747'</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="EPD_EMPID" DataSetColumn="EPD_EMPID" />
+              <Mapping SourceColumn="EPD_FIRST_NAME" DataSetColumn="EPD_FIRST_NAME" />
+              <Mapping SourceColumn="COMPANY_ID" DataSetColumn="COMPANY_ID" />
+              <Mapping SourceColumn="COMPANY_NAME" DataSetColumn="COMPANY_NAME" />
+              <Mapping SourceColumn="CAT_CATEGORY_ID" DataSetColumn="CAT_CATEGORY_ID" />
+              <Mapping SourceColumn="CAT_CATEGORY_DESCRIPTION" DataSetColumn="CAT_CATEGORY_DESCRIPTION" />
+              <Mapping SourceColumn="LOC_ID" DataSetColumn="LOC_ID" />
+              <Mapping SourceColumn="LOC_DESC" DataSetColumn="LOC_DESC" />
+              <Mapping SourceColumn="DIV_ID" DataSetColumn="DIV_ID" />
+              <Mapping SourceColumn="DIV_DESC" DataSetColumn="DIV_DESC" />
+              <Mapping SourceColumn="DEP_ID" DataSetColumn="DEP_ID" />
+              <Mapping SourceColumn="DEP_DESC" DataSetColumn="DEP_DESC" />
+              <Mapping SourceColumn="DESG_ID" DataSetColumn="DESG_ID" />
+              <Mapping SourceColumn="DESG_DESC" DataSetColumn="DESG_DESC" />
+              <Mapping SourceColumn="GRP_ID" DataSetColumn="GRP_ID" />
+              <Mapping SourceColumn="GRP_DESC" DataSetColumn="GRP_DESC" />
+              <Mapping SourceColumn="GRD_ID" DataSetColumn="GRD_ID" />
+              <Mapping SourceColumn="GRD_DESC" DataSetColumn="GRD_DESC" />
+              <Mapping SourceColumn="ESS_LA_FROMDT" DataSetColumn="ESS_LA_FROMDT" />
+              <Mapping SourceColumn="ESS_LA_TODT" DataSetColumn="ESS_LA_TODT" />
+              <Mapping SourceColumn="ESS_LA_LVDAYS" DataSetColumn="ESS_LA_LVDAYS" />
+              <Mapping SourceColumn="ESS_LA_SANCID" DataSetColumn="ESS_LA_SANCID" />
+              <Mapping SourceColumn="SACTIONED_BY" DataSetColumn="SACTIONED_BY" />
+              <Mapping SourceColumn="ESS_LA_LVCD" DataSetColumn="ESS_LA_LVCD" />
+              <Mapping SourceColumn="Half_Full_Day" DataSetColumn="Half_Full_Day" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="LeaveConsumptionDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="LeaveConsumptionDS" msprop:Generator_UserDSName="LeaveConsumptionDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EPD_EMPID" msprop:Generator_ColumnVarNameInTable="columnEPD_EMPID" msprop:Generator_ColumnPropNameInRow="EPD_EMPID" msprop:Generator_ColumnPropNameInTable="EPD_EMPIDColumn" msprop:Generator_UserColumnName="EPD_EMPID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EPD_FIRST_NAME" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEPD_FIRST_NAME" msprop:Generator_ColumnPropNameInRow="EPD_FIRST_NAME" msprop:Generator_ColumnPropNameInTable="EPD_FIRST_NAMEColumn" msprop:Generator_UserColumnName="EPD_FIRST_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMPANY_ID" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_ID" msprop:Generator_ColumnPropNameInRow="COMPANY_ID" msprop:Generator_ColumnPropNameInTable="COMPANY_IDColumn" msprop:Generator_UserColumnName="COMPANY_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMPANY_NAME" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_NAME" msprop:Generator_ColumnPropNameInRow="COMPANY_NAME" msprop:Generator_ColumnPropNameInTable="COMPANY_NAMEColumn" msprop:Generator_UserColumnName="COMPANY_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CAT_CATEGORY_ID" msprop:Generator_ColumnVarNameInTable="columnCAT_CATEGORY_ID" msprop:Generator_ColumnPropNameInRow="CAT_CATEGORY_ID" msprop:Generator_ColumnPropNameInTable="CAT_CATEGORY_IDColumn" msprop:Generator_UserColumnName="CAT_CATEGORY_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CAT_CATEGORY_DESCRIPTION" msprop:Generator_ColumnVarNameInTable="columnCAT_CATEGORY_DESCRIPTION" msprop:Generator_ColumnPropNameInRow="CAT_CATEGORY_DESCRIPTION" msprop:Generator_ColumnPropNameInTable="CAT_CATEGORY_DESCRIPTIONColumn" msprop:Generator_UserColumnName="CAT_CATEGORY_DESCRIPTION" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LOC_ID" msprop:Generator_ColumnVarNameInTable="columnLOC_ID" msprop:Generator_ColumnPropNameInRow="LOC_ID" msprop:Generator_ColumnPropNameInTable="LOC_IDColumn" msprop:Generator_UserColumnName="LOC_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LOC_DESC" msprop:Generator_ColumnVarNameInTable="columnLOC_DESC" msprop:Generator_ColumnPropNameInRow="LOC_DESC" msprop:Generator_ColumnPropNameInTable="LOC_DESCColumn" msprop:Generator_UserColumnName="LOC_DESC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DIV_ID" msprop:Generator_ColumnVarNameInTable="columnDIV_ID" msprop:Generator_ColumnPropNameInRow="DIV_ID" msprop:Generator_ColumnPropNameInTable="DIV_IDColumn" msprop:Generator_UserColumnName="DIV_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DIV_DESC" msprop:Generator_ColumnVarNameInTable="columnDIV_DESC" msprop:Generator_ColumnPropNameInRow="DIV_DESC" msprop:Generator_ColumnPropNameInTable="DIV_DESCColumn" msprop:Generator_UserColumnName="DIV_DESC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEP_ID" msprop:Generator_ColumnVarNameInTable="columnDEP_ID" msprop:Generator_ColumnPropNameInRow="DEP_ID" msprop:Generator_ColumnPropNameInTable="DEP_IDColumn" msprop:Generator_UserColumnName="DEP_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEP_DESC" msprop:Generator_ColumnVarNameInTable="columnDEP_DESC" msprop:Generator_ColumnPropNameInRow="DEP_DESC" msprop:Generator_ColumnPropNameInTable="DEP_DESCColumn" msprop:Generator_UserColumnName="DEP_DESC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DESG_ID" msprop:Generator_ColumnVarNameInTable="columnDESG_ID" msprop:Generator_ColumnPropNameInRow="DESG_ID" msprop:Generator_ColumnPropNameInTable="DESG_IDColumn" msprop:Generator_UserColumnName="DESG_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DESG_DESC" msprop:Generator_ColumnVarNameInTable="columnDESG_DESC" msprop:Generator_ColumnPropNameInRow="DESG_DESC" msprop:Generator_ColumnPropNameInTable="DESG_DESCColumn" msprop:Generator_UserColumnName="DESG_DESC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GRP_ID" msprop:Generator_ColumnVarNameInTable="columnGRP_ID" msprop:Generator_ColumnPropNameInRow="GRP_ID" msprop:Generator_ColumnPropNameInTable="GRP_IDColumn" msprop:Generator_UserColumnName="GRP_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GRP_DESC" msprop:Generator_ColumnVarNameInTable="columnGRP_DESC" msprop:Generator_ColumnPropNameInRow="GRP_DESC" msprop:Generator_ColumnPropNameInTable="GRP_DESCColumn" msprop:Generator_UserColumnName="GRP_DESC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GRD_ID" msprop:Generator_ColumnVarNameInTable="columnGRD_ID" msprop:Generator_ColumnPropNameInRow="GRD_ID" msprop:Generator_ColumnPropNameInTable="GRD_IDColumn" msprop:Generator_UserColumnName="GRD_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GRD_DESC" msprop:Generator_ColumnVarNameInTable="columnGRD_DESC" msprop:Generator_ColumnPropNameInRow="GRD_DESC" msprop:Generator_ColumnPropNameInTable="GRD_DESCColumn" msprop:Generator_UserColumnName="GRD_DESC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ESS_LA_FROMDT" msprop:Generator_ColumnVarNameInTable="columnESS_LA_FROMDT" msprop:Generator_ColumnPropNameInRow="ESS_LA_FROMDT" msprop:Generator_ColumnPropNameInTable="ESS_LA_FROMDTColumn" msprop:Generator_UserColumnName="ESS_LA_FROMDT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ESS_LA_TODT" msprop:Generator_ColumnVarNameInTable="columnESS_LA_TODT" msprop:Generator_ColumnPropNameInRow="ESS_LA_TODT" msprop:Generator_ColumnPropNameInTable="ESS_LA_TODTColumn" msprop:Generator_UserColumnName="ESS_LA_TODT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ESS_LA_LVDAYS" msprop:Generator_ColumnVarNameInTable="columnESS_LA_LVDAYS" msprop:Generator_ColumnPropNameInRow="ESS_LA_LVDAYS" msprop:Generator_ColumnPropNameInTable="ESS_LA_LVDAYSColumn" msprop:Generator_UserColumnName="ESS_LA_LVDAYS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ESS_LA_SANCID" msprop:Generator_ColumnVarNameInTable="columnESS_LA_SANCID" msprop:Generator_ColumnPropNameInRow="ESS_LA_SANCID" msprop:Generator_ColumnPropNameInTable="ESS_LA_SANCIDColumn" msprop:Generator_UserColumnName="ESS_LA_SANCID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SACTIONED_BY" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnSACTIONED_BY" msprop:Generator_ColumnPropNameInRow="SACTIONED_BY" msprop:Generator_ColumnPropNameInTable="SACTIONED_BYColumn" msprop:Generator_UserColumnName="SACTIONED_BY" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ESS_LA_LVCD" msprop:Generator_ColumnVarNameInTable="columnESS_LA_LVCD" msprop:Generator_ColumnPropNameInRow="ESS_LA_LVCD" msprop:Generator_ColumnPropNameInTable="ESS_LA_LVCDColumn" msprop:Generator_UserColumnName="ESS_LA_LVCD">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Half_Full_Day" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnHalf_Full_Day" msprop:Generator_ColumnPropNameInRow="Half_Full_Day" msprop:Generator_ColumnPropNameInTable="Half_Full_DayColumn" msprop:Generator_UserColumnName="Half_Full_Day" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

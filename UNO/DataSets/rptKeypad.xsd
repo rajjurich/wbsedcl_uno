@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="rptKeypad" targetNamespace="http://tempuri.org/rptKeypad.xsd" xmlns:mstns="http://tempuri.org/rptKeypad.xsd" xmlns="http://tempuri.org/rptKeypad.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="connection_string" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="connection_string (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.connection_string.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="IpaddressLogTableAdapter" GeneratorDataComponentClassName="IpaddressLogTableAdapter" Name="IpaddressLog" UserDataComponentName="IpaddressLogTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="connection_string (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>  	
+SELECT    '' as Ipaddress, '' as Ipadressdate ,'' as date,'' as duration, '' as action, '' as ControllerID
+</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="duration" DataSetColumn="duration" />
+              <Mapping SourceColumn="Ipaddress" DataSetColumn="Ipaddress" />
+              <Mapping SourceColumn="Ipadressdate" DataSetColumn="Ipadressdate" />
+              <Mapping SourceColumn="date" DataSetColumn="date" />
+              <Mapping SourceColumn="action" DataSetColumn="action" />
+              <Mapping SourceColumn="ControllerID" DataSetColumn="ControllerID" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="rptKeypad" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="rptKeypad" msprop:Generator_UserDSName="rptKeypad">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="IpaddressLog" msprop:Generator_TableClassName="IpaddressLogDataTable" msprop:Generator_TableVarName="tableIpaddressLog" msprop:Generator_RowChangedName="IpaddressLogRowChanged" msprop:Generator_TablePropName="IpaddressLog" msprop:Generator_RowDeletingName="IpaddressLogRowDeleting" msprop:Generator_RowChangingName="IpaddressLogRowChanging" msprop:Generator_RowEvHandlerName="IpaddressLogRowChangeEventHandler" msprop:Generator_RowDeletedName="IpaddressLogRowDeleted" msprop:Generator_RowClassName="IpaddressLogRow" msprop:Generator_UserTableName="IpaddressLog" msprop:Generator_RowEvArgName="IpaddressLogRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="duration" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnduration" msprop:Generator_ColumnPropNameInRow="duration" msprop:Generator_ColumnPropNameInTable="durationColumn" msprop:Generator_UserColumnName="duration" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Ipaddress" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnIpaddress" msprop:Generator_ColumnPropNameInRow="Ipaddress" msprop:Generator_ColumnPropNameInTable="IpaddressColumn" msprop:Generator_UserColumnName="Ipaddress" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Ipadressdate" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnIpadressdate" msprop:Generator_ColumnPropNameInRow="Ipadressdate" msprop:Generator_ColumnPropNameInTable="IpadressdateColumn" msprop:Generator_UserColumnName="Ipadressdate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="date" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columndate" msprop:Generator_ColumnPropNameInRow="date" msprop:Generator_ColumnPropNameInTable="dateColumn" msprop:Generator_UserColumnName="date" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="action" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnaction" msprop:Generator_ColumnPropNameInRow="action" msprop:Generator_ColumnPropNameInTable="actionColumn" msprop:Generator_UserColumnName="action" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ControllerID" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnControllerID" msprop:Generator_ColumnPropNameInRow="ControllerID" msprop:Generator_ColumnPropNameInTable="ControllerIDColumn" msprop:Generator_UserColumnName="ControllerID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

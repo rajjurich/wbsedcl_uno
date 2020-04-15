@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TOUR_REPORT" targetNamespace="http://tempuri.org/TOUR_REPORT.xsd" xmlns:mstns="http://tempuri.org/TOUR_REPORT.xsd" xmlns="http://tempuri.org/TOUR_REPORT.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="connection_string" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="connection_string (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.connection_string.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Tour_Report1TableAdapter" GeneratorDataComponentClassName="Tour_Report1TableAdapter" Name="Tour_Report1" UserDataComponentName="Tour_Report1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="connection_string (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select '' as ESS_OD_EMPID,'' as Emp_Details,
+'' as DivEntity ,'' as DepGroup,'' as GrdDivision,'' AS  company,'' as location,
+'' as FromDate,'' as ToDate,
+''  as TotalOD from ESS_TA_OD </CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ESS_OD_EMPID" DataSetColumn="ESS_OD_EMPID" />
+              <Mapping SourceColumn="Emp_Details" DataSetColumn="Emp_Details" />
+              <Mapping SourceColumn="DivEntity" DataSetColumn="DivEntity" />
+              <Mapping SourceColumn="DepGroup" DataSetColumn="DepGroup" />
+              <Mapping SourceColumn="GrdDivision" DataSetColumn="GrdDivision" />
+              <Mapping SourceColumn="FromDate" DataSetColumn="FromDate" />
+              <Mapping SourceColumn="ToDate" DataSetColumn="ToDate" />
+              <Mapping SourceColumn="TotalOD" DataSetColumn="TotalOD" />
+              <Mapping SourceColumn="company" DataSetColumn="company" />
+              <Mapping SourceColumn="location" DataSetColumn="location" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TOUR_REPORT" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="TOUR_REPORT" msprop:Generator_UserDSName="TOUR_REPORT">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Tour_Report1" msprop:Generator_TableClassName="Tour_Report1DataTable" msprop:Generator_TableVarName="tableTour_Report1" msprop:Generator_TablePropName="Tour_Report1" msprop:Generator_RowDeletingName="Tour_Report1RowDeleting" msprop:Generator_UserTableName="Tour_Report1" msprop:Generator_RowChangingName="Tour_Report1RowChanging" msprop:Generator_RowEvHandlerName="Tour_Report1RowChangeEventHandler" msprop:Generator_RowDeletedName="Tour_Report1RowDeleted" msprop:Generator_RowEvArgName="Tour_Report1RowChangeEvent" msprop:Generator_RowChangedName="Tour_Report1RowChanged" msprop:Generator_RowClassName="Tour_Report1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ESS_OD_EMPID" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnESS_OD_EMPID" msprop:Generator_ColumnPropNameInRow="ESS_OD_EMPID" msprop:Generator_ColumnPropNameInTable="ESS_OD_EMPIDColumn" msprop:Generator_UserColumnName="ESS_OD_EMPID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Emp_Details" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEmp_Details" msprop:Generator_ColumnPropNameInRow="Emp_Details" msprop:Generator_ColumnPropNameInTable="Emp_DetailsColumn" msprop:Generator_UserColumnName="Emp_Details" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DivEntity" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDivEntity" msprop:Generator_ColumnPropNameInRow="DivEntity" msprop:Generator_ColumnPropNameInTable="DivEntityColumn" msprop:Generator_UserColumnName="DivEntity" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DepGroup" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDepGroup" msprop:Generator_ColumnPropNameInRow="DepGroup" msprop:Generator_ColumnPropNameInTable="DepGroupColumn" msprop:Generator_UserColumnName="DepGroup" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GrdDivision" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnGrdDivision" msprop:Generator_ColumnPropNameInRow="GrdDivision" msprop:Generator_ColumnPropNameInTable="GrdDivisionColumn" msprop:Generator_UserColumnName="GrdDivision" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FromDate" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnFromDate" msprop:Generator_ColumnPropNameInRow="FromDate" msprop:Generator_ColumnPropNameInTable="FromDateColumn" msprop:Generator_UserColumnName="FromDate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ToDate" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnToDate" msprop:Generator_ColumnPropNameInRow="ToDate" msprop:Generator_ColumnPropNameInTable="ToDateColumn" msprop:Generator_UserColumnName="ToDate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TotalOD" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTotalOD" msprop:Generator_ColumnPropNameInRow="TotalOD" msprop:Generator_ColumnPropNameInTable="TotalODColumn" msprop:Generator_UserColumnName="TotalOD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="company" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columncompany" msprop:Generator_ColumnPropNameInRow="company" msprop:Generator_ColumnPropNameInTable="companyColumn" msprop:Generator_UserColumnName="company" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="location" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnlocation" msprop:Generator_ColumnPropNameInRow="location" msprop:Generator_ColumnPropNameInTable="locationColumn" msprop:Generator_UserColumnName="location" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GrpSection" msprop:Generator_ColumnVarNameInTable="columnGrpSection" msprop:Generator_ColumnPropNameInRow="GrpSection" msprop:Generator_ColumnPropNameInTable="GrpSectionColumn" msprop:Generator_UserColumnName="GrpSection" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

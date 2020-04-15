@@ -1,0 +1,300 @@
+E:\Rajneesh\SVN\uno_standard\UNO\obj\Debug\UNO.csprojResolveAssemblyReference.cache
+E:\Rajneesh\SVN\uno_standard\UNO\obj\Debug\RdlCompile.cache
+E:\Rajneesh\SVN\uno_standard\UNO\obj\Debug\RdlCompile.compiled
+E:\Rajneesh\SVN\uno_standard\UNO\bin\UNO.dll
+E:\Rajneesh\SVN\uno_standard\UNO\bin\UNO.pdb
+E:\Rajneesh\SVN\uno_standard\UNO\bin\CMS.Framework.Common.dll
+E:\Rajneesh\SVN\uno_standard\UNO\bin\CMS.UNO.Core.Handler.dll
+E:\Rajneesh\SVN\uno_standard\UNO\bin\CMS.UNO.Framework.DataAccess.dll
+E:\Rajneesh\SVN\uno_standard\UNO\bin\CMS.UNO.Login.Handler.dll
+E:\Rajneesh\SVN\uno_standard\UNO\bin\CMS.UNO.Sentinel.Handler.dll
+E:\Rajneesh\SVN\uno_standard\UNO\bin\CMS.UNO.Tempus.Handler.dll
+E:\Rajneesh\SVN\uno_standard\UNO\bin\HtmlAgilityPack.dll
+E:\Rajneesh\SVN\uno_standard\UNO\bin\Microsoft.Data.Edm.dll
+E:\Rajneesh\SVN\uno_standard\UNO\bin\Microsoft.Data.OData.dll
+E:\Rajneesh\SVN\uno_standard\UNO\bin\Microsoft.WindowsAzure.Configuration.dll
+E:\Rajneesh\SVN\uno_standard\UNO\bin\Microsoft.WindowsAzure.Storage.dll
+E:\Rajneesh\SVN\uno_standard\UNO\bin\System.Spatial.dll
+E:\Rajneesh\SVN\uno_standard\UNO\bin\System.Net.Http.dll
+E:\Rajneesh\SVN\uno_standard\UNO\bin\CMS.Framework.Common.pdb
+E:\Rajneesh\SVN\uno_standard\UNO\bin\CMS.UNO.Core.Handler.pdb
+E:\Rajneesh\SVN\uno_standard\UNO\bin\CMS.UNO.Framework.DataAccess.pdb
+E:\Rajneesh\SVN\uno_standard\UNO\bin\CMS.UNO.Login.Handler.pdb
+E:\Rajneesh\SVN\uno_standard\UNO\bin\CMS.UNO.Sentinel.Handler.pdb
+E:\Rajneesh\SVN\uno_standard\UNO\bin\CMS.UNO.Tempus.Handler.pdb
+E:\Rajneesh\SVN\uno_standard\UNO\bin\HtmlAgilityPack.pdb
+E:\Rajneesh\SVN\uno_standard\UNO\bin\HtmlAgilityPack.xml
+E:\Rajneesh\SVN\uno_standard\UNO\bin\Microsoft.Data.Edm.xml
+E:\Rajneesh\SVN\uno_standard\UNO\bin\Microsoft.Data.OData.xml
+E:\Rajneesh\SVN\uno_standard\UNO\bin\Microsoft.WindowsAzure.Storage.xml
+E:\Rajneesh\SVN\uno_standard\UNO\bin\System.Spatial.xml
+E:\Rajneesh\SVN\uno_standard\UNO\bin\System.Net.Http.xml
+E:\Rajneesh\SVN\uno_standard\UNO\bin\de\Microsoft.Data.Edm.resources.dll
+E:\Rajneesh\SVN\uno_standard\UNO\bin\es\Microsoft.Data.Edm.resources.dll
+E:\Rajneesh\SVN\uno_standard\UNO\bin\fr\Microsoft.Data.Edm.resources.dll
+E:\Rajneesh\SVN\uno_standard\UNO\bin\it\Microsoft.Data.Edm.resources.dll
+E:\Rajneesh\SVN\uno_standard\UNO\bin\ja\Microsoft.Data.Edm.resources.dll
+E:\Rajneesh\SVN\uno_standard\UNO\bin\ko\Microsoft.Data.Edm.resources.dll
+E:\Rajneesh\SVN\uno_standard\UNO\bin\ru\Microsoft.Data.Edm.resources.dll
+E:\Rajneesh\SVN\uno_standard\UNO\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+E:\Rajneesh\SVN\uno_standard\UNO\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+E:\Rajneesh\SVN\uno_standard\UNO\bin\de\Microsoft.Data.OData.resources.dll
+E:\Rajneesh\SVN\uno_standard\UNO\bin\es\Microsoft.Data.OData.resources.dll
+E:\Rajneesh\SVN\uno_standard\UNO\bin\fr\Microsoft.Data.OData.resources.dll
+E:\Rajneesh\SVN\uno_standard\UNO\bin\it\Microsoft.Data.OData.resources.dll
+E:\Rajneesh\SVN\uno_standard\UNO\bin\ja\Microsoft.Data.OData.resources.dll
+E:\Rajneesh\SVN\uno_standard\UNO\bin\ko\Microsoft.Data.OData.resources.dll
+E:\Rajneesh\SVN\uno_standard\UNO\bin\ru\Microsoft.Data.OData.resources.dll
+E:\Rajneesh\SVN\uno_standard\UNO\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+E:\Rajneesh\SVN\uno_standard\UNO\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+E:\Rajneesh\SVN\uno_standard\UNO\bin\de\System.Spatial.resources.dll
+E:\Rajneesh\SVN\uno_standard\UNO\bin\es\System.Spatial.resources.dll
+E:\Rajneesh\SVN\uno_standard\UNO\bin\fr\System.Spatial.resources.dll
+E:\Rajneesh\SVN\uno_standard\UNO\bin\it\System.Spatial.resources.dll
+E:\Rajneesh\SVN\uno_standard\UNO\bin\ja\System.Spatial.resources.dll
+E:\Rajneesh\SVN\uno_standard\UNO\bin\ko\System.Spatial.resources.dll
+E:\Rajneesh\SVN\uno_standard\UNO\bin\ru\System.Spatial.resources.dll
+E:\Rajneesh\SVN\uno_standard\UNO\bin\zh-Hans\System.Spatial.resources.dll
+E:\Rajneesh\SVN\uno_standard\UNO\bin\zh-Hant\System.Spatial.resources.dll
+E:\Rajneesh\SVN\uno_standard\UNO\obj\Debug\UNO.dll
+E:\Rajneesh\SVN\uno_standard\UNO\obj\Debug\UNO.pdb
+D:\SVN\UNO_STANDARD_V2\UNO\bin\UNO.dll
+D:\SVN\UNO_STANDARD_V2\UNO\bin\UNO.pdb
+D:\SVN\UNO_STANDARD_V2\UNO\bin\CMS.Framework.Common.dll
+D:\SVN\UNO_STANDARD_V2\UNO\bin\CMS.UNO.Core.Handler.dll
+D:\SVN\UNO_STANDARD_V2\UNO\bin\CMS.UNO.Framework.DataAccess.dll
+D:\SVN\UNO_STANDARD_V2\UNO\bin\CMS.UNO.Login.Handler.dll
+D:\SVN\UNO_STANDARD_V2\UNO\bin\CMS.UNO.Sentinel.Handler.dll
+D:\SVN\UNO_STANDARD_V2\UNO\bin\CMS.UNO.Tempus.Handler.dll
+D:\SVN\UNO_STANDARD_V2\UNO\bin\HtmlAgilityPack.dll
+D:\SVN\UNO_STANDARD_V2\UNO\bin\Microsoft.Data.Edm.dll
+D:\SVN\UNO_STANDARD_V2\UNO\bin\Microsoft.Data.OData.dll
+D:\SVN\UNO_STANDARD_V2\UNO\bin\Microsoft.WindowsAzure.Configuration.dll
+D:\SVN\UNO_STANDARD_V2\UNO\bin\Microsoft.WindowsAzure.Storage.dll
+D:\SVN\UNO_STANDARD_V2\UNO\bin\System.Spatial.dll
+D:\SVN\UNO_STANDARD_V2\UNO\bin\System.Net.Http.dll
+D:\SVN\UNO_STANDARD_V2\UNO\bin\CMS.Framework.Common.pdb
+D:\SVN\UNO_STANDARD_V2\UNO\bin\CMS.UNO.Core.Handler.pdb
+D:\SVN\UNO_STANDARD_V2\UNO\bin\CMS.UNO.Framework.DataAccess.pdb
+D:\SVN\UNO_STANDARD_V2\UNO\bin\CMS.UNO.Login.Handler.pdb
+D:\SVN\UNO_STANDARD_V2\UNO\bin\CMS.UNO.Sentinel.Handler.pdb
+D:\SVN\UNO_STANDARD_V2\UNO\bin\CMS.UNO.Tempus.Handler.pdb
+D:\SVN\UNO_STANDARD_V2\UNO\bin\HtmlAgilityPack.pdb
+D:\SVN\UNO_STANDARD_V2\UNO\bin\HtmlAgilityPack.xml
+D:\SVN\UNO_STANDARD_V2\UNO\bin\Microsoft.Data.Edm.xml
+D:\SVN\UNO_STANDARD_V2\UNO\bin\Microsoft.Data.OData.xml
+D:\SVN\UNO_STANDARD_V2\UNO\bin\Microsoft.WindowsAzure.Storage.xml
+D:\SVN\UNO_STANDARD_V2\UNO\bin\System.Spatial.xml
+D:\SVN\UNO_STANDARD_V2\UNO\bin\System.Net.Http.xml
+D:\SVN\UNO_STANDARD_V2\UNO\bin\de\Microsoft.Data.Edm.resources.dll
+D:\SVN\UNO_STANDARD_V2\UNO\bin\es\Microsoft.Data.Edm.resources.dll
+D:\SVN\UNO_STANDARD_V2\UNO\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\SVN\UNO_STANDARD_V2\UNO\bin\it\Microsoft.Data.Edm.resources.dll
+D:\SVN\UNO_STANDARD_V2\UNO\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\SVN\UNO_STANDARD_V2\UNO\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\SVN\UNO_STANDARD_V2\UNO\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\SVN\UNO_STANDARD_V2\UNO\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\SVN\UNO_STANDARD_V2\UNO\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\SVN\UNO_STANDARD_V2\UNO\bin\de\Microsoft.Data.OData.resources.dll
+D:\SVN\UNO_STANDARD_V2\UNO\bin\es\Microsoft.Data.OData.resources.dll
+D:\SVN\UNO_STANDARD_V2\UNO\bin\fr\Microsoft.Data.OData.resources.dll
+D:\SVN\UNO_STANDARD_V2\UNO\bin\it\Microsoft.Data.OData.resources.dll
+D:\SVN\UNO_STANDARD_V2\UNO\bin\ja\Microsoft.Data.OData.resources.dll
+D:\SVN\UNO_STANDARD_V2\UNO\bin\ko\Microsoft.Data.OData.resources.dll
+D:\SVN\UNO_STANDARD_V2\UNO\bin\ru\Microsoft.Data.OData.resources.dll
+D:\SVN\UNO_STANDARD_V2\UNO\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\SVN\UNO_STANDARD_V2\UNO\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\SVN\UNO_STANDARD_V2\UNO\bin\de\System.Spatial.resources.dll
+D:\SVN\UNO_STANDARD_V2\UNO\bin\es\System.Spatial.resources.dll
+D:\SVN\UNO_STANDARD_V2\UNO\bin\fr\System.Spatial.resources.dll
+D:\SVN\UNO_STANDARD_V2\UNO\bin\it\System.Spatial.resources.dll
+D:\SVN\UNO_STANDARD_V2\UNO\bin\ja\System.Spatial.resources.dll
+D:\SVN\UNO_STANDARD_V2\UNO\bin\ko\System.Spatial.resources.dll
+D:\SVN\UNO_STANDARD_V2\UNO\bin\ru\System.Spatial.resources.dll
+D:\SVN\UNO_STANDARD_V2\UNO\bin\zh-Hans\System.Spatial.resources.dll
+D:\SVN\UNO_STANDARD_V2\UNO\bin\zh-Hant\System.Spatial.resources.dll
+D:\SVN\UNO_STANDARD_V2\UNO\obj\Debug\UNO.csprojResolveAssemblyReference.cache
+D:\SVN\UNO_STANDARD_V2\UNO\obj\Debug\RdlCompile.cache
+D:\SVN\UNO_STANDARD_V2\UNO\obj\Debug\RdlCompile.compiled
+D:\SVN\UNO_STANDARD_V2\UNO\obj\Debug\UNO.dll
+D:\SVN\UNO_STANDARD_V2\UNO\obj\Debug\UNO.pdb
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\UNO.dll
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\UNO.pdb
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\CMS.Framework.Common.dll
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\CMS.UNO.Core.Handler.dll
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\CMS.UNO.Framework.DataAccess.dll
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\CMS.UNO.Login.Handler.dll
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\CMS.UNO.Sentinel.Handler.dll
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\CMS.UNO.Tempus.Handler.dll
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\HtmlAgilityPack.dll
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\Microsoft.Data.Edm.dll
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\Microsoft.Data.OData.dll
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\Microsoft.WindowsAzure.Configuration.dll
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\Microsoft.WindowsAzure.Storage.dll
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\System.Spatial.dll
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\System.Net.Http.dll
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\CMS.Framework.Common.pdb
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\CMS.UNO.Core.Handler.pdb
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\CMS.UNO.Framework.DataAccess.pdb
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\CMS.UNO.Login.Handler.pdb
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\CMS.UNO.Sentinel.Handler.pdb
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\CMS.UNO.Tempus.Handler.pdb
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\HtmlAgilityPack.pdb
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\HtmlAgilityPack.xml
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\Microsoft.Data.Edm.xml
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\Microsoft.Data.OData.xml
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\Microsoft.WindowsAzure.Storage.xml
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\System.Spatial.xml
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\System.Net.Http.xml
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\de\Microsoft.Data.Edm.resources.dll
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\es\Microsoft.Data.Edm.resources.dll
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\fr\Microsoft.Data.Edm.resources.dll
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\it\Microsoft.Data.Edm.resources.dll
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\ja\Microsoft.Data.Edm.resources.dll
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\ko\Microsoft.Data.Edm.resources.dll
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\ru\Microsoft.Data.Edm.resources.dll
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\de\Microsoft.Data.OData.resources.dll
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\es\Microsoft.Data.OData.resources.dll
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\fr\Microsoft.Data.OData.resources.dll
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\it\Microsoft.Data.OData.resources.dll
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\ja\Microsoft.Data.OData.resources.dll
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\ko\Microsoft.Data.OData.resources.dll
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\ru\Microsoft.Data.OData.resources.dll
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\de\System.Spatial.resources.dll
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\es\System.Spatial.resources.dll
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\fr\System.Spatial.resources.dll
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\it\System.Spatial.resources.dll
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\ja\System.Spatial.resources.dll
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\ko\System.Spatial.resources.dll
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\ru\System.Spatial.resources.dll
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\zh-Hans\System.Spatial.resources.dll
+E:\Rajneesh\SVN\uno_standard_V2\UNO\bin\zh-Hant\System.Spatial.resources.dll
+E:\Rajneesh\SVN\uno_standard_V2\UNO\obj\Debug\UNO.csprojResolveAssemblyReference.cache
+E:\Rajneesh\SVN\uno_standard_V2\UNO\obj\Debug\RdlCompile.cache
+E:\Rajneesh\SVN\uno_standard_V2\UNO\obj\Debug\RdlCompile.compiled
+E:\Rajneesh\SVN\uno_standard_V2\UNO\obj\Debug\UNO.dll
+E:\Rajneesh\SVN\uno_standard_V2\UNO\obj\Debug\UNO.pdb
+D:\Devang Project\wbsedcl\UNO\bin\UNO.dll
+D:\Devang Project\wbsedcl\UNO\bin\UNO.pdb
+D:\Devang Project\wbsedcl\UNO\bin\CMS.Framework.Common.dll
+D:\Devang Project\wbsedcl\UNO\bin\CMS.UNO.Core.Handler.dll
+D:\Devang Project\wbsedcl\UNO\bin\CMS.UNO.Framework.DataAccess.dll
+D:\Devang Project\wbsedcl\UNO\bin\CMS.UNO.Login.Handler.dll
+D:\Devang Project\wbsedcl\UNO\bin\CMS.UNO.Sentinel.Handler.dll
+D:\Devang Project\wbsedcl\UNO\bin\CMS.UNO.Tempus.Handler.dll
+D:\Devang Project\wbsedcl\UNO\bin\HtmlAgilityPack.dll
+D:\Devang Project\wbsedcl\UNO\bin\Microsoft.Data.Edm.dll
+D:\Devang Project\wbsedcl\UNO\bin\Microsoft.Data.OData.dll
+D:\Devang Project\wbsedcl\UNO\bin\Microsoft.WindowsAzure.Configuration.dll
+D:\Devang Project\wbsedcl\UNO\bin\Microsoft.WindowsAzure.Storage.dll
+D:\Devang Project\wbsedcl\UNO\bin\System.Spatial.dll
+D:\Devang Project\wbsedcl\UNO\bin\System.Net.Http.dll
+D:\Devang Project\wbsedcl\UNO\bin\CMS.Framework.Common.pdb
+D:\Devang Project\wbsedcl\UNO\bin\CMS.UNO.Core.Handler.pdb
+D:\Devang Project\wbsedcl\UNO\bin\CMS.UNO.Framework.DataAccess.pdb
+D:\Devang Project\wbsedcl\UNO\bin\CMS.UNO.Login.Handler.pdb
+D:\Devang Project\wbsedcl\UNO\bin\CMS.UNO.Sentinel.Handler.pdb
+D:\Devang Project\wbsedcl\UNO\bin\CMS.UNO.Tempus.Handler.pdb
+D:\Devang Project\wbsedcl\UNO\bin\HtmlAgilityPack.pdb
+D:\Devang Project\wbsedcl\UNO\bin\HtmlAgilityPack.xml
+D:\Devang Project\wbsedcl\UNO\bin\Microsoft.Data.Edm.xml
+D:\Devang Project\wbsedcl\UNO\bin\Microsoft.Data.OData.xml
+D:\Devang Project\wbsedcl\UNO\bin\Microsoft.WindowsAzure.Storage.xml
+D:\Devang Project\wbsedcl\UNO\bin\System.Spatial.xml
+D:\Devang Project\wbsedcl\UNO\bin\System.Net.Http.xml
+D:\Devang Project\wbsedcl\UNO\bin\de\Microsoft.Data.Edm.resources.dll
+D:\Devang Project\wbsedcl\UNO\bin\es\Microsoft.Data.Edm.resources.dll
+D:\Devang Project\wbsedcl\UNO\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\Devang Project\wbsedcl\UNO\bin\it\Microsoft.Data.Edm.resources.dll
+D:\Devang Project\wbsedcl\UNO\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\Devang Project\wbsedcl\UNO\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\Devang Project\wbsedcl\UNO\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\Devang Project\wbsedcl\UNO\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\Devang Project\wbsedcl\UNO\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\Devang Project\wbsedcl\UNO\bin\de\Microsoft.Data.OData.resources.dll
+D:\Devang Project\wbsedcl\UNO\bin\es\Microsoft.Data.OData.resources.dll
+D:\Devang Project\wbsedcl\UNO\bin\fr\Microsoft.Data.OData.resources.dll
+D:\Devang Project\wbsedcl\UNO\bin\it\Microsoft.Data.OData.resources.dll
+D:\Devang Project\wbsedcl\UNO\bin\ja\Microsoft.Data.OData.resources.dll
+D:\Devang Project\wbsedcl\UNO\bin\ko\Microsoft.Data.OData.resources.dll
+D:\Devang Project\wbsedcl\UNO\bin\ru\Microsoft.Data.OData.resources.dll
+D:\Devang Project\wbsedcl\UNO\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\Devang Project\wbsedcl\UNO\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\Devang Project\wbsedcl\UNO\bin\de\System.Spatial.resources.dll
+D:\Devang Project\wbsedcl\UNO\bin\es\System.Spatial.resources.dll
+D:\Devang Project\wbsedcl\UNO\bin\fr\System.Spatial.resources.dll
+D:\Devang Project\wbsedcl\UNO\bin\it\System.Spatial.resources.dll
+D:\Devang Project\wbsedcl\UNO\bin\ja\System.Spatial.resources.dll
+D:\Devang Project\wbsedcl\UNO\bin\ko\System.Spatial.resources.dll
+D:\Devang Project\wbsedcl\UNO\bin\ru\System.Spatial.resources.dll
+D:\Devang Project\wbsedcl\UNO\bin\zh-Hans\System.Spatial.resources.dll
+D:\Devang Project\wbsedcl\UNO\bin\zh-Hant\System.Spatial.resources.dll
+D:\Devang Project\wbsedcl\UNO\obj\Debug\UNO.csprojResolveAssemblyReference.cache
+D:\Devang Project\wbsedcl\UNO\obj\Debug\RdlCompile.cache
+D:\Devang Project\wbsedcl\UNO\obj\Debug\RdlCompile.compiled
+D:\Devang Project\wbsedcl\UNO\obj\Debug\UNO.dll
+D:\Devang Project\wbsedcl\UNO\obj\Debug\UNO.pdb
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\UNO.dll
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\UNO.pdb
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\CMS.Framework.Common.dll
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\CMS.UNO.Core.Handler.dll
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\CMS.UNO.Framework.DataAccess.dll
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\CMS.UNO.Login.Handler.dll
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\CMS.UNO.Sentinel.Handler.dll
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\CMS.UNO.Tempus.Handler.dll
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\HtmlAgilityPack.dll
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\Microsoft.Data.Edm.dll
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\Microsoft.Data.OData.dll
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\Microsoft.WindowsAzure.Configuration.dll
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\Microsoft.WindowsAzure.Storage.dll
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\System.Spatial.dll
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\System.Net.Http.dll
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\CMS.Framework.Common.pdb
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\CMS.UNO.Core.Handler.pdb
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\CMS.UNO.Framework.DataAccess.pdb
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\CMS.UNO.Login.Handler.pdb
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\CMS.UNO.Sentinel.Handler.pdb
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\CMS.UNO.Tempus.Handler.pdb
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\HtmlAgilityPack.pdb
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\HtmlAgilityPack.xml
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\Microsoft.Data.Edm.xml
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\Microsoft.Data.OData.xml
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\Microsoft.WindowsAzure.Storage.xml
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\System.Spatial.xml
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\System.Net.Http.xml
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\de\Microsoft.Data.Edm.resources.dll
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\es\Microsoft.Data.Edm.resources.dll
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\fr\Microsoft.Data.Edm.resources.dll
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\it\Microsoft.Data.Edm.resources.dll
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\ja\Microsoft.Data.Edm.resources.dll
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\ko\Microsoft.Data.Edm.resources.dll
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\ru\Microsoft.Data.Edm.resources.dll
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\de\Microsoft.Data.OData.resources.dll
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\es\Microsoft.Data.OData.resources.dll
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\fr\Microsoft.Data.OData.resources.dll
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\it\Microsoft.Data.OData.resources.dll
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\ja\Microsoft.Data.OData.resources.dll
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\ko\Microsoft.Data.OData.resources.dll
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\ru\Microsoft.Data.OData.resources.dll
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\de\System.Spatial.resources.dll
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\es\System.Spatial.resources.dll
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\fr\System.Spatial.resources.dll
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\it\System.Spatial.resources.dll
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\ja\System.Spatial.resources.dll
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\ko\System.Spatial.resources.dll
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\ru\System.Spatial.resources.dll
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\zh-Hans\System.Spatial.resources.dll
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\bin\zh-Hant\System.Spatial.resources.dll
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\obj\Debug\UNO.csprojResolveAssemblyReference.cache
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\obj\Debug\RdlCompile.cache
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\obj\Debug\RdlCompile.compiled
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\obj\Debug\UNO.dll
+E:\Rajneesh\SVN\uno_clientwise_project\wbsedcl_uno\UNO\obj\Debug\UNO.pdb

@@ -1,0 +1,584 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data;
+using System.Data.SqlClient;
+using System.Configuration;
+using System.Net.Mail;
+using System.Net;
+using System.IO;
+using System.Net.NetworkInformation;
+using System.Management;
+
+namespace UNO
+{
+    public partial class Main : System.Web.UI.MasterPage
+    {
+        SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["connection_string"].ToString());
+        string strMailOption = "";
+        string strMailServer = "";
+        string strMailUserName = "";
+        string strMailPassword = "";
+        int strMailPort = 0;
+
+        string licensekey = "";
+
+
+        public void SendMail(string To, string Password)
+        {
+
+            try
+            {
+                chkMailConfiguration();
+                SmtpClient objSMTPCLIENT = new SmtpClient();
+                MailMessage objMailMessage = new MailMessage();
+                string message = "Your Password is : " + Password;
+                objMailMessage.From = new MailAddress("uno@cms.co.in");
+                objMailMessage.To.Add(To.Trim());
+                //objMailMessage.Bcc.Add("tk_helpdesk@cms.co.in");
+                // p_Mailobj.CC.Add(_mailCCAddress.Trim());
+                objMailMessage.Subject = "Your UNO-Tempus password";
+                objMailMessage.Body = message.Trim();
+                objMailMessage.Priority = MailPriority.High;
+
+                objSMTPCLIENT.Port = strMailPort;
+                objSMTPCLIENT.Host = strMailServer;
+
+                if (strMailUserName != "")
+                {
+                    CredentialCache.DefaultNetworkCredentials.UserName = strMailUserName;
+                    CredentialCache.DefaultNetworkCredentials.Password = strMailPassword;
+
+                    objSMTPCLIENT.Credentials = CredentialCache.DefaultNetworkCredentials;
+
+                }
+                objSMTPCLIENT.Send(objMailMessage);
+
+
+            }
+
+            catch (Exception ex)
+            {
+                lblMessage.Text = ex.Message;
+            }
+        }
+        public void chkMailConfiguration()
+        {
+            conn.Open();
+            String strSql = "select Identifier,value FROM ENT_PARAMS WHERE  MODULE='ESS'";
+            SqlDataAdapter da = new SqlDataAdapter(strSql, conn);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            for (int i = 0; i <= dt.Rows.Count - 1; i++)
+            {
+                if (dt.Rows[i]["Identifier"].ToString() == "WITHMAIL")
+                {
+                    strMailOption = dt.Rows[i]["Value"].ToString();
+                }
+                if (dt.Rows[i]["Identifier"].ToString() == "MAILSERVER")
+                {
+                    strMailServer = dt.Rows[i]["Value"].ToString();
+                }
+                if (dt.Rows[i]["Identifier"].ToString() == "MAILSERVERUSERNAME")
+                {
+                    strMailUserName = dt.Rows[i]["Value"].ToString();
+                }
+                if (dt.Rows[i]["Identifier"].ToString() == "MAILSERVERPASSWORD")
+                {
+                    strMailPassword = dt.Rows[i]["Value"].ToString();
+                }
+                if (dt.Rows[i]["Identifier"].ToString() == "MAILPORT")
+                {
+                    strMailPort = Convert.ToInt32(dt.Rows[i]["Value"]);
+                }
+            }
+
+        }
+
+        private string GetMacAddress()
+        {
+            NetworkInterface[] nics = NetworkInterface.GetAllNetworkInterfaces();
+            String sMacAddress = string.Empty;
+            foreach (NetworkInterface adapter in nics)
+            {
+                if (sMacAddress == String.Empty)// only return MAC Address 
+                {
+                    IPInterfaceProperties properties = adapter.GetIPProperties();
+                    sMacAddress = adapter.GetPhysicalAddress().ToString();
+                }
+            }
+
+            return sMacAddress + GetHDDSerialNo(); //MAC+HDD
+        }
+        private string GetHDDSerialNo()
+        {
+            string strDriveLetter = "C";
+            ManagementObject disk = new ManagementObject("win32_logicaldisk.deviceid=\"" + strDriveLetter + ":\"");
+            disk.Get();
+            return disk["VolumeSerialNumber"].ToString();
+        }
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+            // WriteLog(" Message 1");
+            //coment for development purpose
+            if (IsPostBack)
+            {
+                //  WriteLog(" Message 2");
+                if (!Request.FilePath.Contains("Login"))
+                {
+                    //    WriteLog(" Message 3");
+                    string strPreviousPage = "";
+                    if (Request.UrlReferrer != null)
+                    {
+                        strPreviousPage = Request.UrlReferrer.Segments[Request.UrlReferrer.Segments.Length - 1];
+                    }
+                    if (strPreviousPage == "")
+                    {
+                        Session.Abandon();
+                        Response.Redirect("Login.aspx");
+
+                    }
+                    ///  WriteLog(" Message 4");
+                }
+            }
+            string page = Path.GetFileName(Request.Url.AbsolutePath);
+            licensekey = GetMacAddress();
+            string url = HttpContext.Current.Request.Url.AbsoluteUri;
+            //WriteLog(" Message 5");
+            Response.Cache.SetCacheability(HttpCacheability.NoCache);
+
+
+            Response.Cache.SetExpires(DateTime.UtcNow.AddHours(-1)); Response.Cache.SetNoStore();
+
+            //WriteLog(" Message 6");
+
+
+            if (Session["uid"] == null || Session["uid"].ToString() == "")
+            {
+                //if (Request.QueryString["Missionflag"] != null)
+                //{
+                //    if (page == "Home.aspx")
+                //    {
+
+                //    }
+                //    else if (Request.QueryString["Missionflag"].ToString() == "1")
+                //    {
+                //       Response.Redirect("Mission.aspx");
+                //    }
+                //    else
+                //    {
+                //        Response.Redirect("Login.aspx?redirect=" + HttpUtility.UrlEncode(url), true);
+                //    }
+                //}
+
+
+                //else
+                //{
+
+                if (page == "Home.aspx" || page == "home.aspx")
+                {
+
+                }
+                else if (page == "Mission.aspx")
+                {
+
+                }
+                else if (page == "FeedBack.aspx")
+                {
+
+                }
+                else if (page == "Aboutus.aspx")
+                {
+
+                }
+                else
+                {
+                    Response.Redirect("Login.aspx?redirect=" + HttpUtility.UrlEncode(url), true);
+                }
+
+            }
+            else
+            {
+                lblUserName.Text = Session["loginName"].ToString();
+            }
+
+        }
+        protected void btnLogin_Click(object sender, EventArgs e)
+        {
+            SqlDataReader dr = null;
+            string errormsg = null;
+
+           if (DateTime.Now > CMSDateTime.CMSDateTime.ConvertToDateTime("31/01/2016", "dd/MM/yyyy"))
+            {
+                lblMessage.Visible = true;
+                string str = " <table><tr><td rowspan='2'><img  src='images/Invalid.png' width='40'/></td><td align='left'>License is expired.</td></tr>";
+                str += "<tr><td align='left'>please contact CMS Computers Ltd. -</td></tr>";
+                str += "<tr><td></td><td align='left'>send an email to -</td></tr>";
+                str += "<tr><td></td><td align='left'>uno@cms.co.in</td></tr></table>";
+
+                lblMessage.Text = str;
+                mpeMessage.Show();
+                return;
+            }
+
+
+
+            try
+            {
+
+                WriteLog("Message 1");
+                //MODIFIED BY Pooja
+
+
+
+                if (conn.State == ConnectionState.Closed)
+                {
+                    conn.Open();
+                }
+
+                SqlDataAdapter daAct = new SqlDataAdapter("select top 1 1 from ent_user where isnull(active,0)=0 and userid='" + txtUserName.Text + "'", conn);
+                DataTable dtAct = new DataTable();
+                daAct.Fill(dtAct);
+
+
+
+
+                WriteLog("Message 2");
+                licensekey = GetMacAddress();
+                SqlCommand cmdLicense = new SqlCommand("select LicenseKey from Client_License", conn);
+                string ClientLicenseKey = Convert.ToString(cmdLicense.ExecuteScalar());
+                string[] strKey = ClientLicenseKey.Split('µ');
+                if (ClientLicenseKey != "")
+                {
+                    ClientLicenseKey = Encryption.EncryptDecrypt.Decrypt(strKey[0], true);
+                }
+                if (licensekey != ClientLicenseKey)
+                {
+                    WriteLog("Message 3");
+
+                    SqlCommand cmd1 = new SqlCommand();
+                    cmd1.Connection = conn;
+                    cmd1.CommandType = CommandType.StoredProcedure;
+                    cmd1.CommandText = "authenticateUser";
+                    if (txtUserName.Text.Trim().ToLower() == "admin")
+                    {
+                        cmd1.Parameters.AddWithValue("@cmd", 1);
+                        cmd1.Parameters.AddWithValue("@userId", txtUserName.Text.Trim());
+                        string encrypass = Encryption.EncryptDecrypt.Encrypt(txtUserName.Text.Trim(), true);
+                        cmd1.Parameters.AddWithValue("@encryptPwd", encrypass);
+                    }
+                    cmd1.ExecuteNonQuery();
+
+
+                    WriteLog("Message 4");
+
+                    SqlCommand cmd = new SqlCommand("select UserID,EmployeeID,DateofCreation,Password,LevelID,isnull(EssEnabled,0) EssEnabled,isnull(Active,0) Active,IsDeleted,DeletedDate,InitialLogin,isnull(EPD_FIRST_NAME,'') + ' (' + EmployeeID + ')' as EmpName  from ENT_User left join ENT_EMPLOYEE_PERSONAL_DTLS on epd_empid=EmployeeID WHERE IsDeleted=0 and UserID= upper('" + txtUserName.Text + "')", conn);
+                    cmd.CommandType = CommandType.Text;
+                    dr = cmd.ExecuteReader();
+                    WriteLog("Message 5");
+                    if (dr.Read())
+                    {
+                        if (dr["UserID"].ToString().ToUpper().Trim() == txtUserName.Text.ToUpper().Trim())  //changes made by Shrinith On 12/Sept/2014
+                        {
+                            string strpass = Encryption.EncryptDecrypt.Encrypt(txtPassword.Text.Trim(), true);
+                            if (Encryption.EncryptDecrypt.Decrypt(dr["Password"].ToString(), true) == txtPassword.Text)
+                            {
+                                if (dr["IsDeleted"].ToString() == "False")
+                                {
+                                    WriteLog("Message 6");
+
+                                    if (dtAct.Rows.Count > 0)
+                                    {
+                                        txtUserName.Text = "";
+                                        txtPassword.Text = "";
+                                        lblMessage.Visible = true;
+                                        lblMessage.Text = "Inactive User";
+                                        mpeMessage.Show();
+                                        return;
+                                    }
+                                    WriteLog("Message 7");
+                                    //if (licensekey != "42F2E96A5ED7")
+                                    //{
+                                    Session["uid"] = dr.GetString(0);
+                                    Session["loginName"] = Convert.ToString(dr["EmpName"]);
+                                    Session["levelId"] = Convert.ToString(dr["LevelID"]);
+                                    Session["EssEnabled"] = Convert.ToString(dr["EssEnabled"]);
+                                    //if (dr["EssEnabled"].ToString() == "True")
+                                    //{
+                                    //    Session["uid"] = dr.GetString(0);
+                                    //    Response.Redirect("WebForm1.aspx", true);
+                                    //}
+                                    //Session["uid"] = dr.GetString(0);
+                                    //Response.Redirect("Uno_Dashboard.aspx", true);
+
+                                    if (dr["EssEnabled"].ToString() == "True")
+                                    {
+                                        if (dr["InitialLogin"].ToString() == "True")
+                                        {
+                                            Response.Redirect("UpdatePassword.aspx", false);
+                                        }
+                                        else
+                                        {
+                                            //if (CheckReporting.IsManager(Convert.ToString(Session["uid"])))
+                                            //{
+                                            //    Response.Redirect("Manager_Dashboard.aspx", false);
+                                            //}
+                                            //else
+                                            //{
+                                            //    Response.Redirect("ESS_Dashboard.aspx", false);
+                                            //}
+                                            Response.Redirect("ESS_Dashboard.aspx", false);
+                                        }
+                                    }
+                                    else
+                                    {
+                                        // Session["uid"] = dr.GetString(0);
+                                        if (dr["InitialLogin"].ToString() == "True")
+                                        {
+                                            Response.Redirect("UpdatePassword.aspx", false);
+                                        }
+                                        else
+                                        {
+                                            Response.Redirect("Uno_Dashboard.aspx", false);
+                                          //  Response.Redirect("Manager_Dashboard.aspx", false);
+                                        }
+                                    }
+                                    dr.Close();
+                                    SqlCommand StoreUserHistory = new SqlCommand("insert into UtCheck(userId,userPassword,LoginStatus,loginTime)values('" + txtUserName.Text + "','" + txtPassword.Text + "','Success',getdate())", conn);
+                                    StoreUserHistory.ExecuteNonQuery();
+
+
+
+                                    // }
+                                    //else
+                                    //{
+                                    //    lblMessage.Text = "InValid Login";
+                                    //    return;
+                                    //}
+
+                                }
+                                else
+                                {
+                                    dr.Close();
+                                    SqlCommand StoreUserHistory = new SqlCommand("insert into UtCheck(userId,userPassword,LoginStatus,loginTime)values('" + txtUserName.Text + "','" + txtPassword.Text + "','Failed',getdate())", conn);
+                                    StoreUserHistory.ExecuteNonQuery();
+
+                                    txtUserName.Text = "";
+                                    txtPassword.Text = "";
+                                    lblMessage.Visible = true;
+                                    lblMessage.Text = "Inactive User";
+                                    mpeMessage.Show();
+                                    return;
+                                }
+                            }
+                            else
+                            {
+                                dr.Close();
+                                SqlCommand StoreUserHistory = new SqlCommand("insert into UtCheck(userId,userPassword,LoginStatus,loginTime)values('" + txtUserName.Text + "','" + txtPassword.Text + "','Failed',getdate())", conn);
+                                StoreUserHistory.ExecuteNonQuery();
+
+                                txtUserName.Text = "";
+                                txtPassword.Text = "";
+                                lblMessage.Visible = true;
+                                lblMessage.Text = "Invalid Password";
+                                mpeMessage.Show();
+                                txtPassword.Focus();
+                                return;
+                            }
+                        }
+                        else
+                        {
+                            dr.Close();
+                            SqlCommand StoreUserHistory = new SqlCommand("insert into UtCheck(userId,userPassword,LoginStatus,loginTime)values('" + txtUserName.Text + "','" + txtPassword.Text + "','Failed',getdate())", conn);
+                            StoreUserHistory.ExecuteNonQuery();
+
+                            txtUserName.Text = "";
+                            txtPassword.Text = "";
+                            lblMessage.Visible = true;
+                            lblMessage.Text = "Invalid User id";
+                            mpeMessage.Show();
+                            return;
+                        }
+                    }
+                    else
+                    {
+                        dr.Close();
+                        SqlCommand StoreUserHistory = new SqlCommand("insert into UtCheck(userId,userPassword,LoginStatus,loginTime)values('" + txtUserName.Text + "','" + txtPassword.Text + "','Failed',getdate())", conn);
+                        StoreUserHistory.ExecuteNonQuery();
+
+                        txtUserName.Text = "";
+                        txtPassword.Text = "";
+                        lblMessage.Visible = true;
+                        lblMessage.Text = "Invalid User";
+                        mpeMessage.Show();
+                        return;
+                    }
+                    if (conn.State == ConnectionState.Open)
+                    {
+                        conn.Close();
+                    }
+                }
+                else
+                {
+
+
+                    lblMessage.Visible = true;
+                    string str = " <table><tr><td rowspan='2'><img  src='images/Invalid.png' width='40'/></td><td align='left'>A valid license could not be obtained by the UNO license manager.</td></tr>";
+                    str += "<tr><td align='left'>If you are an authorized user, please contact CMS Computers Ltd. on the below number(s) -</td></tr>";
+                    str += "<tr><td></td><td align='left' style='padding-top:10px'>022-4125 9051</td></tr>";
+                    str += "<tr><td></td><td align='left'>send an email to -</td></tr>";
+                    str += "<tr><td></td><td align='left'>uno@cms.co.in</td></tr></table>";
+
+
+                    lblMessage.Text = str;
+                    mpeMessage.Show();
+
+                }
+            }
+            catch (Exception ex)
+            {
+                WriteLog("Message 8");
+
+                WriteLog(ex.Message.ToString());
+                if (ex.Message.Contains("A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections."))
+                {
+                    lblMessage.Text = "Database Connectivity Issue";
+                    lblMessage.Visible = true;
+                    mpeMessage.Show();
+                    return;
+                }
+                else if (ex.Message.Contains("Cannot open database"))
+                {
+                    lblMessage.Text = "Database not found";
+                    lblMessage.Visible = true;
+                    mpeMessage.Show();
+                    return;
+                }
+                else if (ex.Message.Contains("Login failed for user"))
+                {
+                    lblMessage.Text = "Please enter correct user id and password in web config";
+                    lblMessage.Visible = true;
+                    mpeMessage.Show();
+                    return;
+                }
+                else
+                {
+                    lblMessage.Text = "Unexpected error";
+                    lblMessage.Visible = true;
+                    mpeMessage.Show();
+
+                }
+
+
+                if (dr != null)
+                    dr.Close();
+
+
+
+                WriteLog("Message 10");
+            }
+            finally
+            {
+                WriteLog("Message 11");
+                if (dr != null)
+                    dr.Close();
+                WriteLog("Message 12");
+            }
+        }
+
+        private void WriteLog(string strMessage)
+        {
+            //System.IO.StreamWriter sw=null;
+            //try 
+            //{
+            //    sw=new StreamWriter("D:\\LOG\\Msg.Log",true);
+            //    sw.WriteLine(strMessage);
+            //}
+            //finally
+            //{
+            //    sw.Close();
+            //}
+        }
+
+        protected void signout_Click(object sender, EventArgs e)
+        {
+            Session.RemoveAll();
+            Response.Redirect("Home.aspx", true);
+        }
+
+        protected void btnOk_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (conn.State == ConnectionState.Closed)
+                {
+                    conn.Open();
+                }
+                SqlCommand cmd = new SqlCommand("Select a.epd_Email, b.[Password] from Ent_employee_personal_Dtls a, ENT_User b where a.EPD_EmpId = b.UserID and a.EPD_EmpId = '" + txtEmployeeID.Text + "'", conn);
+                cmd.CommandType = CommandType.Text;
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                if (conn.State == ConnectionState.Open)
+                {
+                    conn.Close();
+                }
+                string EmailTo = "";
+                string Password = "";
+                if (dt.Rows.Count != 0 && dt.Rows[0][0].ToString() != null && dt.Rows[0][0].ToString() != "")
+                {
+                    EmailTo = dt.Rows[0][0].ToString();
+                    Password = dt.Rows[0][1].ToString();
+                    SendMail(EmailTo, Password);
+
+                    lblMessage.Visible = true;
+
+                    lblMessage.Text = "Password has been sent successfully to your mail id";
+                }
+                else
+                {
+                    lblMessage.Text = "No Email Address Registered.";
+                }
+                mpeMessage.Show();
+            }
+            catch (Exception ex)
+            {
+                lblMessage.Text = ex.Message;
+                lblMessage.Visible = true;
+                mpeMessage.Show();
+            }
+        }
+
+        protected void ibHome_Click(object sender, ImageClickEventArgs e)
+        {
+            if (Convert.ToString(Session["uid"]) != "")
+            {
+                if (Session["EssEnabled"].ToString() == "True")
+                {
+
+                    if (CheckReporting.IsManager(Convert.ToString(Session["uid"])))
+                    {
+                        Response.Redirect("Manager_Dashboard.aspx", true);
+                    }
+                    else
+                    {
+                        Response.Redirect("ESS_Dashboard.aspx", true);
+                    }
+                }
+                else
+                {
+                    Response.Redirect("Manager_Dashboard.aspx", true);
+
+                }
+            }
+            else
+            {
+                Response.Redirect("Home.aspx", true);
+            }
+        }
+    }
+}

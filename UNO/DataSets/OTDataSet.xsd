@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="OTDataSet" targetNamespace="http://tempuri.org/OTDataSet.xsd" xmlns:mstns="http://tempuri.org/OTDataSet.xsd" xmlns="http://tempuri.org/OTDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="connection_string" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="connection_string (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.connection_string.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="connection_string (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText> SELECT	TDAY_EMPCDE  ,ENT_EMPLOYEE_PERSONAL_DTLS.EPD_FIRST_NAME+' '  + ENT_EMPLOYEE_PERSONAL_DTLS.EPD_LAST_NAME AS EPD_FIRST_NAME ,
+ CONVERT(varchar(10),TDAY_DATE,101) as Date , convert(varchar,TDAY_LTOT,108)as TDAY_LTOT, convert(varchar,TDAY_EROT,108) as TDAY_EROT, convert(varchar,TDAY_EXHR,108) as TDAY_EXHR,
+ ENT_COMPANY.COMPANY_NAME ,LOC.OCE_DESCRIPTION AS Location ,
+ DIV.OCE_DESCRIPTION AS Division  ,
+ DEP.OCE_DESCRIPTION AS Department ,
+ DESG.OCE_DESCRIPTION AS Designation  ,
+ GRP.OCE_DESCRIPTION AS Groups ,
+ GRD.OCE_DESCRIPTION AS Grade  
+ FROM TDAY  
+ INNER JOIN ENT_EMPLOYEE_PERSONAL_DTLS 
+ ON TDAY.TDAY_EMPCDE=ENT_EMPLOYEE_PERSONAL_DTLS.EPD_EMPID  
+ INNER JOIN ENT_EMPLOYEE_OFFICIAL_DTLS 
+ ON TDAY.TDAY_EMPCDE=ENT_EMPLOYEE_OFFICIAL_DTLS.EOD_EMPID  
+ INNER JOIN ENT_COMPANY 
+ ON ENT_EMPLOYEE_OFFICIAL_DTLS.EOD_COMPANY_ID=ENT_COMPANY.COMPANY_ID  
+ INNER JOIN ENT_ORG_COMMON_ENTITIES AS CAT 
+ ON  ENT_EMPLOYEE_OFFICIAL_DTLS.EOD_CATEGORY_ID=CAT.OCE_ID AND CAT.CEM_ENTITY_ID='CAT'   
+ INNER JOIN ENT_ORG_COMMON_ENTITIES AS LOC ON  ENT_EMPLOYEE_OFFICIAL_DTLS.EOD_LOCATION_ID=LOC.OCE_ID 
+ AND LOC.CEM_ENTITY_ID='LOC'  
+ INNER JOIN ENT_ORG_COMMON_ENTITIES AS DIV 
+ ON  ENT_EMPLOYEE_OFFICIAL_DTLS.EOD_DIVISION_ID=DIV.OCE_ID AND DIV.CEM_ENTITY_ID='DIV'  
+ INNER JOIN ENT_ORG_COMMON_ENTITIES AS DEP ON  
+ ENT_EMPLOYEE_OFFICIAL_DTLS.EOD_DEPARTMENT_ID=DEP.OCE_ID AND DEP.CEM_ENTITY_ID='DEP'  
+ INNER JOIN ENT_ORG_COMMON_ENTITIES AS DESG ON  ENT_EMPLOYEE_OFFICIAL_DTLS.EOD_DESIGNATION_ID=DESG.OCE_ID 
+ AND DESG.CEM_ENTITY_ID='DES'  
+ INNER JOIN ENT_ORG_COMMON_ENTITIES AS GRP ON  ENT_EMPLOYEE_OFFICIAL_DTLS.EOD_GROUP_ID=GRP.OCE_ID 
+ AND GRP.CEM_ENTITY_ID='GRP'  INNER JOIN ENT_ORG_COMMON_ENTITIES AS GRD ON  
+ ENT_EMPLOYEE_OFFICIAL_DTLS.EOD_GRADE_ID=GRD.OCE_ID AND GRD.CEM_ENTITY_ID='GRD' 
+ WHERE  ENT_EMPLOYEE_PERSONAL_DTLS.EPD_ISDELETED=0  and TDAY_EXHR is not null
+ </CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="TDAY_EMPCDE" DataSetColumn="TDAY_EMPCDE" />
+              <Mapping SourceColumn="EPD_FIRST_NAME" DataSetColumn="EPD_FIRST_NAME" />
+              <Mapping SourceColumn="Date" DataSetColumn="Date" />
+              <Mapping SourceColumn="TDAY_LTOT" DataSetColumn="TDAY_LTOT" />
+              <Mapping SourceColumn="TDAY_EROT" DataSetColumn="TDAY_EROT" />
+              <Mapping SourceColumn="TDAY_EXHR" DataSetColumn="TDAY_EXHR" />
+              <Mapping SourceColumn="COMPANY_NAME" DataSetColumn="COMPANY_NAME" />
+              <Mapping SourceColumn="Location" DataSetColumn="Location" />
+              <Mapping SourceColumn="Division" DataSetColumn="Division" />
+              <Mapping SourceColumn="Department" DataSetColumn="Department" />
+              <Mapping SourceColumn="Designation" DataSetColumn="Designation" />
+              <Mapping SourceColumn="Groups" DataSetColumn="Groups" />
+              <Mapping SourceColumn="Grade" DataSetColumn="Grade" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="OTDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="OTDataSet" msprop:Generator_UserDSName="OTDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TDAY_EMPCDE" msprop:Generator_ColumnVarNameInTable="columnTDAY_EMPCDE" msprop:Generator_ColumnPropNameInRow="TDAY_EMPCDE" msprop:Generator_ColumnPropNameInTable="TDAY_EMPCDEColumn" msprop:Generator_UserColumnName="TDAY_EMPCDE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EPD_FIRST_NAME" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEPD_FIRST_NAME" msprop:Generator_ColumnPropNameInRow="EPD_FIRST_NAME" msprop:Generator_ColumnPropNameInTable="EPD_FIRST_NAMEColumn" msprop:Generator_UserColumnName="EPD_FIRST_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="101" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Date" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDate" msprop:Generator_ColumnPropNameInRow="Date" msprop:Generator_ColumnPropNameInTable="DateColumn" msprop:Generator_UserColumnName="Date" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TDAY_LTOT" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTDAY_LTOT" msprop:Generator_ColumnPropNameInRow="TDAY_LTOT" msprop:Generator_ColumnPropNameInTable="TDAY_LTOTColumn" msprop:Generator_UserColumnName="TDAY_LTOT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TDAY_EROT" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTDAY_EROT" msprop:Generator_ColumnPropNameInRow="TDAY_EROT" msprop:Generator_ColumnPropNameInTable="TDAY_EROTColumn" msprop:Generator_UserColumnName="TDAY_EROT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TDAY_EXHR" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTDAY_EXHR" msprop:Generator_ColumnPropNameInRow="TDAY_EXHR" msprop:Generator_ColumnPropNameInTable="TDAY_EXHRColumn" msprop:Generator_UserColumnName="TDAY_EXHR" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMPANY_NAME" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_NAME" msprop:Generator_ColumnPropNameInRow="COMPANY_NAME" msprop:Generator_ColumnPropNameInTable="COMPANY_NAMEColumn" msprop:Generator_UserColumnName="COMPANY_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Location" msprop:Generator_ColumnVarNameInTable="columnLocation" msprop:Generator_ColumnPropNameInRow="Location" msprop:Generator_ColumnPropNameInTable="LocationColumn" msprop:Generator_UserColumnName="Location" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Division" msprop:Generator_ColumnVarNameInTable="columnDivision" msprop:Generator_ColumnPropNameInRow="Division" msprop:Generator_ColumnPropNameInTable="DivisionColumn" msprop:Generator_UserColumnName="Division" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Department" msprop:Generator_ColumnVarNameInTable="columnDepartment" msprop:Generator_ColumnPropNameInRow="Department" msprop:Generator_ColumnPropNameInTable="DepartmentColumn" msprop:Generator_UserColumnName="Department" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Designation" msprop:Generator_ColumnVarNameInTable="columnDesignation" msprop:Generator_ColumnPropNameInRow="Designation" msprop:Generator_ColumnPropNameInTable="DesignationColumn" msprop:Generator_UserColumnName="Designation" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Groups" msprop:Generator_ColumnVarNameInTable="columnGroups" msprop:Generator_ColumnPropNameInRow="Groups" msprop:Generator_ColumnPropNameInTable="GroupsColumn" msprop:Generator_UserColumnName="Groups" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Grade" msprop:Generator_ColumnVarNameInTable="columnGrade" msprop:Generator_ColumnPropNameInRow="Grade" msprop:Generator_ColumnPropNameInTable="GradeColumn" msprop:Generator_UserColumnName="Grade" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,7 @@
+server : 172.19.63.116
+
+Drive: E
+
+Folder : E:\Rajneesh\UNO_Standard_bakup
+
+File : uno_std

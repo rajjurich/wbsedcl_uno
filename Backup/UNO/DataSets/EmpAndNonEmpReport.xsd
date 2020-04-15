@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="EmpAndNonEmpReport" targetNamespace="http://tempuri.org/EmpAndNonEmpReport.xsd" xmlns:mstns="http://tempuri.org/EmpAndNonEmpReport.xsd" xmlns="http://tempuri.org/EmpAndNonEmpReport.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="connection_string" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="connection_string (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.connection_string.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Emp_CountTableAdapter" GeneratorDataComponentClassName="Emp_CountTableAdapter" Name="Emp_Count" UserDataComponentName="Emp_CountTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="connection_string (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select '' as EPD_EMPID,''  as Emp_Details,
+				'' as DivEntity ,'' as DepGroup,'' as GrdDivision,'' as Company,'' as Location,
+				'' as Employee ,
+				'' as EOD_JOINING_DATE
+				from ENT_EMPLOYEE_PERSONAL_DTLS </CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="EPD_EMPID" DataSetColumn="EPD_EMPID" />
+              <Mapping SourceColumn="Emp_Details" DataSetColumn="Emp_Details" />
+              <Mapping SourceColumn="DivEntity" DataSetColumn="DivEntity" />
+              <Mapping SourceColumn="DepGroup" DataSetColumn="DepGroup" />
+              <Mapping SourceColumn="GrdDivision" DataSetColumn="GrdDivision" />
+              <Mapping SourceColumn="Employee" DataSetColumn="Employee" />
+              <Mapping SourceColumn="EOD_JOINING_DATE" DataSetColumn="EOD_JOINING_DATE" />
+              <Mapping SourceColumn="Company" DataSetColumn="Company" />
+              <Mapping SourceColumn="Location" DataSetColumn="Location" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="EmpAndNonEmpReport" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="EmpAndNonEmpReport" msprop:Generator_UserDSName="EmpAndNonEmpReport">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Emp_Count" msprop:Generator_TableClassName="Emp_CountDataTable" msprop:Generator_TableVarName="tableEmp_Count" msprop:Generator_TablePropName="Emp_Count" msprop:Generator_RowDeletingName="Emp_CountRowDeleting" msprop:Generator_UserTableName="Emp_Count" msprop:Generator_RowChangingName="Emp_CountRowChanging" msprop:Generator_RowEvHandlerName="Emp_CountRowChangeEventHandler" msprop:Generator_RowDeletedName="Emp_CountRowDeleted" msprop:Generator_RowEvArgName="Emp_CountRowChangeEvent" msprop:Generator_RowChangedName="Emp_CountRowChanged" msprop:Generator_RowClassName="Emp_CountRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EPD_EMPID" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEPD_EMPID" msprop:Generator_ColumnPropNameInRow="EPD_EMPID" msprop:Generator_ColumnPropNameInTable="EPD_EMPIDColumn" msprop:Generator_UserColumnName="EPD_EMPID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Emp_Details" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEmp_Details" msprop:Generator_ColumnPropNameInRow="Emp_Details" msprop:Generator_ColumnPropNameInTable="Emp_DetailsColumn" msprop:Generator_UserColumnName="Emp_Details" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DivEntity" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDivEntity" msprop:Generator_ColumnPropNameInRow="DivEntity" msprop:Generator_ColumnPropNameInTable="DivEntityColumn" msprop:Generator_UserColumnName="DivEntity" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DepGroup" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDepGroup" msprop:Generator_ColumnPropNameInRow="DepGroup" msprop:Generator_ColumnPropNameInTable="DepGroupColumn" msprop:Generator_UserColumnName="DepGroup" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GrdDivision" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnGrdDivision" msprop:Generator_ColumnPropNameInRow="GrdDivision" msprop:Generator_ColumnPropNameInTable="GrdDivisionColumn" msprop:Generator_UserColumnName="GrdDivision" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Employee" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEmployee" msprop:Generator_ColumnPropNameInRow="Employee" msprop:Generator_ColumnPropNameInTable="EmployeeColumn" msprop:Generator_UserColumnName="Employee" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EOD_JOINING_DATE" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEOD_JOINING_DATE" msprop:Generator_ColumnPropNameInRow="EOD_JOINING_DATE" msprop:Generator_ColumnPropNameInTable="EOD_JOINING_DATEColumn" msprop:Generator_UserColumnName="EOD_JOINING_DATE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Company" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnCompany" msprop:Generator_ColumnPropNameInRow="Company" msprop:Generator_ColumnPropNameInTable="CompanyColumn" msprop:Generator_UserColumnName="Company" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Location" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnLocation" msprop:Generator_ColumnPropNameInRow="Location" msprop:Generator_ColumnPropNameInTable="LocationColumn" msprop:Generator_UserColumnName="Location" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GrpSection" msprop:Generator_ColumnVarNameInTable="columnGrpSection" msprop:Generator_ColumnPropNameInRow="GrpSection" msprop:Generator_ColumnPropNameInTable="GrpSectionColumn" msprop:Generator_UserColumnName="GrpSection" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

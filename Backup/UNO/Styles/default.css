@@ -1,0 +1,882 @@
+
+@font-face
+{
+    font-family: 'fontawesome';
+    src: url('../fonts/fontawesome.eot');
+    src: url('../fonts/fontawesome.eot?#iefix') format('embedded-opentype'), url('../fonts/fontawesome.svg#fontawesome') format('svg'), url('../fonts/fontawesome.woff') format('woff'), url('../fonts/fontawesome.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*body, html { font-size: 100%; 	padding: 0; margin: 0;}*/
+
+/* Reset */
+*, *:after, *:before
+{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after
+{
+    content: " ";
+    display: table;
+}
+
+.clearfix:after
+{
+    clear: both;
+}
+
+html
+{
+    height: 100%;
+}
+body
+{
+    height: 93%;
+    font-family: 'Lato' , Calibri, Arial, sans-serif;
+    color: #47a3da;
+}
+
+a
+{
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: #000;
+}
+
+.container > header
+{
+    width: 90%;
+    max-width: 70em;
+    margin: 0 auto;
+    padding: 0 1.875em 3.125em 1.875em;
+}
+
+.container > header
+{
+    padding: 2.875em 1.875em 1.875em;
+}
+
+.container > header h1
+{
+    font-size: 2.125em;
+    line-height: 1.3;
+    margin: 0;
+    float: left;
+    font-weight: 400;
+}
+
+.container > header span
+{
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    padding: 0 0 0.6em 0.1em;
+}
+
+.container > header nav
+{
+    float: right;
+}
+
+.container > header nav a
+{
+    display: block;
+    float: left;
+    position: relative;
+    width: 2.5em;
+    height: 2.5em;
+    background: #fff;
+    border-radius: 50%;
+    color: transparent;
+    margin: 0 0.1em;
+    border: 4px solid #47a3da;
+    text-indent: -8000px;
+}
+
+.container > header nav a:after
+{
+    content: attr(data-info);
+    color: #47a3da;
+    position: absolute;
+    width: 600%;
+    top: 120%;
+    text-align: right;
+    right: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.container > header nav a:hover:after
+{
+    opacity: 1;
+}
+
+.container > header nav a:hover
+{
+    background: #47a3da;
+}
+
+.icon-drop:before, .icon-arrow-left:before
+{
+    font-family: 'fontawesome';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 2;
+    text-align: center;
+    color: #47a3da;
+    -webkit-font-smoothing: antialiased;
+    text-indent: 8000px;
+    padding-left: 8px;
+}
+
+.container > header nav a:hover:before
+{
+    color: #fff;
+}
+
+.icon-drop:before
+{
+    content: "\e000";
+}
+
+.icon-arrow-left:before
+{
+    content: "\f060";
+}
+
+/* Old start */
+.tablestyle
+{
+    border: solid 1px #7f7f7f;
+    width: 1180px;
+    vertical-align: top;
+    border-bottom: 1px solid #7f7f7f;
+}
+.SearchPanel
+{
+    border: solid 1px #7f7f7f;
+    width: 1180px;
+    vertical-align: top;
+    background-color: #edf5ff;
+    height: 30px;
+}
+
+.srcColor
+{
+    scrollbar-base-color: #E0ECF8;
+    margin-left: auto;
+    margin-right: auto; /* Swapnil Start*/ /*min-height: 170px; */
+    text-align: center; /* Swapnil End  */
+}
+.LinkControl
+{
+    color: Blue;
+    text-decoration: none;
+    font-size: 12px;
+    text-align: right;
+}
+
+.altrowstyle
+{
+    background-color: #edf5ff;
+}
+
+.headerstyle th
+{
+    background: url(App_Themes/img/sprite.png) repeat-x 0px 0px;
+    border-color: #989898 #cbcbcb #989898 #989898;
+    border-style: solid solid solid none;
+    border-width: 1px 1px 1px medium;
+    color: #CDE5FF;
+    padding: 4px 5px 4px 10px;
+    text-align: left;
+    vertical-align: top;
+    background-color: #CDE5FF;
+    position: relative;
+}
+
+.headerstyle th a
+{
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    color: #063E77;
+    display: block;
+    padding-right: 10px;
+}
+
+.rowstyle .sortaltrow, .altrowstyle .sortaltrow
+{
+    background-color: #edf5ff;
+}
+
+.rowstyle .sortrow, .altrowstyle .sortrow
+{
+    background-color: #dbeaff;
+}
+
+.rowstyle td, .altrowstyle td
+{
+    padding: 4px 10px 4px 10px;
+    border-right: solid 1px #cbcbcb;
+}
+
+.headerstyle .sortascheader
+{
+    background: url(App_Themes/img/sprite.png) repeat-x 0px -100px;
+    font-weight: bold;
+}
+
+.headerstyle .sortascheader a
+{
+    background: url(App_Themes/img/dt-arrow-up.png) no-repeat right 50%;
+    font-weight: bold;
+}
+
+.headerstyle .sortdescheader
+{
+    background: url(App_Themes/img/sprite.png) repeat-x 0px -100px;
+    font-weight: bold;
+}
+
+.headerstyle .sortdescheader a
+{
+    background: url(App_Themes/img/dt-arrow-dn.png) no-repeat right 50%;
+    font-weight: bold;
+}
+
+.h1, h2, h3, h4, h5, h6
+{
+    color: #4D77C6;
+}
+
+.h1
+{
+    font-size: 30px;
+    text-align: center;
+}
+
+.div#websiteTitle
+{
+    color: #4D77C6;
+    margin-top: 10px;
+    font-size: 30px;
+    padding-left: 40px;
+}
+
+div.framed
+{
+    border: solid 1px #9CB6E9;
+    padding: 10px;
+    width: 1200px;
+    background-color: #F0F6FC;
+    height: 565px;
+}
+
+.framed2
+{
+    border: solid 1px #9CB6E9;
+    padding: 10px;
+    width: 575px;
+    background-color: #ECFFF8;
+    vertical-align: top;
+}
+
+
+.#frame2
+{
+    border: solid 1px #9CB6E9;
+    padding: 10px;
+    width: 1200px;
+    background-color: #ECFFF8;
+    vertical-align: top;
+}
+.button
+{
+    color: #FFFFFF;
+    background-color: #4D77C6;
+    border-top: solid 1px #FFFFFF;
+    border-left: solid 1px #FFFFFF;
+    border-right: solid 1px #FFFFFF;
+    border-bottom: solid 1px #000000;
+    margin: 5px 0px 5px 0px;
+    float: right;
+    height: 30px;
+    width: 130px;
+    position: inherit;
+}
+
+
+.searchbtn
+{
+    color: #FFFFFF;
+    background-color: #4D77C6;
+    border-top: solid 1px #FFFFFF;
+    border-left: solid 1px #FFFFFF;
+    border-right: solid 1px #FFFFFF;
+    border-bottom: solid 1px #000000;
+    margin: 0px 5px 0px 0px;
+    height: 22px;
+    width: 60px;
+    vertical-align: top;
+}
+.reloadbtn
+{
+    color: #FFFFFF;
+    background-color: #4D77C6;
+    border-top: solid 1px #FFFFFF;
+    border-left: solid 1px #FFFFFF;
+    border-right: solid 1px #FFFFFF;
+    border-bottom: solid 1px #000000;
+    margin: 0px 20px 0px 0px;
+    height: 22px;
+    width: 60px;
+    vertical-align: top;
+}
+
+.wizbtn
+{
+    width: 80px; /*right:170px;	 	position:absolute;*/
+}
+
+input.textbox
+{
+    width: 338px;
+    border: solid 1px #000000;
+    margin: 2px 0px 2px 0px;
+}
+
+.datapager
+{
+    font-family: arial,sans-serif;
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 7px;
+    padding-right: 7px;
+    font-size: 15px;
+    font-weight: bold;
+    border-width: 1px;
+    border-style: solid;
+    color: #063E77;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+
+TR.pagerstyle
+{
+    left: 25px;
+    width: 1180px;
+    border-right-style: solid;
+    position: absolute;
+    top: 512px;
+    height: 25px;
+    text-align: right;
+    border-right-color: navy;
+    border-width: 1px;
+    border-style: solid;
+}
+.div pager-row TD
+{
+    border-top: solid 2px #bbd9ee;
+}
+
+.input[type="text"]
+{
+    border: solid 1px #999;
+}
+
+.CompulsaryLabel
+{
+    color: RED;
+}
+
+/*select 
+{
+	 background-color:#FFFFFF;
+	 margin-top:-2px;
+	 margin-left:-2px;
+	 border-collapse:inherit;
+	 border-bottom-style:solid;
+	 border-width:thin;
+}*/
+
+.TDClassLabel
+{
+    font-family: Verdana;
+    font-size: 9pt;
+    color: #515456;
+    border: 0px solid #CCCCCC;
+    border-width: 0px;
+    text-align: right;
+    padding-right: 4px;
+    width: 20%;
+}
+/*select 
+used by shirish--UAPTDClassLabel
+*/
+.UAPTDClassLabel
+{
+    font-family: Verdana;
+    font-size: 9pt;
+    color: #515456; /*border: 0px solid #CCCCCC;*/
+    border-width: 1px;
+    text-align: right;
+    padding-right: 4px;
+    width: 60%;
+}
+.UAPTDHierarcyLabel
+{
+    font-family: Verdana;
+    font-size: 9pt;
+    color: #515456;
+    text-align: right; /*border-bottom-style: solid;*/
+    border-bottom-width: 1px;
+    border-bottom-color: #CCCCCC;
+}
+
+
+.ComboControl
+{
+    padding: 1px 4px;
+    font-family: Courier New;
+    font-size: 8pt;
+}
+
+.TableClass
+{
+    /*background-color:#F8F8FA;*/
+    text-align: left;
+    padding: 2px;
+    width: 100%;
+}
+
+.TDClassForButton
+{
+    text-align: right;
+    height: 12px;
+    padding: 1px 2px 2px 1px;
+    background-color: #F8F8FA;
+    border-bottom: solid;
+    border-right: solid;
+    border-color: #ECECEC;
+    border-width: 0px;
+    width: 25%;
+}
+.TDClassControl
+{
+    font-size: 9pt;
+    font-family: verdana;
+    color: #515456;
+    border: 0px solid #CCCCCC;
+    border-width: 0px;
+    text-align: left;
+    padding-left: 4px;
+    width: 35%;
+}
+.TDHOLIDAYClass
+{
+    font-size: 9pt;
+    font-family: verdana;
+    color: #515456; /*border: 1px solid #CCCCCC;*/
+    border-width: 1px;
+    text-align: left;
+    padding-left: 4px;
+    width: auto;
+}
+
+/* commented by vaibhav
+.TextControl
+{
+    padding: 1 4;
+    background-color: White;
+    color: #000000;
+    font-family: Verdana;
+    font-size: 8pt;
+    border: 0px solid #CFCFCF;
+}
+
+*/
+/*Swapnil start*/
+.TextBox
+{
+    padding: 4 4 4 4;
+    background-color: White;
+    color: #000000;
+    font-family: Verdana;
+    font-size: 8pt;
+    border: 1px solid #CFCFCF;
+    border-radius: 25px;
+    height: 15px;
+}
+/*Swapnil End*/
+.ButtonControl
+{
+    font-size: 11px;
+    font-family: Verdana;
+    color: Black;
+    font-weight: bold;
+    background-color: #99CCFF;
+    border-color: #99CCFF;
+    border-width: 1px; /*Swapnil Start*/
+    border-radius: 25px; /*Swapnil End*/
+    padding: 2px 10px 2px 10px;
+	}
+
+.RptButtonControl
+{
+    font-size: 11px;
+    font-family: Verdana;
+    color: Black;
+    font-weight: bold;
+    width: 55px;
+    background-color: #99CCFF;
+    border-color: #99CCFF;
+    border-width: 1px;
+}
+.heading
+{
+    text-align: center;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    color: RoyalBlue;
+    margin-bottom: 0px;
+}
+
+
+#overlay
+{
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    background-color: #f8f8f8;
+    width: 100%;
+    height: 100%;
+    filter: Alpha(Opacity=90);
+    opacity: 0.9;
+    -moz-opacity: 0.9;
+}
+
+#theprogress
+{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 300px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    filter: Alpha(Opacity=100);
+    opacity: 1;
+    -moz-opacity: 1;
+}
+
+#modalprogress
+{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin: -11px 0 0 -150px;
+    color: #990000;
+    font-weight: bold;
+    font-size: 14px;
+}
+.style16
+{
+    font-size: 8pt;
+    font-family: verdana;
+    color: #515456;
+    border: 0px solid #CCCCCC;
+    text-align: left;
+    padding-left: 4px;
+    width: 54%;
+    height: 10px;
+}
+.style20
+{
+    font-size: 9pt;
+    font-family: verdana;
+    font-weight: bold;
+    color: #515456; /*border: 1px solid #CCCCCC;*/
+    padding-left: 4px;
+    width: 36%;
+    height: 10px;
+    text-align: center;
+}
+
+.style22
+{
+    font-size: 8pt;
+    font-family: verdana;
+    color: #515456;
+    border: 1px solid #CCCCCC;
+    text-align: right;
+    padding-left: 4px;
+    width: 46%;
+    height: 10px;
+}
+.style23
+{
+    font-size: 8pt;
+    font-family: verdana;
+    color: #515456; /*border: 1px solid #CCCCCC;*/
+    text-align: left;
+    padding-left: 4px;
+    width: 33%;
+    height: 10px;
+}
+.ReportPageHeaderTable
+{
+    background-color: #005478;
+    border: solid 1px;
+    border-color: Black;
+    height: 21px;
+    width: 100%;
+    padding: 0px,0px,0px,0px;
+}
+
+
+.ReportPageFooterTable
+{
+    background-color: #005478;
+    border: solid 1px;
+    border-color: Black;
+    text-align: right;
+    height: 21px;
+    width: 99.9%;
+}
+.ReportHeader
+{
+    text-align: right;
+}
+
+.style17
+{
+    font-size: 8pt;
+    font-family: Courier New;
+    color: #515456;
+    text-align: left;
+}
+
+.styleprint
+{
+    font-size: 8pt;
+    font-family: verdana;
+    color: #515456;
+    border: 1px solid #CCCCCC;
+    text-align: right;
+    padding-left: 4px;
+    width: 54%;
+    height: 10px;
+}
+
+.style27
+{
+    width: 670px;
+}
+.style28
+{
+    width: 208px;
+}
+#btnClose
+{
+    width: 130px;
+}
+.style33
+{
+    font-size: 8pt;
+    font-family: Verdana;
+    width: 200px;
+    font-weight: bold;
+}
+
+.gpleft
+{
+    font-size: 8pt;
+    font-family: Verdana;
+    width: 236px;
+    font-weight: bold;
+}
+
+.gpright
+{
+    font-size: 8pt;
+    font-family: Verdana;
+    width: 236px;
+    font-weight: bold;
+}
+.gpmiddle
+{
+    font-size: 8pt;
+    font-family: Verdana;
+    width: 254px;
+    font-weight: bold;
+}
+#tbl1
+{
+    width: 99%;
+}
+.lbltext
+{
+    font-size: 8pt;
+    font-family: Verdana;
+}
+
+.style35
+{
+    font-family: Verdana;
+    font-size: 8pt;
+    color: #515456;
+    
+   /* border: 1px solid #CCCCCC; */
+    text-align: right;
+    padding-right: 4px;
+    width: 30%;
+}
+.style36
+{
+    font-family: Verdana;
+    font-size: 8pt;
+    color: #515456;
+
+    text-align: right;
+    padding-right: 4px;
+    width: 23%;
+}
+.CompulsaryLabel
+{
+    color: RED;
+    text-align: right;
+}
+/* old End*/
+
+.PopupPanel
+{
+    background-color: White;
+    border: 5px solid #000000;
+    border-radius: 25px;
+    color: Black;
+    padding: 10px 10px 10px 10px;
+}
+.ErrorLabel
+{
+    color: Red;
+}
+
+.textBold
+{
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Trebuchet MS' , Tahoma, Verdana, Arial, sans-serif;
+    font-weight: bold;
+    color: Black;
+    font-size: x-large;
+}
+
+.watermark
+{
+    color: Gray;
+    font-size:x-small;
+    height: 17px;
+    width: 120px;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+.searchTextBox
+{
+    height: 17px;
+    width: 120px;
+    font-size:smaller;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+.DivEmpDetails
+{
+    text-align: center;
+    width: 95%; /*border: 1px solid #333333;*/
+    border-radius: 15px;
+    background-color: #47A3DA;
+    color:Black;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px; /*min-height: 200px;*/ /*font-family: 'Trebuchet MS' , Tahoma, Verdana, Arial, sans-serif;*/
+    box-shadow: 10px 10px 5px #888888;
+}
+.gvHeader
+{
+    background-color: transparent;
+    border: 0px solid #66B7F5;
+    max-height: 29px;
+    height: 29px;
+    min-height: 29px;
+    text-align:center;
+}
+gvAlternateRow
+{
+}
+.gvRow
+{
+    border-bottom: 1px solid #C3C3C3;
+    max-height: 26px;
+    height: 26px;
+    min-height: 26px;
+}
+.gvPager
+{
+    vertical-align: bottom;
+}
+.center
+{
+    text-align: center;
+}
+
+/*select 
+shrinith start
+*/
+
+.TDClassLabel1
+{
+    font-family: Verdana;
+    font-size: 9pt;
+    color: #515456;
+    border: 0px solid #CCCCCC;
+    border-width: 0px;
+    text-align: right;
+    padding-right: 4px;
+    width: 12%;
+}
+
+.TDClassControl1
+{
+    font-size: 9pt;
+    font-family: verdana;
+    color: #515456;
+    border: 0px solid #CCCCCC;
+    border-width: 0px;
+    text-align: left;
+    padding-left: 4px;
+    width: 12%;
+}
+
+/*select 
+shrinith end
+*/

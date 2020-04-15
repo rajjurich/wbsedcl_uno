@@ -1,0 +1,475 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="UNO.Main" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <title>Welcome to UNO</title>
+    <style>
+        /* Create a new class name that contains the dimensions of your slider (not image size, but the slider size used). */
+        /* Then add CSS margin-top with NEGATIVE vaule that is the same numer as height */
+        /* Finish this off by adding a cursor so when the DIV (banner image) is hovered, a hand is shown. */
+        /* Tip to view the clickable area is to add in   background-color: red;   for testing purposes. */
+        
+        .imageLink
+        {
+            width: 950px;
+            height: 440px;
+            margin-top: -440px;
+            cursor: pointer;
+        }
+        
+        .nav
+        {
+            display: block;
+            position: absolute;
+            color: White;
+            padding-top: 11px;
+        }
+        .UserName
+        {
+            padding-right: 10px;
+            color: Yellow;
+        }
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body
+        {
+            background: #fff; /*position: relative;*/
+            font: 13px Arial, Helvetica, sans-serif;
+        }
+        
+        a
+        {
+            text-decoration: none;
+            color: #00c6ff;
+        }
+        
+        .content
+        {
+            width: 960px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        
+        #top-stuff
+        {
+            left: 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 12;
+        }
+        
+        #top-bar-out
+        {
+            display: block;
+            position: relative;
+            width: 100%;
+            height: 40px;
+            background: -moz-linear-gradient(center top, #333333, #111111);
+            background: -webkit-gradient(linear, left top, left bottom, from(#333333), to(#111111));
+            background: -o-linear-gradient(top, #333333, #111111);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#333333', EndColorStr='#111111');
+            box-shadow: 0 1px 2px #666666;
+            -webkit-box-shadow: 0 1px 2px #666666;
+        }
+        
+        .active-links
+        {
+            position: absolute;
+            right: 8px;
+            top: 0;
+      
+        }
+        
+        #container
+        {
+            width: 780px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        #topnav
+        {
+            text-align: right;
+        }
+        
+        #session
+        {
+            cursor: pointer;
+            display: inline-block;
+            height: 20px;
+            padding: 10px 12px;
+            vertical-align: top;
+            white-space: nowrap;
+        }
+        
+        #session.active, #session:hover
+        {
+            background: rgba(255,255,255,0.1);
+            color: fff;
+        }
+        
+        a#signin-link
+        {
+            color: #bababa;
+            position: relative;
+        }
+        
+        a#signin-link em
+        {
+            font-size: 10px;
+            font-style: normal;
+            margin-right: 4px;
+        }
+        
+        a#signin-link strong
+        {
+            color: #fff;
+        }
+        
+        #signin-dropdown
+        {
+            background-color: #202020;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            box-shadow: 0 1px 2px #666666;
+            -webkit-box-shadow: 0 1px 2px #666666;
+            min-height: 130px;
+            min-width: 160px;
+            position: absolute;
+            right: 0;
+            display: none;
+            padding: 0px 20px 5px 20px;
+        }
+        
+        #signin-dropdown form
+        {
+            cursor: pointer;
+            padding: 10px;
+            text-align: left;
+        }
+        
+        #signin-dropdown .textbox span
+        {
+            color: #BABABA;
+        }
+        
+        #signin-dropdown .textbox input
+        {
+            width: 200px;
+        }
+        
+        /* fieldset
+        {
+            border: none;
+        }*/
+        
+        form.signin .textbox label
+        {
+            display: block;
+            padding-bottom: 7px;
+        }
+        
+        form.signin .textbox span
+        {
+            display: block;
+        }
+        
+        form.signin p, form.signin span
+        {
+            color: #999;
+            font-size: 11px;
+            line-height: 18px;
+        }
+        
+        form.signin .textbox input
+        {
+            background: #666666;
+            border-bottom: 1px solid #333;
+            border-left: 1px solid #000;
+            border-right: 1px solid #333;
+            border-top: 1px solid #000;
+            color: #fff;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            font: 13px Arial, Helvetica, sans-serif;
+            padding: 6px 6px 4px;
+        }
+        
+        form.signin .remb
+        {
+            padding: 9px 0;
+            position: relative;
+            text-align: right;
+        }
+        
+        form.signin .remb .remember
+        {
+            text-align: left;
+            position: absolute;
+            left: 0;
+        }
+        
+        .button
+        {
+            background: -moz-linear-gradient(center top, #f3f3f3, #dddddd);
+            background: -webkit-gradient(linear, left top, left bottom, from(#f3f3f3), to(#dddddd));
+            background: -o-linear-gradient(top, #f3f3f3, #dddddd);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f3f3f3', EndColorStr='#dddddd');
+            border-color: #000;
+            border-width: 1px;
+            -moz-border-radius: 4px;
+            -webkit-border-radius: 4px;
+            color: #333;
+            cursor: pointer;
+            display: inline-block;
+            padding: 4px 7px;
+            margin: 0;
+            font: 12px;
+        }
+        
+        .button:hover
+        {
+            background: #ddd;
+        }
+        .modalBackground
+        {
+            background-color: Gray;
+            filter: alpha(opacity=50);
+            opacity: 0.7;
+        }
+        .popupPannel
+        {
+            background-color: White;
+            border: 5px solid #000000;
+            border-radius: 25px;
+            color: Black;
+            padding: 10px 10px 5px 10px;
+            vertical-align: middle;
+            text-align: center;
+        }
+    </style>
+    <script type="text/javascript" src="Scripts/jquery-1.9.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.active-links').click(function () {
+                //Conditional states allow the dropdown box appear and disappear 
+                if ($('#signin-dropdown').is(":visible")) {
+                    $('#signin-dropdown').hide()
+                    $('#session').removeClass('active'); // When the dropdown is not visible removes the class "active"
+                } else {
+                    $('#signin-dropdown').show()
+                    $('#session').addClass('active'); // When the dropdown is visible add class "active"
+                }
+                return false;
+            });
+
+            $('#signin-dropdown').click(function (e) {
+                e.stopPropagation();
+            });
+            $(document).click(function () {
+                $('#signin-dropdown').hide();
+                $('#session').removeClass('active');
+            });
+        });
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+       <form id="form1" runat="server" style="height: 100%;" defaultbutton="btnLogin">
+    <ajaxToolkit:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
+    </ajaxToolkit:ToolkitScriptManager>
+    <div style="height: 100%;">
+        <div id="top-stuff">
+            <div id="top-bar-out">
+<%--                <img src="images/twig.gif" style="float:left;position:absolute;height:39px;border-radius:5px;"/>--%>
+                 <div class="nav" style="margin-left: 15%; margin-bottom: 10%; background-position: top;">
+                    <asp:ImageButton ID="ibHome" runat="server" BorderColor="Transparent" BorderWidth="0px"
+                        ImageUrl="~/images/home.png" ImageAlign="Top" OnClick="ibHome_Click" Style="color: White;
+                        width: 37px; height: 26px; padding: 0,0,0,0;"></asp:ImageButton>
+                    <%-- <asp:ImageButton ID ="ibHome" runat="server" ImageUrl="~/images/MB__home.png" ImageAlign="Top"  OnClick ="ibHome_Click" style="color:White;width:30px;height:30px;"></asp:ImageButton>--%>
+                </div>
+                <div id="container">
+                    
+                    <div id="topnav">
+                       
+                            <div class="nav" style="top: 0px; left: 5px; height: 16px; width: 45px">
+                                <span>&nbsp;</span>
+                            </div>
+                        
+                            <div class="nav" style="margin-left: 15%;">
+                                <span>&nbsp;</span>
+                            </div>
+                       
+                            <div class="nav" style="margin-left: 30%;">
+                                <span>&nbsp;</span>
+                            </div>
+                        
+                            <div class="nav" style="margin-left: 45%;">
+                                <span>&nbsp;</span>
+                            </div>
+                       
+                        <% if (Session["uid"] == null || Session["uid"].ToString() == "")
+                           { %>
+                        <div class="active-links" style="">
+                            <div id="session">
+                                <a id="signin-link" href="#"><em>Have an account?</em> <strong>Sign in</strong>
+                                </a>
+                            </div>
+                            <div id="signin-dropdown">
+                                <fieldset class="textbox">
+                                    <label class="username">
+                                        <div style="min-height: 15px;">
+                                        </div>
+                                        <span>Version 2.0.002</span>
+                                        <%--<span>Username or email</span>--%>
+                                        <asp:TextBox ID="txtUserName" runat="server" Style="width: 150px;"></asp:TextBox>
+                                        <asp:RequiredFieldValidator ID="rfvtxtUserName" runat="server" ErrorMessage="Enter User Name"
+                                            ControlToValidate="txtUserName" Display="None" ValidationGroup="Login"></asp:RequiredFieldValidator>
+                                        <ajaxToolkit:ValidatorCalloutExtender ID="vcerfvtxtUserName" runat="server" TargetControlID="rfvtxtUserName"
+                                            PopupPosition="BottomRight">
+                                        </ajaxToolkit:ValidatorCalloutExtender>
+                                     <%--   <ajaxToolkit:TextBoxWatermarkExtender ID="twetxtUserName" runat="server" TargetControlID="txtUserName"
+                                            WatermarkText="User Name">
+                                        </ajaxToolkit:TextBoxWatermarkExtender>--%>
+                                        <%--<input id="username" name="username" value="" type="text" autocomplete="on">--%>
+                                    </label>
+                                    <label class="password">
+                                        <div style="min-height: 15px;">
+                                        </div>
+                                        <%--<span>Password</span>--%>
+                                        <asp:TextBox ID="txtPassword" runat="server" Text="Password" TextMode="Password"
+                                            Style="width: 150px;"></asp:TextBox>
+                                        <ajaxToolkit:TextBoxWatermarkExtender ID="twetxtPassword" runat="server" TargetControlID="txtPassword"
+                                            WatermarkText="Password">
+                                        </ajaxToolkit:TextBoxWatermarkExtender>
+                                        <asp:RequiredFieldValidator ID="rfvtxtPassword" runat="server" ErrorMessage="Please enter Password"
+                                            ControlToValidate="txtPassword" Display="None" ValidationGroup="Login"> </asp:RequiredFieldValidator>
+                                        <ajaxToolkit:ValidatorCalloutExtender ID="vcerfvtxtPassword" runat="server" TargetControlID="rfvtxtPassword"
+                                            PopupPosition="BottomRight">
+                                        </ajaxToolkit:ValidatorCalloutExtender>
+                                        <%--<input id="password" name="password" value="" type="password">--%>
+                                    </label>
+                                </fieldset>
+                                <fieldset class="remb">
+                                    <%--<label class="remember">
+                                        <input type="checkbox" value="1" name="remember_me" />
+                                        <span>Remember me</span>
+                                    </label>--%>
+                                    <asp:Button ID="btnLogin" runat="server" Text="Login" CssClass="submit button" ValidationGroup="Login"
+                                        OnClick="btnLogin_Click" />
+                                    <%--<button class="submit button" type="button">
+                                        Sign in</button>--%>
+                                </fieldset>
+                                <p>
+                                    <a runat="server" id="lnkForgotPassword" class="forgot" href="#" style="color: Red;">
+                                        Forgot your password?</a>
+                                    <br>
+                                    <%--<a class="mobile" href="#">Already using Twitter via SMS?</a>--%>
+                                </p>
+                                <p>
+                                    <asp:Label ID="lblError" runat="server" Text="" Visible="false"></asp:Label>
+                                </p>
+                            </div>
+                        </div>
+                        <% }
+                           else
+                           { %>
+                        <div id="session" style="">
+                           <em>
+                                    <asp:Label ID="lblUserName" ClientIDMode="Static" runat="server" Text="" CssClass="UserName"></asp:Label></em>
+                            <asp:LinkButton ID="signout" runat="server" OnClick="signout_Click">
+                             
+                                      <strong style="color: Aqua;">Sign out</strong> |
+                                    <a href="UpdatePassword.aspx" style="color: Aqua;">Change Password</a> 
+                                  
+                            </asp:LinkButton>
+                            
+                        </div>
+                        <%--<a id="signout-link" href="#"><em>
+                                    <% Session["uid"].ToString(); %></em> <strong>Sign out</strong> </a>--%>
+                        <% } %>
+                    </div>
+                </div>
+           <%--     <img src="images/ISRO.png" style="float:right;position:absolute;height:39px;margin-top:-12px;margin-left:96%;border-radius:5px;width:56px;"/>
+--%>
+            </div>
+        </div>
+        <% if (Session["uid"] == null || Session["uid"].ToString() == "")
+           { %>
+ <asp:Panel ID="pnlForgot" runat="server" CssClass="popupPannel" Width="300px" >
+            <table >
+                <tr>
+                    <td>
+                        <span>Enter Employee ID</span>
+                    </td>
+                    <td style="padding-left:7%;">
+                        <asp:TextBox ID="txtEmployeeID" runat="server" ValidationGroup="Forgot" MaxLength="8" Width="150px"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="rfvEmployeeID" runat="server" ErrorMessage="Enter Employee ID"
+                            Display="None" ControlToValidate="txtEmployeeID" ValidationGroup="Forgot"></asp:RequiredFieldValidator>
+                        <ajaxToolkit:ValidatorCalloutExtender ID="vcerfvEmployeeID" runat="server" TargetControlID="rfvEmployeeID"
+                            PopupPosition="Right">
+                        </ajaxToolkit:ValidatorCalloutExtender>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center" valign="middle">
+                        <div id="messageDiv" runat="server" clientidmode="Static" class="MessageClass">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center" valign="middle" style="padding-top:2%">
+                        <asp:Button ID="btnOk" runat="server" Text="Ok" CssClass="button" ValidationGroup="Forgot" 
+                            OnClick="btnOk_Click"></asp:Button>
+
+                              <asp:Button ID="btnCancel" runat="server" Text="Cancel" style="padding-left:2%;" CssClass="button">
+                        </asp:Button>
+                    </td>
+                  
+                </tr>
+            </table>
+        </asp:Panel>
+        <ajaxToolkit:ModalPopupExtender ID="mpeForgot" runat="server" TargetControlID="lnkForgotPassword"
+            PopupControlID="pnlForgot" Enabled="true" BackgroundCssClass="modalBackground"
+            CancelControlID="btnCancel">
+        </ajaxToolkit:ModalPopupExtender>
+        <asp:LinkButton ID="lnkDummy" runat="server" Style="display: none;">dummy</asp:LinkButton>
+        <asp:Panel ID="pnlMessage" runat="server" CssClass="popupPannel" Style="min-width: 150px;
+            min-height: 50px;">
+            <table style="width: 100%; height: 100%; min-height: 100%; max-width: 100%;">
+                <tr>
+                    <td style="padding-bottom: 20px;">
+                        <asp:Label ID="lblMessage" runat="server" Text="" Style="font-family: Arial; font-weight: bold;"></asp:Label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:Button ID="btnMessageOK" runat="server" Text="OK" />
+                    </td>
+                </tr>
+            </table>
+        </asp:Panel>
+        <ajaxToolkit:ModalPopupExtender ID="mpeMessage" runat="server" TargetControlID="lnkDummy"
+            PopupControlID="pnlMessage" OkControlID="btnMessageOK" BackgroundCssClass="modalBackground">
+        </ajaxToolkit:ModalPopupExtender>
+        <%} %>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <div style="width: 100%; height: 30px; background-color: #111111; position: fixed;
+            bottom: 0; text-align: center; vertical-align: middle;">
+
+            <span style="color: White; text-align: center;">Copyright © 2014 CMS Computers Ltd. All Rights Reserved.</span><br />
+            <span style="color: White; text-align: center;">This site is best viewed in IE versions 9 and 10, latest version of Firefox & Chrome browsers.</span>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
